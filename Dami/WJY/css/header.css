@@ -1,0 +1,77 @@
+a{
+    text-decoration: none;
+}
+ul,li{
+    padding:0;
+    margin:0;
+    list-style: none;
+}
+#main{
+    width:960px;
+    height:350px;
+    margin:20px auto;
+}
+.header_top:after{
+    display: block;
+    content:"";
+    clear:both;
+}
+.logo{
+    float:left;
+    margin-right:20px;
+}
+#input_box{
+    width:410px;
+    height:34px;
+    border:1px solid #0AA1ED;
+    float:left;
+}
+#input_box>input{
+    border:0;
+    outline:0;
+    height:34px;
+    width:270px;
+    padding:0 0 0 10px;
+}
+.classify{
+    font-size:12px;
+    color:#808080;
+}
+.caret{
+    float:right;
+    margin:4px 10px 0 10px;
+}
+.search{
+    float:right;
+}
+.cart_list{
+    float:right;
+    margin-top:10px;
+    color:#808080;
+}
+.cart_list li{
+    float:left;
+}
+.cart_list li>a{
+    padding:0 10px;
+    color:#808080;
+}
+.cart_list li img{
+    vertical-align: middle;
+}
+/*header-bottom*/
+.header_bottom{
+    margin:40px 0;
+    font-family:"微软雅黑";
+}
+ul.header_bottom li{
+    float:left;
+    font-size:16px;
+    margin:0 25px;
+    color:#CCCCCC;
+}
+ul.header_bottom li:nth-child(1){
+    margin-left:0;
+}
+
+

@@ -1,0 +1,1278 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dami&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;支付</title>
+    <link rel="icon" href="WAZ_HomePagePicture/logo1.png" type="image/x-icon">
+    <!-- Bootstrap -->
+    <link href="bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+
+        #header_1 {
+            width: 100%;
+            height: 40px;
+            background-color: #454545;
+        }
+
+        #header_2 {
+            width: 100%;
+            /*height: 44px;*/
+            /*position:relative;*/
+            /*top:0;*/
+            border-radius: 0;
+            /*text-align: center;!important;*/
+            background-color: #333333;
+            z-index: 1;
+            border: 0px;
+        }
+
+        .headerUL {
+            /*text-align: left;*/
+            /*position: relative;*/
+            font-family: '微软雅黑';
+            font-size: 14px;
+            color: #ffffff;
+            margin: auto auto;
+            /*text-align: center;*/
+            background-color: #333333 !important;
+
+        }
+
+        .header-mynavbar-default .header-mynavbar-nav > li > a {
+            color: #ffffff;
+        }
+
+        .headerUL a:link {
+            color: #FFFFFF
+        }
+
+        .headerUL a:visited {
+            color: #FFFFFF
+        }
+
+        .headerUL a:hover {
+            color: #b2b2b2 !important;
+            outline: none;
+        }
+
+        .headerUL a:active {
+            color: #b2b2b2;
+            outline: none;
+        }
+
+        .headerUL a {
+            text-decoration: none;
+        }
+
+        /*.navbar-default .navbar-toggle:hover,.nav-pills > li > a:focus{*/
+        /*background-color: red;*/
+        /*}*/
+        .header-mynav-pills > li > a {
+            height: 44px;
+        }
+
+        .header-mynavbar-default .header-mynavbar-toggle:hover, .header-mynav-pills > li > a:focus, .header-mynavbar-default .header-mynavbar-toggle:hover, .header-mynav-pills > li > a:hover {
+            background-color: #333333;
+            outline: none;
+        }
+
+        .header-mynav-pills .header-mynav-justified.navbar-navt .header-mynavbar-toggle:hover, .header-mynavbar-default .header-mynavbar-toggle .header-mynav-pills :focus {
+            background-color: #333333;
+            outline: none;
+        }
+
+        #header-mytoggle1 {
+            border: 0px;
+        }
+
+        .header-mynav-justified > li > a {
+            text-align: left;
+        }
+
+        /*.navbar-brand{*/
+        /*text-align: center;!important;*/
+        /*}*/
+        .header-mynavbar-brand {
+            float: left;
+            height: 44px;
+            padding: 15px 15px;
+            font-size: 18px;
+            line-height: 20px;
+        }
+
+        .header-mynavbar {
+            position: relative;
+            min-height: 44px;
+            margin-bottom: 20px;
+            border: 1px solid transparent;
+        }
+
+        .header-mynavbar-fixed-top .header-mynavbar-collapse, .navbar-fixed-bottom .header-mynavbar-collapse {
+            max-height: 800px;
+        }
+
+        /*.col-sm-1, .col-sm-11, .col-sm-12, {*/
+        /*position: relative;*/
+        /*/!*min-height: 1px;*!/*/
+        /*padding-right: 0px;*/
+        /*padding-left: 0px;*/
+        /*}*/
+        /*.nav > li > a {*/
+        /*position: relative;*/
+        /*display: block;*/
+        /*padding: 12px 15px;*/
+        /*}*/
+        .header-myrow {
+            margin-right: 0px;
+            margin-left: 0px;
+        }
+
+        @media (max-width: 1300px) {
+            .header-mypadding1 {
+                padding-left: 30px;
+            }
+
+            /*@media (max-width: 760px){*/
+            /*.mypadding1*/
+            /*{*/
+            /*padding-left: 0px;*/
+            /*}}*/
+        }
+
+        @media (min-width: 1300px) {
+            .header-mypadding1 {
+                padding-left: 80px;
+            }
+        }
+
+        a {
+            color: black;
+        }
+
+        a:hover {
+            text-decoration: none;
+            color: black;
+        }
+
+        .paymenttable {
+            width: 980px;
+            background-color: #ffffff;
+            margin: 0 auto;
+        }
+
+        .paymenttable tr td {
+            border-style: solid;
+            border-width: 1px;
+            border-color: #d2d2d2;
+        }
+
+        .payment_title {
+            /*width: 980px;*/
+            /*height: 50px;*/
+            font-family: 微软雅黑;
+            font-size: 24px;
+            /*margin-left: 20px;*/
+        }
+
+        /*.payment_title >td>a{*/
+        /*/!*margin-left: 20px;*!/*/
+
+        /*padding: 10px 20px;*/
+        /*}*/
+
+        #payment_1_1 {
+            font-family: 微软雅黑;
+            font-size: 36px;
+        }
+
+        #payment_1_2 {
+            font-family: 微软雅黑;
+            font-size: 20px;
+            /*text-align: center;*/
+        }
+
+        .payment_text {
+            font-family: 微软雅黑;
+            font-size: 14px;
+        }
+
+        /*#paymentdiv_2 {*/
+        /*text-align: right;*/
+        /*position: relative;*/
+        /*top: 90px;*/
+        /*right: 10px;*/
+        /*}*/
+
+        #payforitNowBottom {
+            background: #2B9BE2;
+            color: #ffffff;
+            width: 144px;
+            border: 0px;
+            height: 44px;
+            font-family: 微软雅黑;
+            font-size: 20px;
+            border-radius: 3px;
+        }
+
+        /*#payforitNow {*/
+        /*margin: 0 100px ;*/
+        /*}*/
+
+        .payment_3_text1 {
+            clear: both;
+            float: left;
+            font-size: 14px;
+            font-weight: bold;
+            font-family: 微软雅黑;
+        }
+
+        .payment_4_text2 {
+            font-size: 14px;
+            font-weight: bold;
+            font-family: 微软雅黑;
+        }
+
+        #totalpricetable tr td {
+            border: 0px;
+        }
+
+        /*.payment_4_text1 {*/
+        /*clear: both;*/
+        /*float: left;*/
+        /*}*/
+
+        /*.payment_3_text2 {*/
+        /*float: left;*/
+        /*position: relative;*/
+        /*left: 80px;*/
+        /*}*/
+
+        .paymentmassenge {
+
+            margin-top: 20px;
+            width: 100%;
+            display: inline-block;
+        }
+
+        .paymentAdress {
+            /*position: relative;*/
+            /*top: 20px;*/
+            /*height: 150px;*/
+            display: inline-block;
+            padding-top: 20px;
+            width: 100%;
+        }
+
+        .paymentway {
+            margin-top: 20px;
+        }
+
+        #paymentdiv_1 {
+            width: 100%;
+            text-align: center;
+        }
+
+        #paymentdiv_2 {
+            width: 100%;
+            text-align: right;
+            padding-right: 10px;
+            margin-top: 50px;
+            margin-right: 10px;
+        }
+
+        .orderattention {
+            width: 100%;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            display: inline-block;
+        }
+
+        @media (min-width: 680px) {
+            #payforitNow {
+                margin-top: 20px;
+                margin-right: 25px;
+                margin-bottom: 20px;
+                margin-left: 80px;
+            }
+
+            .payment_3_left {
+                /*position: relative;*/
+                /*left: 25px;*/
+                /*top: -40px;*/
+                /*padding-left: 20px;*/
+                /*height: 200px;*/
+                float: left;
+                width: 50%;
+                /*margin-top: 20px;*/
+            }
+
+            .targetandEmail {
+                width: 100%;
+                float: left;
+            }
+
+            .terms {
+                width: 70%;
+                float: left;
+            }
+
+            .totalprice {
+                width: 30%;
+                float: left;
+            }
+
+            .target {
+                width: 100%;
+                float: left;
+            }
+
+            .target1 {
+                width: 50%;
+                float: left;
+            }
+
+            .target2 {
+                width: 50%;
+                float: left;
+            }
+
+            .email {
+                width: 100%;
+                float: left;
+            }
+
+            .email1 {
+                width: 50%;
+                float: left;
+            }
+
+            .email2 {
+                width: 50%;
+                float: left;
+            }
+
+            .paymentgoods {
+                float: left;
+                /*vertical-align: bottom;*/
+                width: 50%;
+                /*position: relative;*/
+                /*left: 270px;*/
+                /*top: -40px;*/
+            }
+
+            .paymentway {
+                width: 50%;
+                float: left;
+                display: inline-block;
+            }
+
+            .paymentway1 {
+                width: 30%;
+                float: left;
+            }
+
+            .paymentway2 {
+                width: 50%;
+                float: left;
+            }
+
+            .payment_4_text1 {
+                clear: both;
+                float: left;
+            }
+
+            .payment_3_text2 {
+                float: left;
+                position: relative;
+                left: 30px;
+            }
+
+            .phonepicture {
+                width: 30%;
+                float: left;
+            }
+
+            .phonemaassage {
+                float: left;
+                width: 60%;
+            }
+        }
+
+        .phone {
+            height: 100px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+
+        .onephone {
+            padding-bottom: 20px;
+            display: inline-block;
+        }
+
+        .termsandtotalprice {
+            width: 100%;
+            display: inline-block;
+            vertical-align: bottom;
+        }
+
+        .terms, .totalprice {
+            margin-top: 20px;
+            margin-bottom: 5px;
+        }
+
+        @media (max-width: 680px) {
+            #payforitNow {
+                margin-top: 20px;
+                margin-bottom: 20px;
+                margin-left: 30px;
+                margin-right: 5px;
+            }
+
+            .payment_3_left {
+                clear: both;
+                /*position: relative;*/
+                /*left: 25px;*/
+                /*top: -40px;*/
+                /*float: left;*/
+                /*height: 200px;*/
+                width: 100%;
+            }
+
+            .terms, .totalprice, .paymentway {
+                width: 100%;
+                float: left;
+                display: inline-block;
+            }
+
+            .paymentway1 {
+                width: 100%;
+                float: left;
+            }
+
+            .paymentway2 {
+                width: 100%;
+                float: left;
+            }
+
+            .phonepicture {
+                width: 100%;
+                float: left;
+            }
+
+            .targetandEmail {
+                width: 100%;
+                float: left;
+            }
+
+            .target {
+                width: 100%;
+                float: left;
+            }
+
+            .target1 {
+                width: 100%;
+                float: left;
+            }
+
+            .target2 {
+                width: 100%;
+                float: left;
+            }
+
+            .email {
+                width: 100%;
+                float: left;
+            }
+
+            .email1 {
+                width: 100%;
+                float: left;
+            }
+
+            .email2 {
+                width: 100%;
+                float: left;
+            }
+
+            .phonemaassage {
+                float: left;
+                width: 100%;
+            }
+
+            .paymentgoods {
+                clear: both;
+                /*float: left;*/
+                /*vertical-align: bottom;*/
+                width: 100%;
+                /*position: relative;*/
+                /*left: 270px;*/
+                /*top: -40px;*/
+            }
+
+            .payment_4_text1 {
+                float: left;
+                width: 100%;
+            }
+
+            .payment_3_text2 {
+                float: left;
+                width: 100%;
+            }
+        }
+
+        .payit {
+            margin-left: 20px;
+        }
+
+        .products {
+            margin-left: 20px;
+        }
+
+        #SaRTerms {
+            text-decoration: none;
+        }
+
+        .payment_title {
+            margin: 5px 20px;
+        }
+
+        #footer_copyright_1, #footer_copyright_2 {
+            font-family: 微软雅黑;
+            font-size: 12px;
+            color: #999999;
+        }
+
+        a:hover, a:active {
+            outline: none;
+        }
+
+        #footer_copyright_1, #footer_copyright_2:hover {
+            text-decoration: none;
+            color: #999999;
+            outline: none;
+        }
+
+        #footer_copyright_1, #footer_copyright_2:active {
+            color: #999999;
+            outline: none;
+        }
+
+        .footer-mynavbar-brand {
+            float: left;
+        !important;
+        }
+
+        #footer_hr {
+            height: 1px;
+            background-color: #dddddd;
+            border: 0px;
+        }
+
+        .footer-mynavbar-nav > li {
+            /*float: left;*/
+            clear: both;
+        !important;
+        }
+
+        .footer_english {
+            font-family: Arial;
+        }
+
+        .footer a:link {
+            color: #3e3e3e
+        }
+
+        .footer a:visited {
+            color: #3e3e3e;
+            outline: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+            color: #000000;
+            outline: none;
+        }
+
+        .footer a:active {
+            color: #3e3e3e outline : none;
+        }
+
+        .footer a {
+            text-decoration: none;
+            outline: none;
+        }
+
+        #footer_h1, #footer_h2, #footer_h3, #footer_h4, #footer_h5:hover {
+            text-decoration: none;
+            color: #020202;
+            outline: none;
+        }
+
+        #footer_h1, #footer_h2, #footer_h3, #footer_h4, #footer_h5:active {
+            color: #020202;
+            outline: none;
+        }
+
+        #footer_number {
+            font-family: 微软雅黑;
+            font-size: 12px;
+            color: #999999;
+        }
+
+        .footer_thead {
+            /*line-height: 10px;*/
+            color: #020202;
+            font-family: '微软雅黑';
+            padding: 0px 0px;
+            /*width: 100%;*/
+            font-size: 14px;
+            height: 30px;
+            margin-left: 32px;
+        !important;
+        }
+
+        .footer-mycontainer-fluid > .navbar-header, .footer-mycontainer-fluid > .navbar-collapse {
+            margin-right: 0px;
+            margin-left: 0px;
+        !important;
+        }
+
+        .footer-mybutton {
+            position: relative;
+            bottom: 13px;
+            border: 0px;
+        }
+
+        .footer-myrow {
+            margin-right: 0px;
+            margin-left: 0px;
+        !important;
+        }
+
+        .footer-mynavbar-default {
+            color: #000;
+            margin-left: 20px;
+            font-size: 12px;
+        !important;
+        }
+
+        .footer-mynavbar-default .footer-mynavbar-nav > li > a:hover, .footer-mynavbar-default .footer-mynavbar-nav > li > a:focus {
+            text-decoration: underline;
+            color: #000000;
+            outline: none;
+        !important;
+        }
+
+        .footer-mynavbar-default .footer-mynavbar-nav > li > a {
+            color: #333;
+        !important;
+        }
+
+        .footer-mycontainer-fluid {
+            padding-right: 0px;
+            padding-left: 0px;
+        }
+
+        .footer-mycol-sm-2 {
+            position: relative;
+            min-height: 1px;
+            padding-right: 0px;
+            padding-left: 0px;
+        }
+
+        #footer_h1, #footer_h2, #footer_h3, #footer_h4, #footer_h5:active {
+            outline: none;
+            color: #020202;
+
+        }
+
+        #footer_h1, #footer_h2, #footer_h3, #footer_h4, #footer_h5:hover {
+            outline: none;
+            text-decoration: none;
+            color: #020202;
+
+        }
+
+        .footer-mynavbar-collapse {
+
+            /*padding-right: 2px;*/
+            /*padding-left: 2px;*/
+            width: 100%;
+
+        }
+
+        .footer-mynav > li > a {
+            position: relative;
+            display: block;
+            padding: 0px 0px;
+            margin-left: 20px;
+            padding-bottom: 10px;
+        !important;
+        }
+
+        .footer-mynavbar-default .footer-mynavbar-toggle:hover, .footer-mynavbar-default .footer-mynavbar-toggle:hover {
+            background-color: rgba(242, 242, 242, 0.81);
+            outline: none;
+        }
+
+        .footer-mynavbar-navt .footer-mynavbar-toggle:hover, .footer-mynavbar-default .footer-mynavbar-toggle:focus {
+            background-color: rgba(242, 242, 242, 0.81);
+            outline: none;
+        }
+
+        @media (max-width: 767px) {
+            .footer-myheader {
+                border-bottom: 1px solid darkgray;
+            }
+        }
+
+        .paybody a {
+            color: black;
+        }
+
+        .pay a:hover, .pay a:focus {
+            color: black;
+            text-decoration: none;
+
+        }
+
+        #SaRTerms:hover {
+            text-decoration: underline;
+        }
+
+        #FooterLogo:hover, #FootercurrentPade:hover {
+            text-decoration: none
+        }
+    </style>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+
+    <![endif]-->
+</head>
+<body>
+
+<!--<div class="row">-->
+<!--<div class="col-md-2"></div>-->
+<!--<div class="col-md-8">-->
+<div id="DamiNewHeader">
+    <nav class="navbar navbar-default navbar-fixed-top header-mynavbar-default header-mynavbar header-mynavbar-fixed-top"
+         role="navigation" id="header_2">
+        <div class="row header-myrow">
+            <!--<div class=" col-lg-1 hidden-md hidden-xs hidden-sm" style="height: 44px"></div>-->
+            <div class="col-lg-11 col-md-12 col-sm-12 col-xs-12 col-lg-offset-1">
+                <div class="row header-myrow">
+                    <div class="navbar-header" style="background-color: #333333">
+                   <span class="navbar-toggle header-mynavbar-toggle" data-toggle="collapse" data-target="#menu"
+                         id="header-mytoggle1">
+                       <span class="sr-only">展开导航</span>
+                       <span class="icon-bar"></span>
+                       <span class="icon-bar"></span>
+                   </span>
+                        <!--<div class=" col-xs-5 hidden-md hidden-lg hidden-sm"></div>-->
+                        <a class="navbar-brand col-lg-2 col-md-1 col-sm-1 col-xs-2 col-xs-offset-5 header-mynavbar-brand"
+                           href="../WAZ/NewDaMi.html" style="position: relative;bottom: 5px;"><img id="logo"
+                                                                                 src="WaZ_HeaderPicture/logo.png"></a>
+                    </div>
+                    <div class="col-lg-11 col-md-10 col-sm-10 col-xs-12 ">
+                        <div class="collapse navbar-collapse header-mynavbar-collapse" id="menu">
+                            <ul class="nav  nav-pills nav-justified headerUL header-mypadding1 header-mynav-pills header-mynav-justified"
+                                style="margin-left: 20px; margin-left: 0px;">
+                                <li><a href="#">iPhone</a></li>
+                                <li><a href="#">Huawei</a></li>
+                                <li><a href="#">Xiaomi</a></li>
+                                <li><a href="#">Oppo</a></li>
+                                <li><a href="#" style="width: 60px">服务</a></li>
+                                <li><a href="#" style="font-size: 12px;width:80px;">技术支持</a></li>
+                                <li><a href="../WAZ/NewDaMi.html"><img src="WAZ_HeaderPicture/magnifying.png"></a></li>
+                                <li>
+                                    <div class="dropdown">
+                                        <button class="btn btn-default dropdown-toggle" type="button"  data-toggle="dropdown" aria-expanded="true"style="background-color: #333333;border: none">
+                                            <img src="WAZ_HeaderPicture/shoppingbag.png">
+                                        </button>
+                                        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1" style="background-color:#ffffff;">
+                                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#" style="color: black">购物袋</a></li>
+                                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#" style="color: black">收藏</a></li>
+                                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#" style="color: black">订单</a></li>
+                                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#" style="color: black">账户</a></li>
+                                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#" style="color: black">注销</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
+<div class="paybody">
+    <div class="pay">
+        <table class="paymenttable" cellspacing="0px">
+            <tr id="payment_1">
+                <td>
+                    <div>
+                        <div class="orderattention">
+                            <div id="paymentdiv_1">
+                                <a id="payment_1_1">现在为你的订单付款</a><br>
+                                <a id="payment_1_2">请在 2 小时内完成付款，否则你的订单将会被取消</a><br>
+                            </div>
+                            <div id="paymentdiv_2"><a class="payment_text" id="ordernumber">订单号:W555130445</a></div>
+                        </div>
+                    </div>
+
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="payment_title"><a>付款说明</a></div>
+                </td>
+            </tr>
+            <tr id="payment_2">
+                <td>
+                    <div>
+                        <div id="payforitNow">
+                            <a class="payment_text">请点击一下按钮付款</a><br><br>
+                            <input type="button" value="现在支付" id="payforitNowBottom" id="btn">
+                            <br><br><a class="payment_text">请注意：<br>
+                            1.我们将在确认付款后处理你的订单，并向你发送一封包含更细后的送货信息的电子邮件。<br>
+                            2.在收货时，需提供订单购买人或订单中列明的接受人的身份证明，或者发货通知邮件。</a>
+                        </div>
+                    </div>
+
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="payment_title"><a>订单商品</a></div>
+                </td>
+            </tr>
+            <tr id="payment_3">
+                <td>
+                    <div>
+                        <div class="products">
+                            <div class="payment_3_left">
+                                <div class="paymentAdress">
+                                    <div class="payment_3_text1"><a>送货地址</a></div>
+                                    <div class="payment_3_text2">
+                                        <a class="payment_text" id="Address">
+                                            达内<br>
+                                            13888488848<br>
+                                            陕西&nbsp;咸阳&nbsp;杨凌区<br>
+                                            西北农林科技大学<br>
+                                            712100<br>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="paymentmassenge">
+                                    <div class="payment_3_text1"><a id="delivery-notice">发货通知</a></div>
+                                    <div class="payment_3_text2"><a class="payment_text">13888488848@163.com</a></div>
+                                </div>
+                            </div>
+                            <div class="paymentgoods">
+                                <div class="phone">
+                                    <div class="onephone">
+                                        <div class="phonepicture"><img src="WAZ_PaymentPagePicture/Xiaomi8_1.png"></div>
+                                        <div class="phonemaassage">
+                                            <a class="payment_text"
+                                               style="font-weight: bold">小米&nbsp;&nbsp;8&nbsp;256GB&nbsp;知更鸟蓝</a><br>
+                                            <a class="payment_text">发货：我们收到付款后就会与你确认日期。<br>通过 标准送货</a>
+                                        </div>
+                                    </div>
+                                    <div class="onephone">
+                                        <div class="phonepicture"><img src="WAZ_PaymentPagePicture/Xiaomi8_2.png"></div>
+                                        <div class="phonemaassage">
+                                            <a class="payment_text" style="font-weight: bold">小米&nbsp;&nbsp;8&nbsp;256GB&nbsp;黑色</a><br>
+                                            <a class="payment_text">发货：我们收到付款后就会与你确认日期。<br>通过标准送货</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="payment_title"><a>付款</a></div>
+                </td>
+            </tr>
+            <tr id="payment_4">
+                <td>
+                    <div class="payit">
+                        <div class="payment_4_1">
+                            <div class="paymentway">
+                                <!--<div class="targetandEmail">-->
+                                <div class="target">
+                                    <div class="target1"><a class="payment_text">发票类型</a></div>
+                                    <div class="target2"><a class="payment_text" id="target">大米电子收据</a></div>
+                                </div>
+                                <div class="email">
+                                    <div class="email1"><a class="payment_text">电子邮件地址</a></div>
+                                    <div class="email2"><a class="payment_text"id="email">1260077156@qq.com</a></div>
+                                </div>
+                                <!--</div>-->
+                                <!--</div>-->
+
+                                <!--<div class="payment_4_text1"><a class="payment_text">发票类型<br>电子邮件地址</a></div>-->
+                                <!--<div class="payment_3_text2">-->
+                                <!--<a class="payment_text">大米电子收据</a><br>-->
+                                <!--<a class="payment_text">1260077156@qq.com</a>-->
+                                <!--</div>-->
+                            </div>
+                            <div class="paymentway">
+                                <div class="paymentway1"><a class="payment_4_text2">付款方式</a></div>
+                                <div class="paymentway2" id="payment-method"><img src="WAZ_PaymentPagePicture/alipay.png"
+                                                              id="paymentwaypicture"></div>
+                            </div>
+                        </div>
+
+
+                        <div class="termsandtotalprice">
+                            <!--<div class="paymentway">-->
+                            <div class="terms">
+                                <a class="payment_text">请注意，您的订单受大米的<a style="color:rgba(6, 169, 239, 0.81)"
+                                                                       href="RaSTerms.html" id="SaRTerms">销售与退款政策</a><a
+                                        class="payment_text">约束。</a></a>
+                            </div>
+                            <div class="totalprice">
+                                <!--<div class="paymentway">-->
+                                <table id="totalpricetable" cellspacing="0px">
+                                    <tr style="font-family: '微软雅黑';font-size:12px;color: green;">
+                                        <td>免费送货&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                                        <td>RMB 0</td>
+                                    </tr>
+                                    <tr style="font-family: '微软雅黑';font-size:16px;font-weight: bold;">
+                                        <td style="border-top: solid 1px;border-color: rgba(174, 174, 174, 0.81)">订单合计&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                                        <td style="border-top: solid 1px;border-color: rgba(174, 174, 174, 0.81)" id="totalprice">RMB19999
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+<p id="pp"></p>
+<div class="NewFooter" style="background-color: #f2f2f2;clear: both;">
+    <!--<div class="col-lg-2 col-md-1 col-sm-1"></div>-->
+    <!--<div class="col-lg-2 col-md-2 col-sm-2 footer-mycol-sm-2">-->
+    <div class="thankyou col-lg-offset-2 col-md-offset-1 col-sm-offset-1 "
+         style="position: relative;left: 45px;top: 40px;z-index: 1;font-size: 12px;width: 160px;">
+        <h4>
+            <a id="FooterLogo" style="color: black;text-underline: none" href="../WAZ/NewDaMi.html"><img src="waz_headerpicture/logo3.png"
+                                                                                       style="position: relative;bottom: 5px"></a>
+            <a style="color: black;text-underline: none;" id="FootercurrentPade">
+                <h class="glyphicon glyphicon-menu-right"></h>
+                Thank you</a>
+        </h4>
+    </div>
+    <nav class="navbar navbar-default footer-mynavbar-default" role="navigation"
+         style="border-radius: 0px;padding-top: 60px;background-color: #f2f2f2;border: 0px">
+        <div class="=row footer-myrow">
+            <div class="col-lg-2 col-md-1 col-sm-1"></div>
+            <div class="col-lg-2 col-md-2 col-sm-2 footer-mycol-sm-2">
+                <div class="container-fluid footer-mycontainer-fluid">
+                    <div class="navbar-header footer-myheader">
+                        <button type="button" class="navbar-toggle collapsed footer-mybutton footer-mynavbar-toggle"
+                                data-toggle="collapse"
+                                data-target="#bs-example-navbar-collapse-2">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="glyphicon glyphicon-plus"></span>
+                        </button>
+                        <a class="footer_thead footer-mynavbar-brand" id="footer_h1">选购及了解</a>
+                    </div>
+                    <div class="navbar-header collapse navbar-collapse footer-mynavbar-collapse"
+                         id="bs-example-navbar-collapse-2">
+
+                        <ul class=" nav navbar-nav footer-mynav footer-mynavbar-nav">
+                            <li class="footer_english "><a href="" target="">iPhone</a>
+                            </li>
+                            <li class="footer_english "><a href="" target="">Huawei</a>
+                            </li>
+                            <li class="footer_english "><a href="" target="">Xiaomi</a>
+                            </li>
+                            <li class="footer_english "><a href="" target="">Oppo</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 footer-mycol-sm-2">
+                <div class="container-fluid footer-mycontainer-fluid">
+                    <div class="navbar-header footer-myheader">
+                        <button type="button" class="navbar-toggle collapsed footer-mybutton footer-mynavbar-toggle"
+                                data-toggle="collapse"
+                                data-target="#bs-example-navbar-collapse-3">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="glyphicon glyphicon-plus"></span>
+                        </button>
+                        <a class="footer_thead footer-mynavbar-brand footer_thead" id="footer_h2">服务与支持</a>
+                    </div>
+                    <div class="navbar-header collapse navbar-collapse footer-mynavbar-collapse"
+                         id="bs-example-navbar-collapse-3">
+                        <ul class=" nav navbar-nav footer-mynav footer-mynavbar-nav">
+                            <li><a href="" target="">翻新与优惠</a></li>
+                            <li><a href="" target="">分期付款</a></li>
+                            <li><a href="" target="">订单状态</a></li>
+                            <li><a href="" target="">以旧换新</a></li>
+                            <li><a href="" target="">零件</a></li>
+                            <li><a href="" target="">服务网点查询</a></li>
+                            <li><a href="" target="">保修政策</a></li>
+                            <li><a href="" target="">预约服务</a></li>
+                            <li><a href="" target="">维修进度查询</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 footer-mycol-sm-2">
+                <div class="container-fluid footer-mycontainer-fluid">
+                    <div class="navbar-header footer-myheader">
+                        <button type="button" class="navbar-toggle collapsed footer-mybutton  footer-mynavbar-toggle"
+                                data-toggle="collapse"
+                                data-target="#bs-example-navbar-collapse-4">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="glyphicon glyphicon-plus"></span>
+                        </button>
+                        <a class="footer_thead footer-mynavbar-brand footer_thead" id="footer_h3">关注我们</a>
+                    </div>
+                    <div class="navbar-header collapse navbar-collapse footer-mynavbar-collapse"
+                         id="bs-example-navbar-collapse-4">
+                        <ul class=" nav navbar-nav footer-mynav footer-mynavbar-nav">
+                            <li><a href="" target="">新浪微博</a></li>
+                            <li><a href="" target="">官方微信</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 footer-mycol-sm-2">
+                <div class="container-fluid footer-mycontainer-fluid">
+                    <div class="navbar-header footer-myheader">
+                        <button type="button" class="navbar-toggle collapsed footer-mybutton footer-mynavbar-toggle"
+                                data-toggle="collapse"
+                                data-target="#bs-example-navbar-collapse-5">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="glyphicon glyphicon-plus"></span>
+                        </button>
+                        <a class="footer_thead footer-mynavbar-brand" id="footer_h4">商务合作</a>
+                    </div>
+                    <div class="navbar-header collapse navbar-collapse footer-mynavbar-collapse"
+                         id="bs-example-navbar-collapse-5">
+
+                        <ul class=" nav navbar-nav footer-mynav footer-mynavbar-nav">
+                            <li><a href="" target="">开放平台</a></li>
+                            <li><a href="" target="">商务采购</a></li>
+                            <li><a href="" target="">品牌入驻</a></li>
+                            <li><a href="" target="">成为伙伴</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 footer-mycol-sm-2">
+                <div class="container-fluid footer-mycontainer-fluid">
+                    <div class="navbar-header footer-myheader">
+                        <button type="button" class="navbar-toggle collapsed footer-mybutton  footer-mynavbar-toggle"
+                                data-toggle="collapse"
+                                data-target="#bs-example-navbar-collapse-6">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="glyphicon glyphicon-plus"></span>
+                        </button>
+                        <a class="footer_thead footer-mynavbar-brand footer_thead" id="footer_h5">更多资讯</a>
+                    </div>
+                    <div class="navbar-header collapse navbar-collapse footer-mynavbar-collapse"
+                         id="bs-example-navbar-collapse-6">
+                        <ul class=" nav navbar-nav footer-mynav footer-mynavbar-nav">
+                            <li><a href="" target="">新闻资讯</a></li>
+                            <li><a href="" target="">联系我们</a></li>
+                            <li><a href="" target="">关于我们</a></li>
+                            <li><a href="" target="">活动</a></li>
+                            <li><a href="" target="">工作机会</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </nav>
+
+    <div style="padding-bottom:45px">
+        <div class="row footer-myrow">
+            <hr id="footer_hr" class="col-sm-12 col-xs-12 col-lg-offset-2 col-lg-9 col-md-10 "
+                style="padding-left: 0px;padding-right: 0px;">
+        </div>
+
+        <div id="footer_copyrightpart" class="row footer-myrow">
+            <div class="col-sm-12 col-xs-12 col-lg-offset-2  col-md-offset-1 col-lg-3 col-md-4 "
+                 style="padding-left: 45px;padding-right: 0px;">
+                <a id="footer_copyright_1">
+                    Copyright&nbsp;&nbsp;&copy;&nbsp;2018&nbsp;&nbsp;Dami.com&nbsp;&nbsp;保留所有权利</a>
+            </div>
+            <div class="col-lg-5 col-md-6 col-sm-12 col-xs-12" style="padding-left: 45px">
+                <a href="" target="" class="footer_four"
+                   style="color: #565656;font-family: 黑体;font-size: 12px;">隐私政策</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+                <a href="" target="" class="footer_four"
+                   style="color: #565656;font-family: 黑体;font-size: 12px;">使用条款</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+                <a href="" target="" class="footer_four"
+                   style="color: #565656;font-family: 黑体;font-size: 12px;">销售策略</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+                <a href="" target="" class="footer_four"
+                   style="color: #565656;font-family: 黑体;font-size: 12px;">法律信息</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+                <a href="" target="" class="footer_four"
+                   style="color: #565656;font-family: 黑体;font-size: 12px;">网络地图</a><br>
+
+            </div>
+        </div>
+        <div class="row footer-myrow">
+            <div class="col-lg-offset-2  col-md-offset-1 col-lg-6 col-md-6 col-sm-12 col-xs-12"
+                 style="padding-left: 45px">
+                <a id="footer_copyright_2"> 京公安网安备&nbsp;&nbsp;&nbsp;11010502008968&nbsp;&nbsp;&nbsp;
+                    <a href="http://www.miibeian.gov.cn/state/outPortal/loginPortal.action;jsessionid=mew3brmEvoFKl-z97HaBxx_OY5_V7bWTD4P8fII3Rj1LUHQtbnH6!1316315234"
+                       id="footer_number">京ICP备10214630</a>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="js/jquery-1.11.3.js">
+    <!--
+    var winWidth = 0;
+    var winHeight = 0;
+    function findDimensions() //函数：获取尺寸
+    {
+//获取窗口宽度
+        if (window.innerWidth)
+            winWidth = window.innerWidth;
+        else if ((document.body) && (document.body.clientWidth))
+            winWidth = document.body.clientWidth;
+//获取窗口高度
+        if (window.innerHeight)
+            winHeight = window.innerHeight;
+        else if ((document.body) && (document.body.clientHeight))
+            winHeight = document.body.clientHeight;
+//通过深入Document内部对body进行检测，获取窗口大小
+        if (document.documentElement && document.documentElement.clientHeight && document.documentElement.clientWidth) {
+            winHeight = document.documentElement.clientHeight;
+            winWidth = document.documentElement.clientWidth;
+        }
+//        var obj =document.getElementsByClassName('').style ;
+        var sizetable = (winWidth * 980) / 1880 + "px";
+        var sizetable1 = winWidth + "px";
+        var sizetable2 = (winWidth * 980) / 1600 + "px";
+
+        if (680 < winWidth < 1000) {
+            for (var i = 0; i < document.getElementsByClassName('paymenttable').length; i++) {
+                var k = document.getElementsByClassName('paymenttable')[i];
+                k.style.width = "680px";
+//                k.style.Homepage_text_head="20px";
+            }
+//        for(var i=0;i< document.getElementsByClassName('payment_3_text2').length;i++){
+//            var k = document.getElementsByClassName('payment_3_text2')[i];
+//            k.style.width = "680px";
+////                k.style.Homepage_text_head="20px";
+//        }
+            document.getElementById('payment_1_2').style.fontSize = "20px";
+            document.getElementById('payment_1_1').style.fontSize = "36px";
+//        document.getElementById('payforitNow').style.margin="30 50px";
+        }
+
+        if (winWidth < 680) {
+            for (var i = 0; i < document.getElementsByClassName('paymenttable').length; i++) {
+                var k = document.getElementsByClassName('paymenttable')[i];
+                k.style.width = sizetable1;
+//                k.style.Homepage_text_head="20px";
+            }
+            document.getElementById('payment_1_2').style.fontSize = "16px";
+            document.getElementById('payment_1_1').style.fontSize = "22px";
+//        document.getElementById('payforitNow').style.margin="30 20px";
+        }
+
+        if (winWidth > 1000) {
+            for (var i = 0; i < document.getElementsByClassName('paymenttable').length; i++) {
+                var k = document.getElementsByClassName('paymenttable')[i];
+                k.style.width = "980px";
+//                k.style.Homepage_text_head="20px";
+            }
+
+            document.getElementById('payment_1_2').style.fontSize = "20px";
+            document.getElementById('payment_1_1').style.fontSize = "36px";
+//            document.getElementById('payforitNow').style.margin="30 80px";
+        }
+
+
+    }
+    findDimensions();
+    //调用函数，获取数值
+    window.onresize = findDimensions;
+    //-->
+</script>
+
+<script src="js/jquery-1.11.3.js">
+    $.ajax({
+        type: "GET",
+        url: "Payment.php",
+        success: function (msg) {
+            //                msg指的是php执行成功返回的数据echo
+            msg = JSON.parse(msg);
+            console.log(msg);
+//            var Address = "";
+//            $("#ordernumber").html("订单号："+msg.OrderId);
+//            var Address = msg.consignee + "<br>" + msg.tel + "<br>" + msg.provice + "&nbsp;" + msg.city + "&nbsp;" + msg.town + "<br>" + msg.detailAddress + "<br>" + msg.postcode + "<br>";
+//            $("#Address").html(Address);
+//            $("#delivery-notice").html(msg.email);
+//            $("#target").html(msg.target);
+//            $("#email").html(msg.email);
+//            $("#paymeny-method").html("<img src='${msg.paymentMethod}' id='paymentwaypicture'>");
+        }
+           })
+</script>
+
+<!--<script src="js/jquery-1.11.3.js">-->
+    <!--$.ajax({-->
+        <!--type: "GET",-->
+        <!--url: "Paymentphone.php",-->
+        <!--success: function (msg) {-->
+            <!--//                msg指的是php执行成功返回的数据echo-->
+            <!--msg = JSON.parse(msg);-->
+            <!--console.log(msg);-->
+            <!--var str = "";-->
+            <!--var totalprice=0.0;-->
+            <!--for (var i = 0; i < msg.length; i++) {-->
+                <!--var order = msg[i];-->
+                <!--str = `-->
+                    <!--<div class="onephone">-->
+                    <!--<div class="phonepicture"><img src="${order.picture}" ></div>-->
+                    <!--<div class="phonemaassage">-->
+                    <!--<a class="payment_text"-->
+                    <!--style="font-weight: bold">${order.type} &nbsp;${order.capacity}&nbsp;${order.color}</a><br>-->
+                    <!--<a class="payment_text">发货：我们收到付款后就会与你确认日期。<br>通过标准送货</a>-->
+                    <!--</div>-->
+                    <!--</div>`;-->
+                  <!--totalprice=(float)(order.eachprice)+(float)(totalprice);-->
+
+            <!--}-->
+<!--//            console.log(str);-->
+            <!--$(".phone").html(str);-->
+            <!--$("#totalprice").html("RMB"+totalprice);-->
+        <!--}-->
+    <!--})-->
+<!--</script>-->
+<!--</div> </div>-->
+<!--<div class="col-md-2"></div>-->
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery-1.11.3.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.js"></script>
+</body>
+</html>

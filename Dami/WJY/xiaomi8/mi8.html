@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="HandheldFriendly" content="true">
+    <title>小米8-大米手机商城</title>
+    <link rel="icon" href="WAZ_HeaderPicture/logo1.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="bootstrap.css" rel="stylesheet">
+
+<style type="text/css">
+    *{margin:0 0;padding:0 0; list-style-type: none;}
+     body{overflow-x: hidden;}
+    .text_center{text-align: center;}
+    .body_1{width: 100%;box-sizing: border-box}
+    .header_font1{width:100% ;font:bold 26px "微软雅黑";padding-left:11%;color:#333;box-sizing:border-box;z-index: 1}
+    .img1{width: 100%;z-index: 1}
+    .img1_word{font:bold 90px "微软雅黑";color: white;}
+    .title{font:bold 48px "微软雅黑";margin: 20px;}
+    .phone_name{font:30px "微软雅黑";margin: 20px;}
+    .phone_des{font:20px "微软雅黑";margin: 20px}
+    .title_{font:bold 16px "微软雅黑";margin: 20px}
+    .describe{font:16px "微软雅黑";margin: 20px;}
+    table{border: 0;margin: auto}
+    table tr,td{text-align: center}
+    .div_head{width: 100%;height: 300px;padding-top: 50px;box-sizing:border-box;}
+    .div_table{margin: 20px;box-sizing:border-box;}
+    .a_w{text-decoration: none;font:18px "微软雅黑";color:#0070c9;margin: 20px}
+    .block{width: 100%;height: 100px;background: white}
+    .long_hr{height: 1px;border: none;width: 100%;background-color:#a7a1a1;}
+
+    .bground{height:1000px;background-image: url(pic/1.png);  background-repeat: no-repeat; background-size: 100% 100%;margin-top: -15px;}
+
+    /*定义一个名字为lefteaseinAnimate动画，实现从页面的左边淡入页面效果*/
+    @keyframes lefteaseinAnimate{
+        0%{ transform: translateX(-2000px); opacity: 0;}   /*在0%时设置文字在想X轴-2000px位移处（左边），透明度为0，也就是看不见文字*/
+        100%{ transform: translateX(0px); opacity: 1;}         /*在100%时设置文字在想X轴0px位移处，也就是原始布局的位置，透明度为1，也就是文字可以看见了*/
+    }
+    @-webkit-keyframes lefteaseinAnimate{
+        0%{ -webkit-transform: translateX(-2000px); opacity: 0;}
+        100%{ -webkit-transform: translateX(0px); opacity: 1;}
+    }
+    @-o-keyframes lefteaseinAnimate{
+        0%{ -webkit-transform: translateX(-2000px); opacity: 0;}
+        100%{ -webkit-transform: translateX(0px); opacity: 1;}
+    }
+    @-ms-keyframes lefteaseinAnimate{
+        0%{ -webkit-transform: translateX(-2000px); opacity: 0;}
+        100%{ -webkit-transform: translateX(0px); opacity: 1;}
+    }
+    @-moz-keyframes lefteaseinAnimate{
+        0%{ -webkit-transform: translateX(-2000px); opacity: 0;}
+        100%{ -webkit-transform: translateX(0px); opacity: 1;}
+    }
+    .company_name{
+        animation: lefteaseinAnimate 1s ease 1;    /*调用已定义好的动画lefteaseinAnimate，全程运行时间1S，进入的速度曲线为ease，只播放一次*/
+        -webkit-animation: lefteaseinAnimate 1s ease 1;
+        -ms-animation: lefteaseinAnimate 1s ease 1;
+        -o-animation: lefteaseinAnimate 1s ease 1;
+        -moz-animation: lefteaseinAnimate 1s ease 1;
+
+        /*规定动画的最后状态为结束状态*/
+        animation-fill-mode:forwards;
+        -webkit-animation-fill-mode: forwards;
+        -o-animation-fill-mode: forwards;
+        -ms-animation-fill-mode: forwards;
+        -moz-animation-fill-mode: forwards;
+    }
+    .fly_font1{
+        font:50px "微软雅黑";
+    }
+    .fly_font2{
+        font:30px "微软雅黑";
+    }
+    /*定义一个名字为righteaseinAnimate动画，实现从页面的右边淡入页面效果*/
+    @keyframes righteaseinAnimate{
+        0%{ transform: translateX(2000px); opacity: 0;}   /*在0%时设置文字在想X轴2000px位移处（右边），透明度为0，也就是看不见文字*/
+        100%{ transform: translateX(0px); opacity: 1;}      /*在100%时设置文字在想X轴0px位移处，也就是原始布局的位置，透明度为1，也就是文字可以看见了*/
+    }
+    @-webkit-keyframes righteaseinAnimate{
+        0%{ -webkit-transform: translateX(2000px); opacity: 0;}
+        100%{ -webkit-transform: translateX(0px); opacity: 1;}
+    }
+    @-o-keyframes righteaseinAnimate{
+        0%{ -webkit-transform: translateX(2000px); opacity: 0;}
+        100%{ -webkit-transform: translateX(0px); opacity: 1;}
+    }
+    @-ms-keyframes righteaseinAnimate{
+        0%{ -webkit-transform: translateX(2000px); opacity: 0;}
+        100%{ -webkit-transform: translateX(0px); opacity: 1;}
+    }
+    @-moz-keyframes righteaseinAnimate{
+        0%{ -webkit-transform: translateX(2000px); opacity: 0;}
+        100%{ -webkit-transform: translateX(0px); opacity: 1;}
+    }
+    .company_introduce{
+        animation: righteaseinAnimate 1s ease 1;    /*调用已定义好的动画righteaseinAnimate，全程运行时间1S，进入的速度曲线为ease，只播放一次*/
+        -webkit-animation: righteaseinAnimate 1s ease 1;
+        -moz-animation: righteaseinAnimate 1s ease 1;
+        -ms-animation: righteaseinAnimate 1s ease 1;
+        -o-animation: righteaseinAnimate 1s ease 1;
+
+        /*规定动画的最后状态为结束状态*/
+        animation-fill-mode:forwards;
+        -webkit-animation-fill-mode: forwards;
+        -o-animation-fill-mode: forwards;
+        -ms-animation-fill-mode: forwards;
+        -moz-animation-fill-mode: forwards;
+    }
+
+   /*头部样式*/
+    #header_1 {
+        width: 100%;
+        height: 40px;
+        background-color: #454545;
+    }
+
+    #header_2 {
+        width: 100%;
+        /*height: 44px;*/
+        /*position:relative;*/
+        /*top:0;*/
+        border-radius: 0;
+        /*text-align: center;!important;*/
+        background-color: #333333;
+        z-index: 1;
+        border: 0px;
+    }
+
+    .headerUL {
+        /*text-align: left;*/
+        /*position: relative;*/
+        font-family: '微软雅黑';
+        font-size: 14px;!important;
+        color: #ffffff;
+        margin: auto auto;
+        /*text-align: center;*/
+        background-color: #333333 !important;
+
+    }
+
+    .header-mynavbar-default .header-mynavbar-nav > li > a {
+        color: #ffffff;
+    }
+
+    .headerUL a:link {
+        color: #FFFFFF
+    }
+
+    .headerUL a:visited {
+        color: #FFFFFF
+    }
+
+    .headerUL a:hover {
+        color: #b2b2b2 !important;
+        outline: none;
+    }
+
+    .headerUL a:active {
+        color: #b2b2b2;
+        outline: none;
+    }
+
+    .headerUL a {
+        text-decoration: none;
+    }
+
+    /*.navbar-default .navbar-toggle:hover,.nav-pills > li > a:focus{*/
+    /*background-color: red;*/
+    /*}*/
+    .header-mynav-pills > li > a {
+        height: 44px;
+    }
+
+    .header-mynavbar-default .header-mynavbar-toggle:hover, .header-mynav-pills > li > a:focus, .header-mynavbar-default .header-mynavbar-toggle:hover, .header-mynav-pills > li > a:hover {
+        background-color: #333333;
+        outline: none;
+    }
+
+    .header-mynav-pills .header-mynav-justified.navbar-navt .header-mynavbar-toggle:hover, .header-mynavbar-default .header-mynavbar-toggle .header-mynav-pills :focus {
+        background-color: #333333;
+        outline: none;
+    }
+
+    #header-mytoggle1 {
+        border: 0px;
+        position: relative;
+        right:90%;
+    }
+
+    .header-mynav-justified > li > a {
+        text-align: left;
+    }
+
+    /*.navbar-brand{*/
+    /*text-align: center;!important;*/
+    /*}*/
+    .header-mynavbar-brand {
+        float: left;
+        height: 44px;
+        padding: 15px 15px;
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .header-mynavbar {
+        position: relative;
+        min-height: 44px;
+        margin-bottom: 20px;
+        border: 1px solid transparent;
+    }
+    .header-mynavbar-fixed-top .header-mynavbar-collapse, .navbar-fixed-bottom .header-mynavbar-collapse {
+        max-height: 800px;
+    }
+
+    .header-myrow {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
+    @media (max-width: 1300px){
+        .header-mypadding1
+        {
+            padding-left: 30px;
+        }
+        /*@media (max-width: 760px){*/
+        /*.mypadding1*/
+        /*{*/
+        /*padding-left: 0px;*/
+        /*}}*/
+    }
+    @Media(max-width: 500px){
+        #header-mytoggle1 {
+            border: 0px;
+            position: relative;
+            right:84%;
+        }
+
+    }
+    @Media(min-width: 500px){
+        #header-mytoggle1 {
+            border: 0px;
+            position: relative;
+            right:90%;
+        }
+
+    }
+    @media (min-width: 1300px){
+        .header-mypadding1
+        {
+            padding-left: 80px;
+        }}
+</style>
+
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+</head>
+
+<body>
+    <!--<iframe style="height: auto" scrolling="no"  src="../../WAZ/DamiNewHeader-1.html" frameborder="0"></iframe>-->
+    <div id="DamHeader">
+        <div id="header_1">
+        </div>
+        <nav class="navbar navbar-default navbar-fixed-top header-mynavbar-default header-mynavbar header-mynavbar-fixed-top"
+             role="navigation" id="header_2">
+            <div class="row header-myrow">
+                <!--<div class=" col-lg-1 hidden-md hidden-xs hidden-sm" style="height: 44px"></div>-->
+                <div class="col-lg-11 col-md-12 col-sm-12 col-xs-12 col-lg-offset-1">
+                    <div class="row header-myrow">
+                        <div class="navbar-header" style="background-color: #333333">
+                   <span class="navbar-toggle header-mynavbar-toggle" data-toggle="collapse" data-target="#menu"
+                         id="header-mytoggle1">
+                       <span class="sr-only">展开导航</span>
+                       <span class="icon-bar"></span>
+                       <span class="icon-bar"></span>
+                   </span>
+                            <!--<div class=" col-xs-5 hidden-md hidden-lg hidden-sm"></div>-->
+                            <a class="navbar-brand col-lg-2 col-md-1 col-sm-1 col-xs-2 col-xs-offset-5 header-mynavbar-brand"
+                               href="../../WAZ/NewDaMi.html" style="position: relative;bottom: 5px;"><img id="logo"
+                                                                                                       src="WaZ_HeaderPicture/logo.png"></a>
+                        </div>
+                        <div class="col-lg-11 col-md-10 col-sm-10 col-xs-12 ">
+                            <div class="collapse navbar-collapse header-mynavbar-collapse" id="menu">
+                                <ul class="nav  nav-pills nav-justified headerUL header-mypadding1 header-mynav-pills header-mynav-justified"
+                                    style="margin-left: 20px; margin-left: 0px;">
+                                    <li><a href="../../ZBY/iphoneXFirst.html">iPhone</a></li>
+                                    <li><a href="../../XWQ/huawei_fp.html">Huawei</a></li>
+                                    <li><a href="../../WJY/xiaomi8/mi8.html">Xiaomi</a></li>
+                                    <li><a href="../../DWJ/OPPOR15.html">Oppo</a></li>
+                                    <li><a href="#" style="width: 60px">服务</a></li>
+                                    <li><a href="#" style="font-size: 12px;width:80px;">技术支持</a></li>
+                                    <li><a href="#"><img src="WAZ_HeaderPicture/magnifying.png"></a></li>
+                                    <li>
+                                        <div class="dropdown">
+                                            <button class="btn btn-default dropdown-toggle" type="button"  data-toggle="dropdown" aria-expanded="true"style="background-color: #333333;border: none">
+                                                <img src="WAZ_HeaderPicture/shoppingbag.png">
+                                            </button>
+                                            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1" style="background-color:#ffffff;">
+                                                <li role="presentation"><a role="menuitem" tabindex="-1" href="" style="color: black" id="gouwudai">购物袋</a></li>
+                                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#" style="color: black">收藏</a></li>
+                                                <li role="presentation"><a role="menuitem" tabindex="-1" id="order" style="color: black">订单</a></li>
+                                                <li role="presentation"><a role="menuitem" tabindex="-1"  style="color: black" id="user">登录</a></li>
+                                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#" style="color: black" id="exit">注销</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div id="wbody">
+        <div >
+            <div  class="header_font1">小米8</div><hr class="long_hr">
+            <div  class="text_center bground">
+                <div style="box-sizing:border-box;position: absolute;margin-top: 50px;left: 41%">
+                    <p class="company_name fly_font1">小米8&nbsp;&nbsp;震撼发布</p>
+                    <p style="margin-top: 10px" class="company_introduce fly_font2">八周年旗舰手机</p>
+                </div>
+            </div>
+            <div class="text_center div_head">
+                <p class="title">8周年 小米新定义</p>
+                <p class="describe">小米8作为小米新系列，继续潜心演绎小米的产品理念，在设计开发中秉持一贯匠心独运的精神。<br>
+                    搭载骁龙845全球首发，卓越性能让你眼前一亮；AI变焦双摄，前置2000万镜头，让你<br>
+                    眼中的风景美不胜收；全面屏，舒适手感令你爱不释手。小米8，你值得拥有。</p>
+            </div>
+        </div>
+
+
+        <div class="body_1">
+            <table>
+                <tr>
+                    <td><img src="pic/2.png" alt=""/></td>
+                    <td>
+                        <p class="title">轻薄圆润 舒适握感</p>
+                        <p class="describe">四曲面玻璃机身，超轻7系铝金属中框，水滴弧收腰设计。</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="title">AI影棚光效<br>轻松拍出影棚级人像</p>
+                        <p class="describe">口袋里的人像影棚，为人像照片加入一缕彩虹<br>
+                            光的期许，亦或是窗边的静谧，让平常的一瞬<br>间，瞬间不平常。</p>
+                    </td>
+                    <td><img src="pic/3.png" alt=""/></td>
+                </tr>
+                <tr>
+                    <td><img src="pic/4.png" alt=""/></td>
+                    <td>
+                        <p class="title">安卓首款“Face ID”</p>
+                        <p class="describe">更安全的面部识别技术，方寸间蕴藏最新科技，由红外相机、<br>
+                            泛光照明、点头阵影等一系列元件构成的3D结构光系统，<br>为你带来更加安全的面部识别方式。</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="title">全球首款压感屏幕指纹识别</p>
+                        <p class="describe">内置高灵敏压感传感器，提升解锁识别率，<br>
+                            同时给予手指振动反馈，增强解锁体验。</p>
+                    </td>
+                    <td><img src="pic/5.png" alt=""/></td>
+                </tr>
+            </table>
+        </div>
+        <div class="block"></div>
+        <div class="body_1">
+            <table rows="11" cols="3">
+                <tr>
+                    <td colspan="3">
+                        <p class="title">三星AMOLED屏幕</p>
+                        <p class="describe">鲜艳通透的6.21英寸全面屏，机身相当于5.5英寸传统手机大小手机。</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3"><img src="pic/6.png" alt=""/></td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <p class="title">全球首款双频GPS定位手机<br>超精准定位</p>
+                        <p class="describe">小米8全球首款双频GPA手机，支持1+L5双频定位，双频信号协同工作，<br>在城市复杂环境中，有效改善导航精确度。</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3"><img src="pic/7.png" alt=""/></td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <p class="title">惊人的30万跑分*<br>骁龙845 旗舰标配</p>
+                        <p class="describe">骁龙845处理器，再次爆发强劲性能，无论是穿梭于多个APP之间，<br>或是来一场激烈的枪战游戏，一定是你不可或缺的凶猛利器。</p></td>
+                </tr>
+                <tr>
+                    <td colspan="3"><img src="pic/8.png" alt=""/></tr></td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <p class="title">AI变焦双摄<br>DxOMark超百分相机</p>
+                        <p class="describe">1.4μm超大像素，夜晶画质更明亮细腻，源自单反的2PD双核对焦技术，即使暗光环境也能疾速抓拍。</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3"><img src="pic/9.png" alt=""/></td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <p class="title">AI场景相机 实时优化<br>智能识别206种拍照场景</p>
+                        <p class="describe">聪明的AI相机，能识别206种常见拍照场景，自动进行曝光，饱和度等多项优化。<br>出国旅行时还是全能小助手，帮你翻译菜单，提供实时汇率计算。</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img width="50%" height="70%" src="pic/aicamera1.png" alt=""/></td>
+                    <td><img width="50%" height="70%" src="pic/aicamera2.png" alt=""/></td>
+                    <td><img width="50%" height="70%"src="pic/aicamera3.png" alt=""/></td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="title_">AI识别风景</p>
+                        <p class="describe">自动优化色彩，直出风光大片</p>
+                    </td>
+                    <td>
+                        <p class="title_">AI识别人像</p>
+                        <p class="describe">清爽拍出优质逆光，剪影人像作品</p>
+                    </td>
+                    <td>
+                        <p class="title_">AI识别夜景</p>
+                        <p class="describe">去噪点，增强解析力，夜晚也清晰</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="block"></div>
+        <p class="title text_center">拥有属于你的小米</p>
+        <div class="text_center"><a class="a_w" href="mi8_more.html" target="_blank">> 进一步了解小米8</a></div>
+        <div class="block"></div>
+        <div id="#buy" class="body_1">
+            <table width="70%">
+                <tr>
+                    <td><img src="pic/phone1-1.png" alt=""/></td>
+                    <td>
+                        <p class="phone_name">小米8  牛奶白</p>
+                        <p class="phone_des">牛奶肌肤 至享纯净</p>
+                        <a class="a_w" href="mi8_white.html">> 购买</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="phone_name">小米8  流光金</p>
+                        <p class="phone_des">流光溢彩 引人注目</p>
+                        <a class="a_w" href="mi8_blonze.html">> 购买</a>
+                    </td>
+                    <td><img src="pic/phone2-1.png" alt=""/></td>
+                </tr>
+                <tr>
+                    <td><img src="pic/phone3-1.png" alt=""/></td>
+                    <td>
+                        <p class="phone_name">小米8  星曜蓝</p>
+                        <p class="phone_des">星耀光泽 无与伦比</p>
+                        <a class="a_w" href="mi8_blue.html">> 购买</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="phone_name">小米8  暗夜黑</p>
+                        <p class="phone_des">暗夜无声 深沉静谧</p>
+                        <a class="a_w" href="mi8_black.html">> 购买</a>
+                    </td>
+                    <td><img src="pic/phone4-1.png" alt=""/></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="block"></div>
+        <p class="title text_center">精彩图集</p>
+        <div class="apple-banner">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slide1">
+                        <div class="title txt"> </div>
+                    </div>
+                    <div class="swiper-slide slide2">
+                        <div class="title txt"></div>
+                    </div>
+                    <div class="swiper-slide slide3">
+                        <div class="title txt"></div>
+                    </div>
+                    <div class="swiper-slide slide4">
+                        <div class="title txt"> </div>
+                    </div>
+                    <div class="swiper-slide slide5">
+                        <div class="title txt"></div>
+                    </div>
+                </div>
+                <div class="swiper-button-prev"><span></span></div>
+                <div class="swiper-button-next"><span></span></div>
+                <ul class="swiper-pagination autoplay">
+                </ul>
+            </div>
+        </div>
+    </div>
+
+<iframe width="100%" height="555px" src="DamiNewFooter.html" frameborder="0"></iframe>
+    <script src="js/jquery-1.11.3.js"> </script>
+    <script>
+        $.ajax({
+            type: "GET",
+            url: "loginornot-1.php",
+            success: function (msg) {
+                //                msg指的是php执行成功返回的数据echo
+                msg = JSON.parse(msg);
+                console.log(msg);
+
+                $("#user").html("账户："+msg);
+            }
+        })
+    </script>
+    <script>
+        // 显示头部登录用户名
+        $(function () {
+
+            //判断是否通过url传递了参数userId
+            var par = window.location.search;
+            console.log(par); //result:substring(1, searchURL.length);
+            par = par.substring(1, par.length);
+            var userId = null;
+            console.log(userId);
+            if((par != null) && (par != "")){
+                userId = par.split("&")[0].split("=")[1];
+                $.ajax({
+                    type: "GET",
+                    url: "idToUserName.php",
+                    data:{"userId":userId},
+                    success: function (msg) {
+                        //                msg指的是php执行成功返回的数据echo
+
+                        console.log(msg);
+                        //msg = JSON.parse(msg);
+                        if(msg != null){
+                            $("#user").html("账户&nbsp;"+msg);
+                        }
+                    }
+                });
+                $("#user").text("账户 "+userId);
+            }
+            $("#user").click(function () {
+                if($("#user").text() == "登录"){
+                    $("#user").attr("href","../../ZFH/login/login.html");
+                }
+                else{
+                    var str = "../../ZFH/userInfo/userInfo.html?userId=";
+                    str += userId;
+                    $("#user").attr("href",str);
+                }
+            });
+            $("#order").click(function () {
+                if($("#user").text() == "登录"){
+                    alert("您没有登录，请先登录！");
+                    //$("#order").attr("href","../ZFH/login/login.html");
+                }
+                else{
+                    var str = "../../ZFH/order/order.html?userId=";
+                    str += userId;
+                    $("#order").attr("href",str);
+                }
+            });
+            $("#gouwudai").click(function () {
+                if($("#user").text() == "登录"){
+                    alert("您没有登录，请先登录！");
+                    //$("#order").attr("href","../ZFH/login/login.html");
+                }
+                else{
+                    //var str = "../ZFH/order/order.html?userId=";
+                    //str += userId;
+                    var str = "../../ZGQ/";
+                    $("#gouwudai").attr("href",str);
+                }
+            });
+
+            $("#exit").click(function () {
+                $.ajax({
+                    type: "GET",
+                    url: "exit.php",
+                    success: function (msg) {
+                        //                msg指的是php执行成功返回的数据echo
+
+                        console.log(msg);
+                        //msg = JSON.parse(msg);
+                        if(msg == null){
+                            $("#user").attr("href","../../ZFH/login/login.html");
+                        }
+                        else{
+                            $("#user").attr("href","../../ZFH/userInfo/userInfo.html");
+                        }
+                        $("#user").html("账户&nbsp;"+msg);
+                    }
+                });
+            });
+        });
+    </script>
+
+<script src="js/jquery-1.11.3.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/apple.js"></script>
+
+</body>
+</html>

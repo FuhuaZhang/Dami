@@ -1,0 +1,486 @@
+
+.main-div{
+	/*width: 1880px;*/
+	width: 100%;
+	/*margin-left: 300px;*/
+	
+}
+.main {
+	width: 960px;
+	margin: 0 auto;
+	
+}
+
+.div4-1,
+.div6-1,
+.div8-1,
+.div9-1,
+.div1,
+.div2,
+.div3,
+.div4,
+.div5,
+.div6,
+.div7,
+.div8,
+.div9,
+.div10,
+.div11 {
+	width: 978px;
+	position: relative;
+	/*box-shadow: 0px 1px 0px 2px #9D9D9D;*/
+	box-shadow: 0px 1px 0px 1px #BEBEBE;
+}
+
+.div1 {
+	height: 84px;
+	border-top: 2px solid #BEBEBE;
+}
+
+.div2 {
+	height: 119px;
+}
+
+.div3 {
+	height: 58px;
+}
+
+.div4 {
+	height: 216px;
+}
+
+.div5 {
+	height: 58px;
+}
+
+.div6 {
+	height: 42px;
+}
+
+.div7 {
+	height: 79px;
+}
+
+.div8 {
+	height: 59px;
+}
+
+.div9 {
+	height: 79px;
+}
+
+.div10 {
+	height: 112px;
+}
+
+.div11 {
+	height: 68px;
+}
+
+.item-title {
+	font-family: "微软雅黑";
+	font-size: 26px;
+	font-weight: bold;
+	float: left;
+	margin-left: 14px;
+}
+
+.item-button {
+	right: 0;
+	margin-right: 32px;
+}
+
+
+/*父级div position 设为relative  item-title,item-button设置为absolute 
+ top:50% 让内容垂直居中  margin-top：-16px  content的宽度是32px 为了达到真正的居中 需要margin-top设置为-50%的content的高度*/
+
+.item-title,
+.item-button {
+	position: absolute;
+	top: 50%;
+	margin-top: -16px;
+}
+
+.edit-button {
+	/*width: 66px;*/
+	padding: 0 20px;
+	/*自适应宽度*/
+	height: 32px;
+	background: #1982d6;
+	color: white;
+}
+
+
+/*div8*/
+
+.div8-item1,
+.div9-item1,
+.div6-item1 {
+	width: 176px;
+	padding-left: 44px;
+	padding-top: 8px;
+	/*float: left;*/
+	display: inline-block;
+}
+
+.div8-item2,
+.div6-item2 {
+	/*box-sizing: border-box;*/
+	width: 360px;
+	padding-left: 56px;
+	padding-top: 8px;
+	/*float: left;*/
+	display: inline-block;
+}
+
+.div10-item1 {
+	display: inline-block;
+	height: 112px;
+	line-height: 112px;
+	padding-left: 44px;
+	color: #1982D6;
+}
+
+.div10-item2 {
+	float: right;
+	height: 112px;
+	padding-right: 32px;
+	text-align: center;
+	padding-top: 20px;
+}
+
+.div11-item1 {
+	display: inline-block;
+	height: 68px;
+	line-height: 68px;
+	padding-left: 44px;
+	color: #989898;
+	font-size: 12px;
+}
+
+.div11-item1>a {
+	text-decoration: none;
+	color: #1982D6;
+}
+
+.div11-button {
+	position: absolute;
+	top: 50%;
+	margin-top: -16px;
+	right: 0;
+	margin-right: 32px;
+}
+
+.div11-edit-button {
+	padding: 0 28px;
+	/*自适应宽度*/
+	height: 44px;
+	background: #1982d6;
+	color: white;
+	font-size: 22px;
+	border-radius: 10px;
+}
+
+.tr1 {
+	height: 150px;
+}
+
+.td-head {
+	width: 248px;
+	padding-left: 44px;
+	vertical-align: top;
+}
+
+.td-head,
+.div6-item1 {
+	font-weight: bold;
+}
+
+.td-main {
+	width: 420px;
+	vertical-align: top;
+}
+
+.td-main>a {
+	text-decoration: none;
+	color: #1982D6;
+}
+
+.div2-item1 {
+	width: 150px;
+	display: inline-block;
+	padding-left: 44px;
+	padding-top: 20px;
+	float: left;
+}
+
+.div2-item2 {
+	float: left;
+	height: 100%;
+	margin-top: 26px;
+}
+
+.div2-item2:after {
+	clear: both;
+}
+
+.div2-item2-span1 {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.div2-item2-span2 {
+	position: absolute;
+	right: 37px;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.div2-item2-block {
+	box-sizing: border-box;
+	width: 745px;
+	height: 48px;
+	padding-top: 12px;
+	padding-left: 12px;
+	font-size: 12px;
+	border-radius: 5px;
+	border: solid 1px #BEBEBE;
+	background-color: #f3f3f3;
+}
+
+.div4-1,
+.div6-1,
+.div8-1,
+.div9-1 {
+	visibility: hidden;
+	height: 0;
+}
+
+.label-item {
+	display: inline-block;
+	width: 4em;
+}
+
+.div8-item1 {
+	display: inline-block;
+}
+
+.div8-1-left {
+	box-sizing: border-box;
+	padding-top: 20px;
+	display: inline-block;
+	height: 350px;
+	padding-left: 44px;
+	/*padding-top: 20px;*/
+	font-size: 12px;
+	overflow: hidden;
+	width: 400px;
+}
+
+.div8-1-right {
+	box-sizing: border-box;
+	display: inline-block;
+	padding-top: 20px;
+	padding-left: 44px;
+	height: 350px;
+	width: 460px;
+	font-size: 12px;
+}
+
+.div8-1-right div {
+	position: absolute;
+}
+
+.invoice-font {
+	font-size: 14px;
+	font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+/*尾部*/
+
+.footer {
+	margin-top: 100px;
+	width: 100%;
+	height: 467px;
+	background-color: #f2f2f2;
+	color: rgba(174, 174, 174, 0.6);
+}
+.footer-main{
+	width: 960px;
+	margin: 0 auto;
+	
+}
+#footer_table td {
+	width: 192px;
+	text-align: left;
+	font-family: Arial;
+	font-size: 12px;
+	font-family: 黑体;
+	color: #585858;
+	line-height: 29px;
+	vertical-align: top;
+}
+
+.footer_english {
+	font-family: Arial;
+}
+
+#footer_table ul {
+	list-style: none;
+	position: relative;
+}
+
+.footer_thead {
+	line-height: 27px;
+	color: #020202;
+	font-family: 微软雅黑;
+}
+
+.footer a:link {
+	color: #3e3e3e
+}
+
+.footer a:visited {
+	color: #3e3e3e
+}
+
+.footer a:hover {
+	text-decoration: underline;
+	color: #000000;
+}
+
+.footer a:active {
+	color: #3e3e3e
+}
+
+.footer a {
+	text-decoration: none;
+}
+
+#footer_h1,
+#footer_h2,
+#footer_h3,
+#footer_h4,
+#footer_h5:hover {
+	text-decoration: none;
+	color: #020202;
+}
+
+#footer_h1,
+#footer_h2,
+#footer_h3,
+#footer_h4,
+#footer_h5:active {
+	color: #020202;
+}
+
+#footer_table {
+	width: 960px;
+
+}
+
+#footer_hr {
+	height: 1px;
+	width: 918px;
+	background-color: #999999;
+}
+
+#footer_copyright_1,
+#footer_copyright_2 {
+	font-family: 微软雅黑;
+	font-size: 12px;
+	color: #999999;
+}
+
+#footer_copyright_1,
+#footer_copyright_2:hover {
+	text-decoration: none;
+	color: #999999;
+}
+
+#footer_copyright_1,
+#footer_copyright_2:active {
+	color: #999999
+}
+
+.footer_four {
+	color: #565656;
+	font-family: "黑体";
+	font-size: 12px;
+}
+
+#footer_copyrightpart {
+	box-sizing: border-box;
+	position: relative;
+}
+
+#footer_number {
+	font-family: 微软雅黑;
+	font-size: 12px;
+	color: #999999;
+}
+
+
+
+
+
+
+
+/*头部*/
+
+  #header{
+            width:100%;
+            height: 84px;
+            margin-bottom: 50px;
+        }
+        #header_1{
+            width:100%;
+            height: 40px;
+            background-color:#454545;
+        }
+        #header_2{
+        	box-sizing: border-box;
+        	padding-top: 5px;
+            width:100%;
+            height: 44px;
+            background-color: #333333;
+        }
+        .header-main{
+        	
+        	width: 960px;
+        	margin: 0 auto;
+        }
+        #logo{
+    
+        }
+        .header_table td{
+            width: 106px;
+            text-align: center;
+            font-family: 微软雅黑;
+            font-size: 14px;
+            color:#ffffff;
+
+        }
+        /*#header_magn{
+            position:relative;
+            left: 20%;
+        }*/
+        .header_table a:link {color: #FFFFFF}
+        .header_table a:visited {color: #FFFFFF}
+        .header_table a:hover {color:#b2b2b2 }
+        .header_table a:active {color: #b2b2b2}
+		.header_table a{text-decoration: none;}
+		
+
+		.div2-img{
+			width:76px;
+			height: 76px;
+		}

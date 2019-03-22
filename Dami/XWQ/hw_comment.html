@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <title>demo</title>
+    <style>
+        #cc2{
+            width: 1200px;
+            height: 1200px;
+            margin: auto;
+        }
+        body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td{margin:0;padding:0;border:none; outline: none;}
+        h1,h2,h3,h4,h5,h6{font-size:100%;}
+        address,cite,dfn,em,var{font-style:normal;}
+        code,kbd,pre,samp{font-family:courier new,courier,monospace;}
+        ul,ol{list-style:none;}
+        a{text-decoration:none;color:#111;}
+        a:hover, a:visited, a:link, a:active{text-decoration:none;}
+        sup{vertical-align:text-top;}
+        sub{vertical-align:text-bottom;}
+        legend{color:#000;}
+        fieldset,img{border:0;}
+        button,input,select,textarea{font-size:100%;}
+        table{border-collapse:collapse;border-spacing:0;}
+        .clear{clear: both;float: none;height: 0;overflow: hidden;}
+        body{color:#333; font: 12px/1.3 'Arial','Microsoft YaHei';}
+        #pn{width: 1200px; height: auto; background: #fff; margin: 0 auto; padding: 20px;}
+        .list0{width:1000px;padding: 20px 0; position: relative; border-top: 1px solid #eee;}
+        .head{width: 60px; float: left;}
+        .head img{width: 60px; height: 60px; }
+        .close{width: 20px; height: 20px; position: absolute; top: 0; right: 0; color: #696e78; font-size: 14px; text-align: center; line-height: 20px;}
+        .close:hover{color: #eb7350;}
+        .content{width: 450px; line-height: 20px; font-size: 14px; margin-left: 70px; }
+        .name{color: #eb7350; }
+        .good:after{clear:both;content:'';display:block;width:0;height:0;visibility:hidden;}
+        .good{*zoom:1;}
+        .date{float:left; color: #808080;}
+        .good a{float: right; color: #808080;}
+        .people{background: #F7F7F7; height: 28px; line-height: 28px; padding-left: 10px; margin: 5px 0;}
+        .comment:after{clear:both;content:'';display:block;width:0;height:0;visibility:hidden;}
+        .comment{*zoom:1; padding: 10px 0; border-top: 1px solid #eee;}
+        .comment-left{width: 30px; float: left; display: inline; margin-right: 10px;}
+        .comment-left img{width: 30px; height: 30px;}
+        .comment-right{float: left; width: 410px;}
+        .comment-text{line-height: 18px;width: 900px;}
+        .comment-text span{color:#eb7350;}
+        .comment-date{font-size: 12px; line-height: 14px; color: #ccc; position: relative;}
+        .comment-zan{position: absolute; right: 40px; bottom: 0; color: #808080;}
+        .comment-dele{position: absolute; right: 0; bottom: 0; color: #808080;}
+        .hf:after{clear:both;content:'';display:block;width:0;height:0;visibility:hidden;}
+        .hf{*zoom:1;}
+        .hf-text{ border: 1px solid #eee; display: block; height: 30px; width: 438px; padding: 5px; resize: none; color: #ccc; font-size:12px;}
+        .hf-on .hf-text{height: 60px; color: #333; border:1px solid #ff8140;}
+        .hf-btn{float: right; width: 65px; height: 26px; background: #f7f7f7; color: #ccc; font-size: 12px; display: none;}
+        .hf-btn-on{background: #ff8140; color: #fff; }
+        .hf-nub{float: right; padding: 3px 5px; color: #666; display: none;}
+        .hf-on .hf-btn{display: inline;}
+        .hf-on .hf-nub{display: inline;}
+        .cc1{  width: 160px;  height: 30px;  margin: auto; position:relative;right:150px; }
+        .cc1 img{  width: 20px;  height: 20px;  }
+        p{
+            width: 900px;
+        }
+    </style>
+
+</head>
+<body>
+<div id="cc2">
+<ul id="pn">
+    <li class="list0" style="width: 1000px;">
+        <a class="close" href="javascript:;">X</a>
+        <div class="head"><img src="xwq_img/user.png" alt=""/></div>
+        <div class="content">
+            <p class="text"><span class="name">张三：</span>支持华为～//@李伟: 手机很好看，手机性能也很好
+                //@商城客服:您的支持点燃了我们的激情！
+                其实最大的表扬，就是您对我们有所期待，我们对您有所依赖，我们一起携手，走向更加光明的未来。</p>
+            <div class="cc1">
+                <img src="xwq_img/Star.png">
+                <img src="xwq_img/Star.png">
+                <img src="xwq_img/Star.png">
+                <img src="xwq_img/Star.png">
+                <img src="xwq_img/Star.png">
+                <label>好评</label>
+            </div>
+            <div class="good"><span class="date">02-14 23:01</span><a class="dzan" href="javascript:;"
+                                                                      style="position: relative;left: 450px;">赞</a></div>
+            <div class="people" total="2980" >2980人觉得很赞</div>
+            <div class="comment-list">
+                <div class="comment" user="self">
+                    <div class="comment-left"><img src="xwq_img/user.png" alt=""/></div>
+                    <div class="comment-right">
+                        <div class="comment-text"><span class="user">@李伟：</span>手机很好看，手机性能也很好</div>
+                        <div class="comment-date">02-14 22:00
+                            <a  class="comment-zan" href="javascript:;" total="23" my="1" style="position: relative;
+                            left: 750px;">23 取消赞</a>
+                            <a class="comment-dele" href="javascript:;">回复</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="comment" user="self">
+                    <div class="comment-left"><img src="xwq_img/user.png" alt=""/></div>
+                    <div class="comment-right">
+                        <div class="comment-text"><span class="user">商城客服：</span>您的支持点燃了我们的激情！
+                            其实最大的表扬，就是您对我们有所期待，我们对您有所依赖，我们一起携手，走向更加光明的未来。</div>
+                        <div class="comment-date">02-14 22:01
+                            <a class="comment-zan" href="javascript:;" total="0" my="0" style="position:
+                            relative;left: 750px;">赞</a>
+                            <a class="comment-dele" href="javascript:;"style="position:
+                            relative;left: 750px;">删除</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hf">
+                <textarea type="text" class="hf-text" autocomplete="off" maxlength="100" >评论…</textarea>
+                <button class="hf-btn" >回复</button>
+                <span class="hf-nub" >0/100</span>
+            </div>
+        </div>
+    </li>
+    <li class="list0" style="width: 1000px;">
+        <a class="close" href="javascript:;">X</a>
+        <div class="head"><img src="xwq_img/user.png" alt=""/></div>
+        <div class="content">
+            <p class="text"><span class="name">用户428905394</span>支持华为，支持国货。更要为华为这样的国货点赞。
+                手机真的漂亮，好用。//@商城客服:明明能靠才华吃饭，无奈亲们只看颜值，还好宝宝颜值一直在线~</p>
+            <div class="cc1">
+                <img src="xwq_img/Star.png">
+                <img src="xwq_img/Star.png">
+                <img src="xwq_img/Star.png">
+                <img src="xwq_img/Star.png">
+                <img src="xwq_img/Star.png">
+                <label>好评</label>
+            </div>
+            <div class="good"><span class="date">02-14 23:01</span><a class="dzan" href="javascript:;" style="position: relative;
+                            left: 450px;">赞</a></div>
+            <div class="people" total="0" style="display: none;"></div>
+            <div class="comment-list">
+                <div class="comment" user="self">
+                    <div class="comment-left"><img src="xwq_img/user.png" alt=""/></div>
+                    <div class="comment-right">
+                        <div class="comment-text"><span class="user">用户489238598：</span>不错  一直用的华为</div>
+                        <div class="comment-date">02-14 24:00
+                            <a class="comment-zan" href="javascript:;" total="286" my="1" style="position: relative;
+                            left: 750px;">286 取消赞</a>
+                            <a class="comment-dele" href="javascript:;" style="position: relative;
+                            left: 750px;">删除</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hf">
+                <textarea type="text" class="hf-text" autocomplete="off" maxlength="100">评论…</textarea>
+                <button class="hf-btn">回复</button>
+                <span class="hf-nub">0/100</span>
+            </div>
+        </div>
+    </li>
+
+    <li class="list0" style="width: 1000px;">
+        <a class="close" href="javascript:;">X</a>
+        <div class="head"><img src="xwq_img/user.png" alt=""/></div>
+        <div class="content">
+            <p class="text"><span class="name">用户463785387</span>第二部荣耀play是帮朋友买的，朋友用了杠杠哒帮朋友赞一个👍
+                //@商城客服:咱家宝贝风情又果敢，远目且踏实，品味上乘却又勤奋自省，不得不说您的选择及推荐帮助了很多有需要的小伙伴！</p>
+            <div class="cc1">
+                <img src="xwq_img/Star.png">
+                <img src="xwq_img/Star.png">
+                <img src="xwq_img/Star.png">
+                <img src="xwq_img/Star.png">
+                <img src="xwq_img/Star.png">
+                <label>好评</label>
+            </div>
+            <div class="good"><span class="date">02-14 23:01</span><a class="dzan" href="javascript:;"style="position: relative;
+                            left: 450px;">赞</a></div>
+            <div class="people" total="0" style="display: none;"></div>
+            <div class="comment-list">
+                <div class="comment" user="self">
+                    <div class="comment-left"><img src="xwq_img/user.png" alt=""/></div>
+                    <div class="comment-right">
+                        <div class="comment-text"><span class="user">用户463785387：</span>新机到了赶在我特殊的日子
+                            到感谢华为？希望越来越好!</div>
+                        <div class="comment-date">02-14 24:00
+                            <a class="comment-zan" href="javascript:;" total="136" my="1"style="position: relative;
+                            left: 750px;">136 取消赞</a>
+                            <a class="comment-dele" href="javascript:;"style="position: relative;
+                            left: 750px;">删除</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hf">
+                <textarea type="text" class="hf-text" autocomplete="off" maxlength="100">评论…</textarea>
+                <button class="hf-btn">回复</button>
+                <span class="hf-nub">0/100</span>
+            </div>
+        </div>
+    </li>
+</ul>
+</div>
+<script type="text/javascript">
+    function addloadEvent(func){
+        var oldonload=window.onload;
+        if(typeof window.onload !="function"){
+            window.onload=func;
+        }
+        else{
+            window.onload=function(){
+                if(oldonload){
+                    oldonload();
+                }
+                func();
+            }
+        }
+    }
+    addloadEvent(b);
+    function b(){
+        var pn=document.getElementById("pn");
+        var lists=pn.children;
+        function remove(node){
+            node.parentNode.removeChild(node);
+        }
+        function praisebox(box,el){
+            var praise=box.getElementsByClassName("people")[0];
+            var total=parseInt(praise.getAttribute("total"));
+            var txt=el.innerHTML;
+            var newtotal;
+            if(txt=="赞"){
+                newtotal=total+1;
+                praise.innerHTML=newtotal==1 ? "我觉得很赞" : "我和" + total +"个人觉得很赞";
+                el.innerHTML="取消赞";
+            }
+            else{
+                newtotal=total-1;
+                praise.innerHTML=newtotal==0 ? "" : newtotal +"个人觉得很赞";
+                el.innerHTML="赞";
+            }
+            praise.setAttribute("total",newtotal);
+            praise.style.display=(newtotal==0) ? "none" : "block";
+        }
+
+        function reply(box){
+            var textarea=box.getElementsByTagName("textarea")[0];
+            var comment=box.getElementsByClassName("comment-list")[0];
+            var div=document.createElement("div");
+            div.className="comment";
+            div.setAttribute("user","self");
+            var html='<div class="comment-left">'+'<img src="xwq_img/user.png" alt=""/>'+'</div>'+
+                    '<div class="comment-right">'+
+                    '<div class="comment-text"><span>商城客服：</span>'+textarea.value+'</div>'+
+                    '<div class="comment-date">'+
+                    getTime()+
+                    '<a class="comment-zan" href="javascript:;" total="0" my="0">赞</a>'+
+                    '<a class="comment-dele" href="javascript:;">删除</a>'+
+                    '</div>'+
+                    '</div>';
+            div.innerHTML=html;
+            comment.appendChild(div);
+            textarea.value="评论…";
+            textarea.parentNode.className="hf";
+        }
+        function getTime(){
+            var t=new Date();
+            var y=t.getFullYear();
+            var m=t.getMonth()+1;
+            var d=t.getDate();
+            var h=t.getHours();
+            var mi=t.getMinutes();
+            m=m<10?"0"+m:m;
+            d=d<10?"0"+d:d;
+            h=h<10?"0"+h:h;
+            mi=mi<10?"0"+mi:mi;
+            return y+"-"+m+"-"+d+""+h+":"+mi;
+        }
+        function praiseReply(el){
+            var total=parseInt(el.getAttribute("total"));
+            var my=parseInt(el.getAttribute("my"));
+            var newtotal;
+            if(my==0){
+                newtotal=total+1;
+                el.setAttribute("total",newtotal);
+                el.setAttribute("my",1);
+                el.innerHTML=newtotal+" 取消赞";
+            }else{
+                newtotal=total-1;
+                el.setAttribute("total",newtotal);
+                el.setAttribute("my",0);
+                el.innerHTML=(newtotal==0)?" 赞":newtotal+" 赞";
+            }
+        }
+        function operateReply(el){
+            var comment=el.parentNode.parentNode.parentNode;
+            var box=comment.parentNode.parentNode.parentNode;
+            var textarea=box.getElementsByTagName("textarea")[0];
+            var user=comment.getElementsByClassName("user")[0];
+            var txt=el.innerHTML;
+            if(txt=="回复"){
+                textarea.onfocus();
+                textarea.value="回复 "+user.innerHTML;
+                textarea.onkeyup();
+            }else{
+                remove(comment);
+            }
+        }
+        for(var i=0;i<lists.length;i++){
+            lists[i].onclick=function(e){
+                var e=e||window.event;
+                var el=e.srcElement;
+                if(!el){
+                    el=e.target;
+                }
+                switch(el.className){
+                    case "close":
+                        remove(el.parentNode);
+                        break;
+                    case "dzan":
+                        praisebox(el.parentNode.parentNode.parentNode,el);
+                        break;
+                    case "hf-btn hf-btn-on":
+                        reply(el.parentNode.parentNode.parentNode);
+                        break;
+                    case "comment-zan":
+                        praiseReply(el);
+                        break;
+                    case "comment-dele":
+                        operateReply(el);
+                        break;
+                }
+            }
+            var textarea=lists[i].getElementsByClassName("hf-text")[0];
+            textarea.onfocus=function(){
+                this.parentNode.className='hf hf-on';
+                this.value = this.value == '评论…' ? '' : this.value;
+            }
+            textarea.onblur=function(){
+                if(this.value==''){
+                    this.parentNode.className='hf';
+                    this.value ='评论…';
+                }
+            }
+            textarea.onkeyup=function(){
+                var len=this.value.length;
+                var textParentNode=this.parentNode;
+                var textBtn=textParentNode.children[1];
+                var textNub=textParentNode.children[2];
+                if(len==0 /*|| len>100*/){
+                    textBtn.className="hf-btn";
+                }else{
+                    textBtn.className="hf-btn hf-btn-on";
+                }
+                textNub.innerHTML=len+"/100";
+            }
+        }
+    }
+</script>
+</body>
+</html> 

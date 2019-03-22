@@ -1,0 +1,545 @@
+#header_1 {
+    width: 100%;
+    height: 40px;
+    background-color: #454545;
+}
+
+#header_2 {
+    width: 100%;
+    border-radius: 0;
+    background-color: #333333;
+    z-index: 1;
+    border: 0px;
+}
+
+
+.headerUL {
+    font-family: 微软雅黑;
+    font-size: 14px;
+    color: #ffffff;
+    margin: auto auto;
+    background-color: #333333 !important;
+
+}
+
+.header-mynavbar-default .header-mynavbar-nav > li > a {
+    color: #ffffff;
+}
+
+.headerUL a:link {
+    color: #FFFFFF
+}
+
+.headerUL a:visited {
+    color: #FFFFFF
+}
+
+.headerUL a:hover {
+    color: #b2b2b2 !important;
+    outline: none;
+}
+
+.headerUL a:active {
+    color: #b2b2b2;
+    outline: none;
+}
+
+.headerUL a {
+    text-decoration: none;
+}
+
+
+.header-mynav-pills > li > a {
+    height: 44px;
+}
+
+.header-mynavbar-default .header-mynavbar-toggle:hover, .header-mynav-pills > li > a:focus, .header-mynavbar-default .header-mynavbar-toggle:hover, .header-mynav-pills > li > a:hover {
+    background-color: #333333;
+    outline: none;
+}
+
+.header-mynav-pills .header-mynav-justified.navbar-navt .header-mynavbar-toggle:hover, .header-mynavbar-default .header-mynavbar-toggle .header-mynav-pills :focus {
+    background-color: #333333;
+    outline: none;
+}
+
+#header-mytoggle1 {
+    border: 0px;
+}
+
+.header-mynav-justified > li > a {
+    text-align: left;
+}
+
+
+.header-mynavbar-brand {
+    float: left;
+    height: 44px;
+    padding: 15px 15px;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.header-mynavbar {
+    position: relative;
+    min-height: 44px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+}
+.header-mynavbar-fixed-top .header-mynavbar-collapse, .navbar-fixed-bottom .header-mynavbar-collapse {
+    max-height: 800px;
+}
+
+.header-myrow {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+@media (max-width: 1300px){
+    .header-mypadding1
+    {
+        padding-left: 30px;
+    }
+
+}
+@media (min-width: 1300px){
+    .header-mypadding1
+    {
+        padding-left: 80px;
+    }}
+
+
+#headerFont {
+    margin-top: 15px;
+    font-family: 微软雅黑;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+
+#buyBtn {
+    margin-left:40px;
+    margin-top: 10px;
+}
+
+#headerFontFirst {
+    margin-top: 20px;
+    font-family: 微软雅黑;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+
+#buyBtnFirst {
+    margin-left:40px;
+    margin-top: 10px;
+}
+
+
+#buyFont {
+    font-size: 11px;
+    font-family: 微软雅黑;
+    top: 50%;
+    left: 30%;
+}
+
+.headerBorder {
+    width: 100%;
+    height: 2px;
+    background-color: #bbbbbb;
+}
+
+#iphoneFirst {
+    clear: both;
+    display: block;
+    margin: auto;
+
+}
+
+#bigFont {
+    position: relative;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+#firstDescription {
+    font-family: 微软雅黑;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+#firstSummaryFont {
+    font-family: 微软雅黑;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+#firstDescriptionFont {
+    font-weight: bold;
+    font-size: 32px;
+}
+
+#firstSmallDescriptionFont {
+    font-family: 微软雅黑;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#firstScreen {
+    clear: both;
+    display: block;
+    margin: auto;
+    width: 1200px;
+}
+
+#secondScreen {
+    margin-top: 50px;
+    height: 873px;
+    background-color: #e8e8e8;
+}
+
+#secondScreenDescriptionFont {
+    padding-top: 30px;
+    font-family: 微软雅黑;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#secondScreenPicture {
+    clear: both;
+    display: block;
+    margin: auto;
+    width: 1200px;
+}
+
+#secondSummaryFont {
+    font-family: 微软雅黑;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+#secondDescriptionFont {
+    font-weight: bold;
+    font-size: 32px;
+}
+
+#secondSmallDescriptionFont {
+    font-family: 微软雅黑;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#secondCPUPicture {
+    clear: both;
+    display: block;
+    margin-right: auto;
+    margin-top: 50px;
+    width: 696px;
+}
+
+#compareDescription {
+    margin-top: 50px;
+
+
+}
+
+@keyframes roate {
+    0%{width: 0px}
+    100%{width:600px}
+}
+
+#compareDescription blockquote {
+    font-family: 微软雅黑;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+@keyframes roateFirst {
+    0%{width:0px}
+    100%{width:480px}
+}
+@keyframes roateSecond {
+    0%{width:0px}
+    100%{width:468px}
+}
+@keyframes roateThird {
+    0%{width:0px}
+    100%{width:450px}
+}
+@keyframes roateFourth {
+    0%{width:0px}
+    100%{width:300px}
+}
+
+#compareDescription blockquote #firstBorder, #secondBorder, #thirdBorder, #fourthBorder {
+    background: #4d4d4d !important;
+}
+
+
+
+#compareDescription blockquote div {
+    width: 600px;
+    height: 12px;
+    background: linear-gradient(to right, #4382f0, #f42a37);
+    animation:roate 2s;
+    animation-fill-mode:forwards;
+    animation-direction:alternate;
+}
+
+#gameDescription {
+    margin-top: 100px;
+    height: 796px;
+    background-color: #e8e8e8;
+}
+
+#gameDescription blockquote {
+    padding-top: 50px;
+    font-family: 微软雅黑;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#game {
+    clear: both;
+    display: block;
+    margin: auto;
+    width: 1200px;
+}
+
+#thirdSummaryFont {
+    font-family: 微软雅黑;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+#thirdDescriptionFont {
+    font-weight: bold;
+    font-size: 32px;
+}
+
+#thirdSmallDescriptionFont {
+    font-family: 微软雅黑;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#firstCamera {
+    clear: both;
+    display: block;
+    margin: auto;
+    width: 1200px;
+}
+
+#secondCamera {
+    margin-top: 50px;
+    height: 873px;
+    background-color: #e8e8e8;
+}
+
+#firstCameraDescriptionFont {
+    padding-top: 30px;
+    font-family: 微软雅黑;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#secondCameraPicture {
+    clear: both;
+    display: block;
+    margin: auto;
+    width: 1200px;
+}
+
+.footerUp blockquote {
+    margin-top: 50px;
+    font-family: 微软雅黑;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+#footerPicture {
+    clear: both;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:100%;
+}
+
+
+#footer_copyright_1,#footer_copyright_2{
+    font-family: 微软雅黑;
+    font-size: 12px;
+    color: #999999;
+}
+#footer_copyright_1,#footer_copyright_2:hover {text-decoration: none;  color:#999999;}
+#footer_copyright_1,#footer_copyright_2:active {color: #999999}
+.footer-mynavbar-brand {
+    float: left;!important;
+}
+#footer_hr{
+    height: 1px;
+    background-color: #dddddd;
+    border:0px ;
+}
+
+.footer-mynavbar-nav > li {
+    /*float: left;*/
+    clear: both;
+!important;
+}
+
+
+
+
+
+.footer_english {
+    font-family: Arial;
+}
+
+
+
+
+.footer a:link {
+    color: #3e3e3e
+}
+
+.footer a:visited {
+    color: #3e3e3e
+}
+
+.footer a:hover {
+    text-decoration: underline;
+    color: #000000;
+}
+
+.footer a:active {
+    color: #3e3e3e
+}
+
+.footer a {
+    text-decoration: none;
+}
+
+#footer_h1, #footer_h2, #footer_h3, #footer_h4, #footer_h5:hover {
+    text-decoration: none;
+    color: #020202;
+}
+
+#footer_h1, #footer_h2, #footer_h3, #footer_h4, #footer_h5:active {
+    color: #020202;
+}
+
+#footer_number {
+    font-family: 微软雅黑;
+    font-size: 12px;
+    color: #999999;
+}
+
+
+.footer_thead {
+
+    color: #020202;
+    font-family: '微软雅黑';
+    padding: 0px 0px;
+    /*width: 100%;*/
+    font-size: 14px;
+    height: 30px;
+    margin-left: 32px;
+!important;
+}
+.footer-mycontainer-fluid > .navbar-header,  .footer-mycontainer-fluid > .navbar-collapse {
+    margin-right: 0px;
+    margin-left: 0px;
+!important;
+}
+.footer-mybutton{
+    position: relative;
+    bottom: 13px;
+    border:0px;
+}
+.footer-myrow {
+    margin-right: 0px;
+    margin-left: 0px;
+!important;
+}
+.footer-mynavbar-default  {
+    color: #000;
+    margin-left: 20px;
+    font-size: 12px ;
+!important;
+}
+
+
+.footer-mynavbar-default .footer-mynavbar-nav > li > a:hover, .footer-mynavbar-default .footer-mynavbar-nav > li > a:focus {
+    text-decoration: underline;
+    color: #000000;
+!important;
+}
+
+.footer-mynavbar-default .footer-mynavbar-nav > li > a {
+    color: #333;
+!important;
+}
+.footer-mycontainer-fluid {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+
+.footer-mycol-sm-2 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+
+
+#footer_h1, #footer_h2, #footer_h3, #footer_h4, #footer_h5:active {
+
+    color: #020202;
+
+}
+
+#footer_h1, #footer_h2, #footer_h3, #footer_h4, #footer_h5:hover {
+
+    text-decoration: none;
+    color: #020202;
+
+}
+
+
+
+.footer-mynavbar-collapse {
+
+
+    width: 100%;
+
+}
+
+
+
+.footer-mynav > li > a {
+    position: relative;
+    display: block;
+    padding: 0px 0px;
+    margin-left: 20px;
+    padding-bottom: 10px;!important;
+}
+.footer-mynavbar-default .footer-mynavbar-toggle:hover,  .footer-mynavbar-default .footer-mynavbar-toggle:hover {
+    background-color:rgba(242, 242, 242, 0.81);
+}
+
+.footer-mynavbar-navt .footer-mynavbar-toggle:hover, .footer-mynavbar-default .footer-mynavbar-toggle:focus {
+    background-color: rgba(242, 242, 242, 0.81);
+}
+@media (max-width: 767px) {
+    .footer-myheader{
+        border-bottom: 1px solid darkgray;
+    }
+}
+#FooterLogo:hover, #FootercurrentPade:hover{text-decoration: none}

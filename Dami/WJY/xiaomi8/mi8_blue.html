@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>小米8 - 蓝色 - 选择</title>
+    <link rel="icon" href="WAZ_HeaderPicture/logo1.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="bootstrap.css" rel="stylesheet">
+
+    <script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+    <script src="js/click.js"></script>
+
+    <style type="text/css">
+        *{margin:0 0;padding:0 0;box-sizing:border-box;}
+        body{overflow-x: hidden;}
+        a{text-decoration: none;}
+        .text_center{text-align: center;}
+        .body_1{width: 100%;}
+        .header_font1{width:100% ;font:bold 26px "微软雅黑";padding-left:11%;color:#333;box-sizing:border-box;}
+        .header_font2{width:100%;font:18px "微软雅黑";color: #0070c9;height: 100px;line-height: 100px;}
+        .header_font3{width:100%;font:32px "微软雅黑";height: 100px;color:#333;}
+        .body_1 a{text-decoration: none;}
+        .border{width:200px;height:100px;border:1px solid #333;border-radius: 4px;background:white;display: inline-block;margin:0 10px;box-sizing:border-box;}
+        .div1{height: 100px;line-height: 100px;}
+        .border_font1{  font:36px  "微软雅黑";  color: #333333; }
+        .border_font2{font:12px "微软雅黑";color: #333333; width: 100%;height: 12px;  margin-top: 10px;}
+        .body_1 img{width: 100%;height: 100%;}
+        table{width: 60%;height: 500px;margin:100px auto;text-align: center;box-sizing:border-box;}
+        table td{font:14px "微软雅黑"}
+        .footer_font{font:12px "微软雅黑";color:#a7a1a1;margin:10px auto;width:55%;box-sizing:border-box;}
+        hr{height:1px;border:none;background-color:#a7a1a1;width:55%;margin:auto}
+        .long_hr{height: 1px;border: none;width: 100%;background-color:#a7a1a1;margin-top: 15px;}
+
+        /*隐藏页面的一些样式属性 */
+        .header_font4{width:100%;font:18px "微软雅黑";color: #0070c9;height: 50px;line-height: 50px;margin-bottom: 50px;}
+        .header_font5{width:100%;font:32px "微软雅黑";height: 100px;color:#333;line-height: 100px;}
+        .table1{width:30%;height: 200px;}
+        .td_l{text-align: left;vertical-align: top}
+        .td_r{text-align: right;vertical-align: top}
+        .button1{width:200px;border:none;height:40px;background-color: #107cf7;color: white;border-radius: 4px;font-size:18px;text-align: center;cursor:pointer;}
+        .td_font{font:22px "微软雅黑"}
+
+        /*头部样式*/
+        #header_1 {
+            width: 100%;
+            height: 40px;
+            background-color: #454545;
+        }
+
+        #header_2 {
+            width: 100%;
+            /*height: 44px;*/
+            /*position:relative;*/
+            /*top:0;*/
+            border-radius: 0;
+            /*text-align: center;!important;*/
+            background-color: #333333;
+            z-index: 1;
+            border: 0px;
+        }
+
+        .headerUL {
+            /*text-align: left;*/
+            /*position: relative;*/
+            font-family: '微软雅黑';
+            font-size: 14px;!important;
+            color: #ffffff;
+            margin: auto auto;
+            /*text-align: center;*/
+            background-color: #333333 !important;
+
+        }
+
+        .header-mynavbar-default .header-mynavbar-nav > li > a {
+            color: #ffffff;
+        }
+
+        .headerUL a:link {
+            color: #FFFFFF
+        }
+
+        .headerUL a:visited {
+            color: #FFFFFF
+        }
+
+        .headerUL a:hover {
+            color: #b2b2b2 !important;
+            outline: none;
+        }
+
+        .headerUL a:active {
+            color: #b2b2b2;
+            outline: none;
+        }
+
+        .headerUL a {
+            text-decoration: none;
+        }
+
+        /*.navbar-default .navbar-toggle:hover,.nav-pills > li > a:focus{*/
+        /*background-color: red;*/
+        /*}*/
+        .header-mynav-pills > li > a {
+            height: 44px;
+        }
+
+        .header-mynavbar-default .header-mynavbar-toggle:hover, .header-mynav-pills > li > a:focus, .header-mynavbar-default .header-mynavbar-toggle:hover, .header-mynav-pills > li > a:hover {
+            background-color: #333333;
+            outline: none;
+        }
+
+        .header-mynav-pills .header-mynav-justified.navbar-navt .header-mynavbar-toggle:hover, .header-mynavbar-default .header-mynavbar-toggle .header-mynav-pills :focus {
+            background-color: #333333;
+            outline: none;
+        }
+
+        #header-mytoggle1 {
+            border: 0px;
+            position: relative;
+            right:90%;
+        }
+
+        .header-mynav-justified > li > a {
+            text-align: left;
+        }
+
+        /*.navbar-brand{*/
+        /*text-align: center;!important;*/
+        /*}*/
+        .header-mynavbar-brand {
+            float: left;
+            height: 44px;
+            padding: 15px 15px;
+            font-size: 18px;
+            line-height: 20px;
+        }
+
+        .header-mynavbar {
+            position: relative;
+            min-height: 44px;
+            margin-bottom: 20px;
+            border: 1px solid transparent;
+        }
+        .header-mynavbar-fixed-top .header-mynavbar-collapse, .navbar-fixed-bottom .header-mynavbar-collapse {
+            max-height: 800px;
+        }
+
+        .header-myrow {
+            margin-right: 0px;
+            margin-left: 0px;
+        }
+
+        @media (max-width: 1300px){
+            .header-mypadding1
+            {
+                padding-left: 30px;
+            }
+            /*@media (max-width: 760px){*/
+            /*.mypadding1*/
+            /*{*/
+            /*padding-left: 0px;*/
+            /*}}*/
+        }
+        @Media(max-width: 500px){
+            #header-mytoggle1 {
+                border: 0px;
+                position: relative;
+                right:84%;
+            }
+
+        }
+        @Media(min-width: 500px){
+            #header-mytoggle1 {
+                border: 0px;
+                position: relative;
+                right:90%;
+            }
+
+        }
+        @media (min-width: 1300px){
+            .header-mypadding1
+            {
+                padding-left: 80px;
+            }}
+    </style>
+</head>
+
+<body>
+<!--<iframe scrolling="no" width="100%" height="80px" src="DamiNewHeader.html" frameborder="0"></iframe>-->
+<div id="DamHeader">
+    <div id="header_1">
+    </div>
+    <nav class="navbar navbar-default navbar-fixed-top header-mynavbar-default header-mynavbar header-mynavbar-fixed-top"
+         role="navigation" id="header_2">
+        <div class="row header-myrow">
+            <!--<div class=" col-lg-1 hidden-md hidden-xs hidden-sm" style="height: 44px"></div>-->
+            <div class="col-lg-11 col-md-12 col-sm-12 col-xs-12 col-lg-offset-1">
+                <div class="row header-myrow">
+                    <div class="navbar-header" style="background-color: #333333">
+                   <span class="navbar-toggle header-mynavbar-toggle" data-toggle="collapse" data-target="#menu"
+                         id="header-mytoggle1">
+                       <span class="sr-only">展开导航</span>
+                       <span class="icon-bar"></span>
+                       <span class="icon-bar"></span>
+                   </span>
+                        <!--<div class=" col-xs-5 hidden-md hidden-lg hidden-sm"></div>-->
+                        <a class="navbar-brand col-lg-2 col-md-1 col-sm-1 col-xs-2 col-xs-offset-5 header-mynavbar-brand"
+                           href="../WAZ/NewDaMi.html" style="position: relative;bottom: 5px;"><img id="logo"
+                                                                                                   src="WaZ_HeaderPicture/logo.png"></a>
+                    </div>
+                    <div class="col-lg-11 col-md-10 col-sm-10 col-xs-12 ">
+                        <div class="collapse navbar-collapse header-mynavbar-collapse" id="menu">
+                            <ul class="nav  nav-pills nav-justified headerUL header-mypadding1 header-mynav-pills header-mynav-justified"
+                                style="margin-left: 20px; margin-left: 0px;">
+                                <li><a href="../../ZBY/iphoneXFirst.html">iPhone</a></li>
+                                <li><a href="../../XWQ/huawei_fp.html">Huawei</a></li>
+                                <li><a href="../../WJY/xiaomi8/mi8.html">Xiaomi</a></li>
+                                <li><a href="../../DWJ/OPPOR15.html">Oppo</a></li>
+                                <li><a href="#" style="width: 60px">服务</a></li>
+                                <li><a href="#" style="font-size: 12px;width:80px;">技术支持</a></li>
+                                <li><a href="#"><img src="WAZ_HeaderPicture/magnifying.png"></a></li>
+                                <li>
+                                    <div class="dropdown">
+                                        <button class="btn btn-default dropdown-toggle" type="button"  data-toggle="dropdown" aria-expanded="true"style="background-color: #333333;border: none">
+                                            <img src="WAZ_HeaderPicture/shoppingbag.png">
+                                        </button>
+                                        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1" style="background-color:#ffffff;">
+                                            <li role="presentation"><a role="menuitem" tabindex="-1" href="" style="color: black" id="gouwudai">购物袋</a></li>
+                                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#" style="color: black">收藏</a></li>
+                                            <li role="presentation"><a role="menuitem" tabindex="-1" id="order" style="color: black">订单</a></li>
+                                            <li role="presentation"><a role="menuitem" tabindex="-1"  style="color: black" id="user">登录</a></li>
+                                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#" style="color: black" id="exit">注销</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
+
+<div class="header_font1">小米8</div><hr class="long_hr"/>
+<div id="blue" style="display: block">
+  <div class="body_1">
+    <div class="header_font2 text_center">小米8&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a style="color:#0070c9" href="mi8.html##buy">星曜蓝</a></div>
+    <div class="header_font3 text_center">选择存储容量</div>
+    <div class="text_center">
+        <button id="b1" class="border" style="cursor:pointer">
+            <div class="border_font1">6+64GB</div>
+            <div class="border_font2" >更有分期付款选择。RMB 2,699</div>
+        </button>
+        <button id="b2" class="border" style="cursor:pointer">
+            <div class="border_font1">6+128GB</div>
+            <div class="border_font2" >更有分期付款选择。RMB 2,999</div>
+        </button>
+        <button id="b3" class="border" style="cursor:pointer">
+            <div class="border_font1">6+256GB</div>
+            <div class="border_font2" >更有分期付款选择。RMB 3,299</div>
+        </button>
+    </div>
+    <div class="div1 text_center">送达日期：有现货</div>
+    <a href=""><div class="header_font2 text_center">> 查看你所在地点的交货日期</div></a>
+  </div>
+
+
+<div class="text_center" >
+    <img src="pic/phone3.png" alt=""/>
+     <img style="width: 100%" src="pic/index3.jpg" alt=""/>
+</div>
+</div>
+<div id="blue1" style="display: none">
+    <div class="body_1">
+        <div class="header_font5 text_center">这是你选择的小米8</div>
+        <div class="header_font4 text_center">小米8&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a style="color:#0070c9" href="mi8.html##buy">星曜蓝</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a style="color:#0070c9" href="mi8_blue.html"><span>6+64G</span></a></div>
+    </div>
+    <div>
+        <div class="text_center"><img src="pic/phone3.png" alt=""/></div>
+    </div>
+    <div class="text_center">
+        <table class="table1">
+            <tr>
+                <td class="td_l td_font">价格</td>
+                <td class="td_r"><span class="td_font">RMB：2,699</span><br><a style="color:#0070c9" href="">更有分期付款选择。</a></td>
+            </tr>
+            <tr>
+                <td class="td_l">
+                    <p>有现货</p><p>免费送货</p><a href=""><p style="color:#0070c9">查看送货日期</p></a>
+                </td>
+                <td class="td_r">
+                    <button id="blue-1" class="button1">添加到购物袋</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<div id="blue2" style="display: none">
+    <div class="body_1">
+        <div class="header_font5 text_center">这是你选择的小米8</div>
+        <div class="header_font4 text_center">小米8&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a style="color:#0070c9" href="mi8.html##buy">星曜蓝</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a style="color:#0070c9" href="mi8_blue.html"><span>6+128G</span></a></div>
+    </div>
+    <div>
+        <div class="text_center"><img src="pic/phone3.png" alt=""/></div>
+    </div>
+    <div class="text_center">
+        <table class="table1">
+            <tr>
+                <td class="td_l td_font">价格</td>
+                <td class="td_r"><span class="td_font">RMB：2,999</span><br><a style="color:#0070c9" href="">更有分期付款选择。</a></td>
+            </tr>
+            <tr>
+                <td class="td_l">
+                    <p>有现货</p><p>免费送货</p><a href=""><p style="color:#0070c9">查看送货日期</p></a>
+                </td>
+                <td class="td_r">
+                    <button id="blue-2" class="button1">添加到购物袋</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<div id="blue3" style="display: none">
+    <div class="body_1">
+        <div class="header_font5 text_center">这是你选择的小米8</div>
+        <div class="header_font4 text_center">小米8&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a style="color:#0070c9" href="mi8.html##buy">星曜蓝</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a style="color:#0070c9" href="mi8_blue.html"><span>6+256G</span></a></div>
+    </div>
+    <div>
+        <div class="text_center"><img src="pic/phone3.png" alt=""/></div>
+    </div>
+    <div class="text_center">
+        <table class="table1">
+            <tr>
+                <td class="td_l td_font">价格</td>
+                <td class="td_r"><span class="td_font">RMB：3,299</span><br><a style="color:#0070c9" href="">更有分期付款选择。</a></td>
+            </tr>
+            <tr>
+                <td class="td_l">
+                    <p>有现货</p><p>免费送货</p><a href=""><p style="color:#0070c9">查看送货日期</p></a>
+                </td>
+                <td class="td_r">
+                    <button id="blue-3" class="button1">添加到购物袋</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<div>
+    <table>
+        <tr><td class="header_font3" colspan="5">包装内容</td></tr>
+        <tr>
+            <td><img width="190px" height="300px" src="pic/phone3-1.png" alt=""/></td>
+            <td><img src="pic/protector.png" alt=""/></td>
+            <td><img src="pic/lightning-to-usb.jpg" alt=""/></td>
+            <td><img src="pic/power-adapter.jpg" alt=""/></td>
+            <td><img src="pic/earpods.jpg" alt=""/></td>
+        </tr>
+        <tr>
+            <td>手机*1</td>
+            <td>手机保护套*1</td>
+            <td>USB Type-C 数据线*1</td>
+            <td>电源适配器*1</td>
+            <td>耳机*1</td>
+        </tr>
+    </table>
+</div>
+<div class="body_1">
+    <hr/>
+    <div class="footer_font">
+        数据说明：<br>
+        * 全面屏是一项屏幕技术，指相比其他小米手机，屏幕占比较大；屏占比依据测量方式不同，实际结果可能略有差异，数据来源实验室测试数据;手机支持 QC4+ 快充协议，标配18W QC3.0充电器；206种场景由25类标签场景细分所得，在使用过程中通过AI 相机调校效果可主观感知；<br>
+        * 在初期销售批次手机中系统未搭载AI动态光斑，AI影棚光效，AI智能特效等功能，后续都将通过OTA升级；功能不同更新进度有所差异，最终以MIUI官网公布（www.miui.com）、MIUI稳定版功能更新为准。<br/>
+        * 实际可用容量会由于诸多因素而减少并有所差异：由于操作系统运行占据了部分内存（RAM），实际可用空间小于标识内存容量；由于安装操作系统和预装的程序占据了部分闪存（ROM），实际可用存储空间小于标识闪存容量。<br/>
+        * 页面中所对比的一般手机，均为小米自有手机。产品站非特别指出，均为我司实验室数据、设计技术参数及供应商提供数据，全站数据实际情况会因测试软件版本、具体测试环境、具体版本不同，而略有差异。全站所展示结构图片，均为功能示意图，并非绝对实际结构，最终以实物为准。<br/>
+        * 异常订单处理规则：为了维护以个人消费为目的用户的权益，小米商城特制定本规则，敬请在购物前仔细阅读。在符合适用法律法规的前提下,发生以下任一情形，小米商城有权认定其为异常订单，在商品妥投前，均可单方面退款至支付账户，并取消订单：1. 同一用户使用多个会员账户购买同一商品；2. 同一商品被大量购买，订单收货地址、收货人姓名及电话、支付账号、下单IP地址等相同或近似；3. 一人或多人使用多个账号下单，不支付或者选择延迟发货以占用库存；4. 同一用户多次或大量无正当理由，拒绝签收订单商品；5. 其他可以被认定为异常订单的情形。本规则于2018年4月3日00：00公布并生效。
+    </div>
+    <hr/>
+</div>
+<iframe width="100%" height="555px" src="DamiNewFooter.html" frameborder="0"></iframe>
+</body>
+
+<script>
+    var Btn = document.getElementById('blue');
+    var Btn1 = document.getElementById('b1');
+    var Btn2 = document.getElementById('b2');
+    var Btn3 = document.getElementById('b3');
+    var Div1 = document.getElementById('blue1');
+    var Div2 = document.getElementById('blue2');
+    var Div3 = document.getElementById('blue3');
+    Btn1.onclick = function(){
+        if(Btn.style.display == 'block'){
+            Btn.style.display = 'none';
+            Div1.style.display = 'block';
+        }else{
+            Div1.style.display = 'none';
+            Btn.style.display = 'block';
+        }
+    };
+    Btn2.onclick = function(){
+        if(Btn.style.display == 'block'){
+            Btn.style.display = 'none';
+            Div2.style.display = 'block';
+        }else{
+            Div2.style.display = 'none';
+            Btn.style.display = 'block';
+        }
+    };
+    Btn3.onclick = function(){
+        if(Btn.style.display == 'block'){
+            Btn.style.display = 'none';
+            Div3.style.display = 'block';
+        }else{
+            Div3.style.display = 'none';
+            Btn.style.display = 'block';
+        }
+    };
+</script>
+
+<script src="js/jquery-1.11.3.js"> </script>
+<script>
+    $.ajax({
+        type: "GET",
+        url: "loginornot-1.php",
+        success: function (msg) {
+            //                msg指的是php执行成功返回的数据echo
+            msg = JSON.parse(msg);
+            console.log(msg);
+
+            $("#user").html("账户："+msg);
+        }
+    })
+</script>
+<script>
+    // 显示头部登录用户名
+    $(function () {
+
+        //判断是否通过url传递了参数userId
+        var par = window.location.search;
+        console.log(par); //result:substring(1, searchURL.length);
+        par = par.substring(1, par.length);
+        var userId = null;
+        console.log(userId);
+        if((par != null) && (par != "")){
+            userId = par.split("&")[0].split("=")[1];
+            $.ajax({
+                type: "GET",
+                url: "idToUserName.php",
+                data:{"userId":userId},
+                success: function (msg) {
+                    //                msg指的是php执行成功返回的数据echo
+
+                    console.log(msg);
+                    //msg = JSON.parse(msg);
+                    if(msg != null){
+                        $("#user").html("账户&nbsp;"+msg);
+                    }
+                }
+            });
+            $("#user").text("账户 "+userId);
+        }
+        $("#user").click(function () {
+            if($("#user").text() == "登录"){
+                $("#user").attr("href","../../ZFH/login/login.html");
+            }
+            else{
+                var str = "../../ZFH/userInfo/userInfo.html?userId=";
+                str += userId;
+                $("#user").attr("href",str);
+            }
+        });
+        $("#order").click(function () {
+            if($("#user").text() == "登录"){
+                alert("您没有登录，请先登录！");
+                //$("#order").attr("href","../ZFH/login/login.html");
+            }
+            else{
+                var str = "../../ZFH/order/order.html?userId=";
+                str += userId;
+                $("#order").attr("href",str);
+            }
+        });
+        $("#gouwudai").click(function () {
+            if($("#user").text() == "登录"){
+                alert("您没有登录，请先登录！");
+                //$("#order").attr("href","../ZFH/login/login.html");
+            }
+            else{
+                //var str = "../ZFH/order/order.html?userId=";
+                //str += userId;
+                var str = "../../ZGQ/";
+                $("#gouwudai").attr("href",str);
+            }
+        });
+
+        $("#exit").click(function () {
+            $.ajax({
+                type: "GET",
+                url: "exit.php",
+                success: function (msg) {
+                    //                msg指的是php执行成功返回的数据echo
+
+                    console.log(msg);
+                    //msg = JSON.parse(msg);
+                    if(msg == null){
+                        $("#user").attr("href","../../ZFH/login/login.html");
+                    }
+                    else{
+                        $("#user").attr("href","../../ZFH/userInfo/userInfo.html");
+                    }
+                    $("#user").html("账户&nbsp;"+msg);
+                }
+            });
+        });
+    });
+</script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/apple.js"></script>
+</html>

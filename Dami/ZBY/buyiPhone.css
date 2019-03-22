@@ -1,0 +1,617 @@
+
+#header_1 {
+    width: 100%;
+    height: 40px;
+    background-color: #454545;
+}
+
+#header_2 {
+    width: 100%;
+    border-radius: 0;
+    background-color: #333333;
+    z-index: 1;
+    border: 0px;
+}
+
+
+.headerUL {
+    font-family: '微软雅黑';
+    font-size: 14px;
+    color: #ffffff;
+    margin: auto auto;
+    background-color: #333333 !important;
+
+}
+
+.header-mynavbar-default .header-mynavbar-nav > li > a {
+    color: #ffffff;
+}
+
+.headerUL a:link {
+    color: #FFFFFF
+}
+
+.headerUL a:visited {
+    color: #FFFFFF
+}
+
+.headerUL a:hover {
+    color: #b2b2b2 !important;
+    outline: none;
+}
+
+.headerUL a:active {
+    color: #b2b2b2;
+    outline: none;
+}
+
+.headerUL a {
+    text-decoration: none;
+}
+
+.header-mynav-pills > li > a {
+    height: 44px;
+}
+
+.header-mynavbar-default .header-mynavbar-toggle:hover, .header-mynav-pills > li > a:focus, .header-mynavbar-default .header-mynavbar-toggle:hover, .header-mynav-pills > li > a:hover {
+    background-color: #333333;
+    outline: none;
+}
+
+.header-mynav-pills .header-mynav-justified.navbar-navt .header-mynavbar-toggle:hover, .header-mynavbar-default .header-mynavbar-toggle .header-mynav-pills :focus {
+    background-color: #333333;
+    outline: none;
+}
+
+#header-mytoggle1 {
+    border: 0px;
+}
+
+.header-mynav-justified > li > a {
+    text-align: left;
+}
+
+
+.header-mynavbar-brand {
+    float: left;
+    height: 44px;
+    padding: 15px 15px;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.header-mynavbar {
+    position: relative;
+    min-height: 44px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+}
+.header-mynavbar-fixed-top .header-mynavbar-collapse, .navbar-fixed-bottom .header-mynavbar-collapse {
+    max-height: 800px;
+}
+
+.header-myrow {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+@media (max-width: 1300px){
+    .header-mypadding1
+    {
+        padding-left: 30px;
+    }
+
+}
+@media (min-width: 1300px){
+    .header-mypadding1
+    {
+        padding-left: 80px;
+    }}
+
+
+
+
+#footer_copyright_1,#footer_copyright_2{
+    font-family: 微软雅黑;
+    font-size: 12px;
+    color: #999999;
+}
+#footer_copyright_1,#footer_copyright_2:hover {text-decoration: none;  color:#999999;}
+#footer_copyright_1,#footer_copyright_2:active {color: #999999}
+.footer-mynavbar-brand {
+    float: left;!important;
+}
+#footer_hr{
+    height: 1px;
+    background-color: #dddddd;
+    border:0px ;
+}
+
+.footer-mynavbar-nav > li {
+    /*float: left;*/
+    clear: both;
+!important;
+}
+
+
+
+
+
+.footer_english {
+    font-family: Arial;
+}
+
+
+
+
+.footer a:link {
+    color: #3e3e3e
+}
+
+.footer a:visited {
+    color: #3e3e3e
+}
+
+.footer a:hover {
+    text-decoration: underline;
+    color: #000000;
+}
+
+.footer a:active {
+    color: #3e3e3e
+}
+
+.footer a {
+    text-decoration: none;
+}
+
+#footer_h1, #footer_h2, #footer_h3, #footer_h4, #footer_h5:hover {
+    text-decoration: none;
+    color: #020202;
+}
+
+#footer_h1, #footer_h2, #footer_h3, #footer_h4, #footer_h5:active {
+    color: #020202;
+}
+
+#footer_number {
+    font-family: 微软雅黑;
+    font-size: 12px;
+    color: #999999;
+}
+
+
+.footer_thead {
+    /*line-height: 10px;*/
+    color: #020202;
+    font-family: '微软雅黑';
+    padding: 0px 0px;
+    /*width: 100%;*/
+    font-size: 14px;
+    height: 30px;
+    margin-left: 32px;
+!important;
+}
+.footer-mycontainer-fluid > .navbar-header,  .footer-mycontainer-fluid > .navbar-collapse {
+    margin-right: 0px;
+    margin-left: 0px;
+!important;
+}
+.footer-mybutton{
+    position: relative;
+    bottom: 13px;
+    border:0px;
+}
+.footer-myrow {
+    margin-right: 0px;
+    margin-left: 0px;
+!important;
+}
+.footer-mynavbar-default  {
+    color: #000;
+    margin-left: 20px;
+    font-size: 12px ;
+!important;
+}
+
+
+.footer-mynavbar-default .footer-mynavbar-nav > li > a:hover, .footer-mynavbar-default .footer-mynavbar-nav > li > a:focus {
+    text-decoration: underline;
+    color: #000000;
+!important;
+}
+
+.footer-mynavbar-default .footer-mynavbar-nav > li > a {
+    color: #333;
+!important;
+}
+.footer-mycontainer-fluid {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+
+.footer-mycol-sm-2 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+
+
+#footer_h1, #footer_h2, #footer_h3, #footer_h4, #footer_h5:active {
+
+    color: #020202;
+
+}
+
+#footer_h1, #footer_h2, #footer_h3, #footer_h4, #footer_h5:hover {
+
+    text-decoration: none;
+    color: #020202;
+
+}
+
+
+
+.footer-mynavbar-collapse {
+
+    /*padding-right: 2px;*/
+    /*padding-left: 2px;*/
+    width: 100%;
+
+}
+
+
+
+.footer-mynav > li > a {
+    position: relative;
+    display: block;
+    padding: 0px 0px;
+    margin-left: 20px;
+    padding-bottom: 10px;!important;
+}
+.footer-mynavbar-default .footer-mynavbar-toggle:hover,  .footer-mynavbar-default .footer-mynavbar-toggle:hover {
+    background-color:rgba(242, 242, 242, 0.81);
+}
+
+.footer-mynavbar-navt .footer-mynavbar-toggle:hover, .footer-mynavbar-default .footer-mynavbar-toggle:focus {
+    background-color: rgba(242, 242, 242, 0.81);
+}
+@media (max-width: 767px) {
+    .footer-myheader{
+        border-bottom: 1px solid darkgray;
+    }
+}
+#FooterLogo:hover, #FootercurrentPade:hover{text-decoration: none}
+
+#headerFont
+{
+    margin-top: 15px;
+    font-family: 微软雅黑;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.headerBorder {
+    width: 100%;
+    height: 2px;
+    background-color: #bbbbbb;
+}
+
+#thisYour
+{
+    margin-top: 30px;
+    font-family: 微软雅黑;
+    font-size: 28px;
+    margin-bottom: 0px;
+}
+
+#greyColor
+{
+    margin-top: 32px;
+    font-family: 微软雅黑;
+    font-size: 14px;
+    margin-bottom:30px;
+}
+
+#buyDescription
+{
+    padding-top: 80px;
+}
+#iPhoneFirst
+{
+    clear: both;
+    display: block;
+    margin: auto;
+    width: 750px;
+}
+
+.price
+{
+
+}
+
+#price
+{
+    padding-top: 50px;
+    font-weight: normal;
+    font-size: 24px;
+}
+
+#RMB
+{
+    font-weight: bold;
+    font-size: 24px;
+}
+
+#priceFont
+{
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.price ul
+{
+    float: left;
+    list-style: none;
+    position: relative;
+    margin-bottom: 50px;
+}
+.price li
+{
+    margin-top:5px;
+}
+
+#purchase
+{
+    margin-top: 30px;
+    left:1000px;
+    width:500px;
+
+}
+
+
+#buyPhone
+{
+    padding-top:100px;
+    clear: both;
+    display: block;
+    margin: auto;
+    width: 80%;
+}
+
+#showContent
+{
+    height:350px;
+    background-color: #f9f9f9;
+}
+#showContent ul
+{
+    width:1880px;
+    list-style: none;
+    display:inline;
+}
+
+#showContent ul li
+{
+    width:180px;
+    margin-left: 120px;
+    float:left;
+   
+}
+
+#showContentFont ul
+{
+  
+    list-style: none;
+    display:inline;
+
+}
+
+#showContentFont ul li
+{
+    float:left;
+    
+}
+
+#phoneBackground
+{
+    background-color: #fafafa;
+    height:300px;
+}
+
+#phone
+{
+    clear: both;
+    display: block;
+    margin: auto;
+    width: 100%;
+}
+
+#footerPicture {
+    clear: both;
+    display: block;
+    margin: auto;
+    width:60%;
+}
+
+
+.NewFooter
+{
+    margin-top: 100px;
+}
+#footer_copyright_1,#footer_copyright_2{
+    font-family: 微软雅黑;
+    font-size: 12px;
+    color: #999999;
+}
+#footer_copyright_1,#footer_copyright_2:hover {text-decoration: none;  color:#999999;}
+#footer_copyright_1,#footer_copyright_2:active {color: #999999}
+.footer-mynavbar-brand {
+    float: left;!important;
+}
+#footer_hr{
+    height: 1px;
+    background-color: #dddddd;
+    border:0px ;
+}
+
+.footer-mynavbar-nav > li {
+    /*float: left;*/
+    clear: both;
+!important;
+}
+
+
+
+
+
+.footer_english {
+    font-family: Arial;
+}
+
+
+
+
+.footer a:link {
+    color: #3e3e3e
+}
+
+.footer a:visited {
+    color: #3e3e3e
+}
+
+.footer a:hover {
+    text-decoration: underline;
+    color: #000000;
+}
+
+.footer a:active {
+    color: #3e3e3e
+}
+
+.footer a {
+    text-decoration: none;
+}
+
+#footer_h1, #footer_h2, #footer_h3, #footer_h4, #footer_h5:hover {
+    text-decoration: none;
+    color: #020202;
+}
+
+#footer_h1, #footer_h2, #footer_h3, #footer_h4, #footer_h5:active {
+    color: #020202;
+}
+
+#footer_number {
+    font-family: 微软雅黑;
+    font-size: 12px;
+    color: #999999;
+}
+
+
+.footer_thead {
+
+    color: #020202;
+    font-family: '微软雅黑';
+    padding: 0px 0px;
+    /*width: 100%;*/
+    font-size: 14px;
+    height: 30px;
+    margin-left: 32px;
+!important;
+}
+.footer-mycontainer-fluid > .navbar-header,  .footer-mycontainer-fluid > .navbar-collapse {
+    margin-right: 0px;
+    margin-left: 0px;
+!important;
+}
+.footer-mybutton{
+    position: relative;
+    bottom: 13px;
+    border:0px;
+}
+.footer-myrow {
+    margin-right: 0px;
+    margin-left: 0px;
+!important;
+}
+.footer-mynavbar-default  {
+    color: #000;
+    margin-left: 20px;
+    font-size: 12px ;
+!important;
+}
+
+
+.footer-mynavbar-default .footer-mynavbar-nav > li > a:hover, .footer-mynavbar-default .footer-mynavbar-nav > li > a:focus {
+    text-decoration: underline;
+    color: #000000;
+!important;
+}
+
+.footer-mynavbar-default .footer-mynavbar-nav > li > a {
+    color: #333;
+!important;
+}
+.footer-mycontainer-fluid {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+
+.footer-mycol-sm-2 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+
+
+#footer_h1, #footer_h2, #footer_h3, #footer_h4, #footer_h5:active {
+
+    color: #020202;
+
+}
+
+#footer_h1, #footer_h2, #footer_h3, #footer_h4, #footer_h5:hover {
+
+    text-decoration: none;
+    color: #020202;
+
+}
+
+
+
+.footer-mynavbar-collapse {
+
+
+    width: 100%;
+
+}
+
+
+
+.footer-mynav > li > a {
+    position: relative;
+    display: block;
+    padding: 0px 0px;
+    margin-left: 20px;
+    padding-bottom: 10px;!important;
+}
+.footer-mynavbar-default .footer-mynavbar-toggle:hover,  .footer-mynavbar-default .footer-mynavbar-toggle:hover {
+    background-color:rgba(242, 242, 242, 0.81);
+}
+
+.footer-mynavbar-navt .footer-mynavbar-toggle:hover, .footer-mynavbar-default .footer-mynavbar-toggle:focus {
+    background-color: rgba(242, 242, 242, 0.81);
+}
+@media (max-width: 767px) {
+    .footer-myheader{
+        border-bottom: 1px solid darkgray;
+    }
+}
+#FooterLogo:hover, #FootercurrentPade:hover{text-decoration: none}

@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dami&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;官方网站</title>
+    <link rel="icon" href="WAZ_HomePagePicture/logo1.png" type="image/x-icon">
+    <!-- Bootstrap -->
+    <link href="bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+
+        a:hover, a:active {
+            outline: none;
+        }
+
+        #header_1 {
+            width: 100%;
+            height: 40px;
+            background-color: #454545;
+        }
+
+        #header_2 {
+            width: 100%;
+            /*height: 44px;*/
+            /*position:relative;*/
+            /*top:0;*/
+            border-radius: 0;
+            /*text-align: center;!important;*/
+            background-color: #333333;
+            z-index: 1;
+            border: 0px;
+        }
+
+        .headerUL {
+            /*text-align: left;*/
+            /*position: relative;*/
+            font-family: '微软雅黑';
+            font-size: 14px;
+            color: #ffffff;
+            margin: auto auto;
+            /*text-align: center;*/
+            background-color: #333333 !important;
+
+        }
+
+        .header-mynavbar-default .header-mynavbar-nav > li > a {
+            color: #ffffff;
+        }
+
+        .headerUL a:link {
+            color: #FFFFFF
+        }
+
+        .headerUL a:visited {
+            color: #FFFFFF
+        }
+
+        .headerUL a:hover {
+            outline: none;
+            color: #b2b2b2 !important;
+        }
+
+        .headerUL a:active {
+            outline: none;
+            color: #b2b2b2
+        }
+
+        .headerUL a {
+            text-decoration: none;
+        }
+
+        /*.navbar-default .navbar-toggle:hover,.nav-pills > li > a:focus{*/
+        /*background-color: red;*/
+        /*}*/
+        .header-mynav-pills > li > a {
+            height: 44px;
+        }
+
+        .header-mynavbar-default .header-mynavbar-toggle:hover, .header-mynav-pills > li > a:focus, .header-mynavbar-default .header-mynavbar-toggle:hover, .header-mynav-pills > li > a:hover {
+            background-color: #333333;
+            outline: none;
+        }
+
+        .header-mynav-pills .header-mynav-justified.navbar-navt .header-mynavbar-toggle:hover, .header-mynavbar-default .header-mynavbar-toggle .header-mynav-pills :focus {
+            background-color: #333333;
+            outline: none;
+        }
+
+        #header-mytoggle1 {
+            border: 0px;
+        }
+
+        .header-mynav-justified > li > a {
+            text-align: left;
+        }
+
+        /*.navbar-brand{*/
+        /*text-align: center;!important;*/
+        /*}*/
+        .header-mynavbar-brand {
+            float: left;
+            height: 44px;
+            padding: 15px 15px;
+            font-size: 18px;
+            line-height: 20px;
+        }
+
+        .header-mynavbar {
+            position: relative;
+            min-height: 44px;
+            margin-bottom: 20px;
+            border: 1px solid transparent;
+        }
+
+        .header-mynavbar-fixed-top .header-mynavbar-collapse, .navbar-fixed-bottom .header-mynavbar-collapse {
+            max-height: 800px;
+        }
+
+        /*.col-sm-1, .col-sm-11, .col-sm-12, {*/
+        /*position: relative;*/
+        /*/!*min-height: 1px;*!/*/
+        /*padding-right: 0px;*/
+        /*padding-left: 0px;*/
+        /*}*/
+        /*.nav > li > a {*/
+        /*position: relative;*/
+        /*display: block;*/
+        /*padding: 12px 15px;*/
+        /*}*/
+        .header-myrow {
+            margin-right: 0px;
+            margin-left: 0px;
+        }
+
+        @media (max-width: 1300px) {
+            .header-mypadding1 {
+                padding-left: 30px;
+            }
+
+            /*@media (max-width: 760px){*/
+            /*.mypadding1*/
+            /*{*/
+            /*padding-left: 0px;*/
+            /*}}*/
+        }
+
+        @media (min-width: 1300px) {
+            .header-mypadding1 {
+                padding-left: 80px;
+            }
+        }
+
+        /*@media (min-width: 1400px){*/
+        /*.mypadding1*/
+        /*{*/
+        /*width: 100px;*/
+        /*}}*/
+
+        /*@media (max-width: 1200px){*/
+        /*.mypadding1*/
+        /*{*/
+        /*width: 100px;*/
+        /*}}*/
+        /***********************************************************************************************
+    HOMEBODY         CSS
+    ***********************************************************************************************/
+
+        .homepagebody img {
+            width: 100%;
+            height: auto;
+        }
+
+        /*.Homepage_div4 div img{*/
+        /*width:100%;*/
+        /*height: auto;*/
+        /*}*/
+        .homepagebody {
+            width: 100%;
+            /*margin-bottom: 10px;*/
+            /*height:4395px;*/
+        }
+
+        .Homepage_div1 {
+            width: 100%;
+            /*height: 660px;*/
+        }
+
+        .Homepage_div2 {
+            width: 100%;
+            /*height: 692px;*/
+            /*position:relative;*/
+            /*top: 2%;*/
+        }
+
+        .Homepage_div3 {
+            width: 100%;
+            /*height: 692px;*/
+            /*position:relative;*/
+            /*top: 24px;*/
+        }
+
+        /*.Homepage_div4{*/
+        /*clear: both;*/
+        /*}*/
+
+        .img-float {
+            float: left;
+            width: 50%;
+            box-sizing: border-box;
+            padding: 6px;
+            position: relative;
+        }
+
+        .Homepage_text {
+            position: absolute;
+            /*top: 30px;*/
+            top: 5%;
+            width: 99%;
+            z-index: 1;
+            text-align: center;
+
+        }
+
+        .Homepage_text_z {
+            font-family: 微软雅黑;
+            font-size: 20px;
+            /*font-size: 120%;*/
+            color: #000000;
+            /*text-align: center;*/
+        }
+
+        .Homepage_text_head {
+            font-family: 黑体;
+            font-size: 38px;
+            /*font-size: 230%;*/
+            color: #000000;
+            font-weight: bold;
+            /*text-align: center;*/
+        }
+
+        .homeoagebody a, .Homepage_text_head:link {
+            color: #3e3e3e
+        }
+
+        .homeoagebody a, .Homepage_text_head:visited {
+            color: #3e3e3e
+        }
+
+        .Homepage_text_head:hover {
+            text-decoration: none;
+            outline: none;
+        }
+
+        /*.homeoagebody a,.Homepage_text_head:active {color: #3e3e3e}*/
+        .Homepage_text_head {
+            text-decoration: none;
+        }
+
+        .Homepage_text_z:hover {
+            text-decoration: none;
+            outline: none;
+            color: #000000;
+        !important;
+        }
+
+        /***********************************************************************************
+        FooterCSS
+        ***********************************************************************************/
+        #footer_copyright_1, #footer_copyright_2 {
+            font-family: 微软雅黑;
+            font-size: 12px;
+            color: #999999;
+        }
+
+        #footer_copyright_1, #footer_copyright_2:hover {
+            text-decoration: none;
+            color: #999999;
+            outline: none;
+        }
+
+        #footer_copyright_1, #footer_copyright_2:active {
+            color: #999999;
+            outline: none;
+        }
+
+        .footer-mynavbar-brand {
+            float: left;
+        !important;
+        }
+
+        #footer_hr {
+            height: 1px;
+            background-color: #dddddd;
+            border: 0px;
+        }
+
+        .footer-mynavbar-nav > li {
+            /*float: left;*/
+            clear: both;
+        !important;
+        }
+
+        .footer_english {
+            font-family: Arial;
+        }
+
+        .footer a:link {
+            color: #3e3e3e
+        }
+
+        .footer a:visited {
+            color: #3e3e3e
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+            color: #000000;
+            outline: none;
+        }
+
+        .footer a:active {
+            color: #3e3e3e;
+            outline: none;
+        }
+
+        .footer a {
+            text-decoration: none;
+        }
+
+        #footer_h1, #footer_h2, #footer_h3, #footer_h4, #footer_h5:hover {
+            text-decoration: none;
+            color: #020202;
+            outline: none;
+        }
+
+        #footer_h1, #footer_h2, #footer_h3, #footer_h4, #footer_h5:active {
+            color: #020202;
+            outline: none;
+        }
+
+        #footer_number {
+            font-family: 微软雅黑;
+            font-size: 12px;
+            color: #999999;
+        }
+
+        .footer_thead {
+            /*line-height: 10px;*/
+            color: #020202;
+            font-family: '微软雅黑';
+            padding: 0px 0px;
+            /*width: 100%;*/
+            font-size: 14px;
+            height: 30px;
+            margin-left: 32px;
+        !important;
+        }
+
+        .footer-mycontainer-fluid > .navbar-header, .footer-mycontainer-fluid > .navbar-collapse {
+            margin-right: 0px;
+            margin-left: 0px;
+        !important;
+        }
+
+        .footer-mybutton {
+            position: relative;
+            bottom: 13px;
+            border: 0px;
+        }
+
+        .footer-myrow {
+            margin-right: 0px;
+            margin-left: 0px;
+        !important;
+        }
+
+        .footer-mynavbar-default {
+            color: #000;
+            margin-left: 20px;
+            font-size: 12px;
+        !important;
+        }
+
+        .footer-mynavbar-default .footer-mynavbar-nav > li > a:hover, .footer-mynavbar-default .footer-mynavbar-nav > li > a:focus {
+            text-decoration: underline;
+            color: #000000;
+            outline: none;
+        !important;
+        }
+
+        .footer-mynavbar-default .footer-mynavbar-nav > li > a {
+            color: #333;
+        !important;
+        }
+
+        .footer-mycontainer-fluid {
+            padding-right: 0px;
+            padding-left: 0px;
+        }
+
+        .footer-mycol-sm-2 {
+            position: relative;
+            min-height: 1px;
+            padding-right: 0px;
+            padding-left: 0px;
+        }
+
+        #footer_h1, #footer_h2, #footer_h3, #footer_h4, #footer_h5:active {
+            outline: none;
+            color: #020202;
+
+        }
+
+        #footer_h1, #footer_h2, #footer_h3, #footer_h4, #footer_h5:hover {
+            outline: none;
+            text-decoration: none;
+            color: #020202;
+
+        }
+
+        .footer-mynavbar-collapse {
+
+            /*padding-right: 2px;*/
+            /*padding-left: 2px;*/
+            width: 100%;
+
+        }
+
+        .footer-mynav > li > a {
+            position: relative;
+            display: block;
+            padding: 0px 0px;
+            margin-left: 20px;
+            padding-bottom: 10px;
+        !important;
+        }
+
+        .footer-mynavbar-default .footer-mynavbar-toggle:hover, .footer-mynavbar-default .footer-mynavbar-toggle:hover {
+            background-color: rgba(242, 242, 242, 0.81);
+            outline: none;
+        }
+
+        .footer-mynavbar-navt .footer-mynavbar-toggle:hover, .footer-mynavbar-default .footer-mynavbar-toggle:focus {
+            background-color: rgba(242, 242, 242, 0.81);
+            outline: none;
+        }
+
+        @media (max-width: 767px) {
+            .footer-myheader {
+                border-bottom: 1px solid darkgray;
+            }
+        }
+    </style>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+
+    <![endif]-->
+</head>
+<body>
+
+<!--<div class="row">-->
+<!--<div class="col-md-2"></div>-->
+<!--<div class="col-md-8">-->
+<div id="DamHeader">
+    <div id="header_1">
+    </div>
+    <nav class="navbar navbar-default navbar-fixed-top header-mynavbar-default header-mynavbar header-mynavbar-fixed-top"
+         role="navigation" id="header_2">
+        <div class="row header-myrow">
+            <!--<div class=" col-lg-1 hidden-md hidden-xs hidden-sm" style="height: 44px"></div>-->
+            <div class="col-lg-11 col-md-12 col-sm-12 col-xs-12 col-lg-offset-1">
+                <div class="row header-myrow">
+                    <div class="navbar-header" style="background-color: #333333">
+                   <span class="navbar-toggle header-mynavbar-toggle" data-toggle="collapse" data-target="#menu"
+                         id="header-mytoggle1">
+                       <span class="sr-only">展开导航</span>
+                       <span class="icon-bar"></span>
+                       <span class="icon-bar"></span>
+                   </span>
+                        <!--<div class=" col-xs-5 hidden-md hidden-lg hidden-sm"></div>-->
+                        <a class="navbar-brand col-lg-2 col-md-1 col-sm-1 col-xs-2 col-xs-offset-5 header-mynavbar-brand"
+                           href="../WAZ/NewDaMi.html" style="position: relative;bottom: 5px;"><img id="logo"
+                                                                                 src="WaZ_HeaderPicture/logo.png"></a>
+                    </div>
+                    <div class="col-lg-11 col-md-10 col-sm-10 col-xs-12 ">
+                        <div class="collapse navbar-collapse header-mynavbar-collapse" id="menu">
+                            <ul class="nav  nav-pills nav-justified headerUL header-mypadding1 header-mynav-pills header-mynav-justified"
+                                style="margin-left: 20px; margin-left: 0px;">
+                                <li><a href="../ZBY/iphoneXFirst.html">iPhone</a></li>
+                                <li><a href="../XWQ/huawei_fp.html">Huawei</a></li>
+                                <li><a href="../WJY/xiaomi8/mi8.html">Xiaomi</a></li>
+                                <li><a href="../DWJ/OPPOR15.html">Oppo</a></li>
+                                <li><a href="#" style="width: 60px">服务</a></li>
+                                <li><a href="#" style="font-size: 12px;width:80px;">技术支持</a></li>
+                                <li><a href="../WAZ/NewDaMi.html"><img src="WAZ_HeaderPicture/magnifying.png"></a></li>
+                                <li>
+                                    <div class="dropdown">
+                                        <button class="btn btn-default dropdown-toggle" type="button"  data-toggle="dropdown" aria-expanded="true"style="background-color: #333333;border: none">
+                                            <img src="WAZ_HeaderPicture/shoppingbag.png">
+                                        </button>
+                                        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1" style="background-color:#ffffff;">
+                                            <li role="presentation"><a role="menuitem" tabindex="-1" href="" style="color: black" id="gouwudai">购物袋</a></li>
+                                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#" style="color: black">收藏</a></li>
+                                            <li role="presentation"><a role="menuitem" tabindex="-1" id="order" style="color: black">订单</a></li>
+                                            <li role="presentation"><a role="menuitem" tabindex="-1"  style="color: black" id="user">登录</a></li>
+                                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#" style="color: black" id="exit">注销</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
+<div class="homepagebody">
+    <div class="Homepage_div1">
+        <a href="../ZBY/iphoneXFirst.html" target=""> <img src="WAZ_HomePagePicture/iPhone X.png"></a>
+    </div>
+    <div class="Homepage_div2">
+        <a href="../XWQ/huawei_fp.html" target=""> <img src="WAZ_HomePagePicture/Huawei.png"></a>
+    </div>
+    <div class="Homepage_div3">
+        <a href="../DWJ/OPPOR15.html" target=""> <img src="WAZ_HomePagePicture/Oppor15.png"></a>
+    </div>
+
+    <div class="img-float">
+        <div class="Homepage_text"><a class="Homepage_text_head" href="" target=""> PAD</a><br><a
+                class="Homepage_text_z">这个电脑,丢掉电脑的条条框框</a></div>
+        <img src="WAZ_HomePagePicture/Pad.png" alt=""/>
+    </div>
+
+    <div class="img-float">
+        <div class="Homepage_text"><a class="Homepage_text_head" href="../WJY/xiaomi8/mi8.html" target="">小米8</a><br><a
+                class="Homepage_text_z">8&nbsp;&nbsp;周&nbsp;&nbsp;年&nbsp;&nbsp;旗&nbsp;&nbsp;舰&nbsp;&nbsp;手&nbsp;&nbsp;机</a>
+        </div>
+        <img src="WAZ_HomePagePicture/Xiaomi.png" alt=""/>
+    </div>
+
+    <div class="img-float">
+        <div class="Homepage_text"><a class="Homepage_text_head" href="" target="">天作之合 </a><br><a
+                class="Homepage_text_z">多彩一面，尽情展现</a></div>
+        <img src="WAZ_HomePagePicture/earphone.png" alt=""/>
+    </div>
+
+    <div class="img-float">
+        <div class="Homepage_text"><a class="Homepage_text_head" href="" target="" style="color:#ffffff;">智能生活</a><br><a
+                class="Homepage_text_z" style="color:#ffffff;">科技前沿，舒适生活</a></div>
+        <img src="WAZ_HomePagePicture/voicebox.png" alt=""/>
+    </div>
+
+    <div class="img-float">
+        <div class="Homepage_text"><a class="Homepage_text_head" href="" target="" style="color:#ffffff;">联系我们</a><br><a
+                class="Homepage_text_z" style="color:#ffffff;">为您更好服务，是我们衷心的希望</a></div>
+        <img src="WAZ_HomePagePicture/keyboard.png" alt=""/>
+    </div>
+
+    <div class="img-float">
+        <div class="Homepage_text"><a class="Homepage_text_head" href="" target="">售后</a> <br><a
+                class="Homepage_text_z">全国联保，正品保障</a></div>
+        <img src="WAZ_HomePagePicture/instrument.png" alt=""/>
+    </div>
+
+</div>
+
+<div class="NewFooter" style="background-color: #f2f2f2;clear: both">
+    <nav class="navbar navbar-default footer-mynavbar-default" role="navigation"
+         style="border-radius: 0px;padding-top: 60px;background-color: #f2f2f2;border: 0px">
+        <div class="=row footer-myrow">
+            <div class="col-lg-2 col-md-1 col-sm-1"></div>
+            <div class="col-lg-2 col-md-2 col-sm-2 footer-mycol-sm-2">
+                <div class="container-fluid footer-mycontainer-fluid">
+                    <div class="navbar-header footer-myheader">
+                        <button type="button" class="navbar-toggle collapsed footer-mybutton footer-mynavbar-toggle"
+                                data-toggle="collapse"
+                                data-target="#bs-example-navbar-collapse-2">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="glyphicon glyphicon-plus"></span>
+                        </button>
+                        <a class="footer_thead footer-mynavbar-brand" id="footer_h1">选购及了解</a>
+                    </div>
+                    <div class="navbar-header collapse navbar-collapse footer-mynavbar-collapse"
+                         id="bs-example-navbar-collapse-2">
+
+                        <ul class=" nav navbar-nav footer-mynav footer-mynavbar-nav">
+                            <li class="footer_english "><a href="../ZBY/iphoneXFirst.html" target="">iPhone</a>
+                            </li>
+                            <li class="footer_english "><a href="../XWQ/huawei_fp.html" target="">Huawei</a>
+                            </li>
+                            <li class="footer_english "><a href="../WJY/xiaomi8/mi8.html" target="">Xiaomi</a>
+                            </li>
+                            <li class="footer_english "><a href="../DWJ/OPPOR15.html" target="">Oppo</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 footer-mycol-sm-2">
+                <div class="container-fluid footer-mycontainer-fluid">
+                    <div class="navbar-header footer-myheader">
+                        <button type="button" class="navbar-toggle collapsed footer-mybutton footer-mynavbar-toggle"
+                                data-toggle="collapse"
+                                data-target="#bs-example-navbar-collapse-3">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="glyphicon glyphicon-plus"></span>
+                        </button>
+                        <a class="footer_thead footer-mynavbar-brand footer_thead" id="footer_h2">服务与支持</a>
+                    </div>
+                    <div class="navbar-header collapse navbar-collapse footer-mynavbar-collapse"
+                         id="bs-example-navbar-collapse-3">
+                        <ul class=" nav navbar-nav footer-mynav footer-mynavbar-nav">
+                            <li><a href="" target="">翻新与优惠</a></li>
+                            <li><a href="" target="">分期付款</a></li>
+                            <li><a href="" target="">订单状态</a></li>
+                            <li><a href="" target="">以旧换新</a></li>
+                            <li><a href="" target="">零件</a></li>
+                            <li><a href="" target="">服务网点查询</a></li>
+                            <li><a href="" target="">保修政策</a></li>
+                            <li><a href="" target="">预约服务</a></li>
+                            <li><a href="" target="">维修进度查询</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 footer-mycol-sm-2">
+                <div class="container-fluid footer-mycontainer-fluid">
+                    <div class="navbar-header footer-myheader">
+                        <button type="button" class="navbar-toggle collapsed footer-mybutton  footer-mynavbar-toggle"
+                                data-toggle="collapse"
+                                data-target="#bs-example-navbar-collapse-4">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="glyphicon glyphicon-plus"></span>
+                        </button>
+                        <a class="footer_thead footer-mynavbar-brand footer_thead" id="footer_h3">关注我们</a>
+                    </div>
+                    <div class="navbar-header collapse navbar-collapse footer-mynavbar-collapse"
+                         id="bs-example-navbar-collapse-4">
+                        <ul class=" nav navbar-nav footer-mynav footer-mynavbar-nav">
+                            <li><a href="" target="">新浪微博</a></li>
+                            <li><a href="" target="">官方微信</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 footer-mycol-sm-2">
+                <div class="container-fluid footer-mycontainer-fluid">
+                    <div class="navbar-header footer-myheader">
+                        <button type="button" class="navbar-toggle collapsed footer-mybutton footer-mynavbar-toggle"
+                                data-toggle="collapse"
+                                data-target="#bs-example-navbar-collapse-5">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="glyphicon glyphicon-plus"></span>
+                        </button>
+                        <a class="footer_thead footer-mynavbar-brand" id="footer_h4">商务合作</a>
+                    </div>
+                    <div class="navbar-header collapse navbar-collapse footer-mynavbar-collapse"
+                         id="bs-example-navbar-collapse-5">
+
+                        <ul class=" nav navbar-nav footer-mynav footer-mynavbar-nav">
+                            <li><a href="" target="">开放平台</a></li>
+                            <li><a href="" target="">商务采购</a></li>
+                            <li><a href="" target="">品牌入驻</a></li>
+                            <li><a href="" target="">成为伙伴</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 footer-mycol-sm-2">
+                <div class="container-fluid footer-mycontainer-fluid">
+                    <div class="navbar-header footer-myheader">
+                        <button type="button" class="navbar-toggle collapsed footer-mybutton  footer-mynavbar-toggle"
+                                data-toggle="collapse"
+                                data-target="#bs-example-navbar-collapse-6">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="glyphicon glyphicon-plus"></span>
+                        </button>
+                        <a class="footer_thead footer-mynavbar-brand footer_thead" id="footer_h5">更多资讯</a>
+                    </div>
+                    <div class="navbar-header collapse navbar-collapse footer-mynavbar-collapse"
+                         id="bs-example-navbar-collapse-6">
+                        <ul class=" nav navbar-nav footer-mynav footer-mynavbar-nav">
+                            <li><a href="" target="">新闻资讯</a></li>
+                            <li><a href="" target="">联系我们</a></li>
+                            <li><a href="" target="">关于我们</a></li>
+                            <li><a href="" target="">活动</a></li>
+                            <li><a href="" target="">工作机会</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </nav>
+    <div style="padding-bottom:45px">
+        <div class="row footer-myrow">
+            <hr id="footer_hr" class="col-sm-12 col-xs-12 col-lg-offset-2 col-lg-9 col-md-10 "
+                style="padding-left: 0px;padding-right: 0px;">
+        </div>
+
+        <div id="footer_copyrightpart" class="row footer-myrow">
+            <div class="col-sm-12 col-xs-12 col-lg-offset-2  col-md-offset-1 col-lg-3 col-md-4 "
+                 style="padding-left: 45px;padding-right: 0px;">
+                <a id="footer_copyright_1">
+                    Copyright&nbsp;&nbsp;&copy;&nbsp;2018&nbsp;&nbsp;Dami.com&nbsp;&nbsp;保留所有权利</a>
+            </div>
+            <div class="col-lg-5 col-md-6 col-sm-12 col-xs-12" style="padding-left: 45px">
+                <a href="" target="" class="footer_four"
+                   style="color: #565656;font-family: 黑体;font-size: 12px;">隐私政策</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+                <a href="" target="" class="footer_four"
+                   style="color: #565656;font-family: 黑体;font-size: 12px;">使用条款</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+                <a href="" target="" class="footer_four"
+                   style="color: #565656;font-family: 黑体;font-size: 12px;">销售策略</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+                <a href="" target="" class="footer_four"
+                   style="color: #565656;font-family: 黑体;font-size: 12px;">法律信息</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+                <a href="" target="" class="footer_four"
+                   style="color: #565656;font-family: 黑体;font-size: 12px;">网络地图</a><br>
+
+            </div>
+        </div>
+        <div class="row footer-myrow">
+            <div class="col-lg-offset-2  col-md-offset-1 col-lg-6 col-md-6 col-sm-12 col-xs-12"
+                 style="padding-left: 45px">
+                <a id="footer_copyright_2"> 京公安网安备&nbsp;&nbsp;&nbsp;11010502008968&nbsp;&nbsp;&nbsp;
+                    <a href="http://www.miibeian.gov.cn/state/outPortal/loginPortal.action;jsessionid=mew3brmEvoFKl-z97HaBxx_OY5_V7bWTD4P8fII3Rj1LUHQtbnH6!1316315234"
+                       id="footer_number">京ICP备10214630</a>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script type="text/javascript">
+    function menuFixed(id) {
+        var obj = document.getElementById(id);
+        var _getHeight = obj.offsetTop;
+
+        window.onscroll = function () {
+            changePos(id, _getHeight);
+        }
+    }
+    function changePos(id, height) {
+        var obj = document.getElementById(id);
+        var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+        if (scrollTop < height) {
+            obj.style.position = 'relative';
+        } else {
+            obj.style.position = 'fixed';
+        }
+    }
+    function FontFixed() {
+
+    }
+</script>
+<script type="text/javascript">
+    window.onload = function () {
+        menuFixed('img-float');
+    }
+</script>
+<script type="text/javascript">
+    <!--
+    var winWidth = 0;
+    var winHeight = 0;
+    function findDimensions() //函数：获取尺寸
+    {
+//获取窗口宽度
+        if (window.innerWidth)
+            winWidth = window.innerWidth;
+        else if ((document.body) && (document.body.clientWidth))
+            winWidth = document.body.clientWidth;
+//获取窗口高度
+        if (window.innerHeight)
+            winHeight = window.innerHeight;
+        else if ((document.body) && (document.body.clientHeight))
+            winHeight = document.body.clientHeight;
+//通过深入Document内部对body进行检测，获取窗口大小
+        if (document.documentElement && document.documentElement.clientHeight && document.documentElement.clientWidth) {
+            winHeight = document.documentElement.clientHeight;
+            winWidth = document.documentElement.clientWidth;
+        }
+//        var obj =document.getElementsByClassName('').style ;
+        if (winWidth < 720) {
+            for (var i = 0; i < document.getElementsByClassName('img-float').length; i++) {
+                var k = document.getElementsByClassName('img-float')[i];
+                k.style.width = "100%";
+                k.style.Homepage_text_head = "20px";
+            }
+            var size1 = (winWidth / 1000) * 38 + "px";
+            for (var i = 0; i < document.getElementsByClassName('Homepage_text_head').length; i++) {
+                var k = document.getElementsByClassName('Homepage_text_head')[i];
+                k.style.fontSize = size1;
+            }
+
+            var size2 = (winWidth / 1000) * 20 + "px";
+            for (var i = 0; i < document.getElementsByClassName('Homepage_text_z').length; i++) {
+                var k = document.getElementsByClassName('Homepage_text_z')[i];
+                k.style.fontSize = size2;
+            }
+        }
+        else {
+            for (var i = 0; i < document.getElementsByClassName('img-float').length; i++) {
+                var k = document.getElementsByClassName('img-float')[i];
+                k.style.width = "50%";
+                k.style.Homepage_text_head = "38px";
+            }
+            var size3 = (winWidth / 1300) * 38 + "px";
+            for (var i = 0; i < document.getElementsByClassName('Homepage_text_head').length; i++) {
+                var k = document.getElementsByClassName('Homepage_text_head')[i];
+                k.style.fontSize = size3;
+            }
+            var size4 = (winWidth / 1000) * 20 + "px";
+            for (var i = 0; i < document.getElementsByClassName('Homepage_text_z').length; i++) {
+                var k = document.getElementsByClassName('Homepage_text_z')[i];
+                k.style.fontSize = size4;
+            }
+        }
+        if (1300 < winWidth) {
+//            var size2=(winWidth/1300)*38+"px";
+            for (var i = 0; i < document.getElementsByClassName('Homepage_text_head').length; i++) {
+                var k = document.getElementsByClassName('Homepage_text_head')[i];
+                k.style.fontSize = "38px";
+            }
+            // var size2=(winWidth/1000)*20+"px";
+            for (var i = 0; i < document.getElementsByClassName('Homepage_text_z').length; i++) {
+                var k = document.getElementsByClassName('Homepage_text_z')[i];
+                k.style.fontSize = "20px";
+            }
+        }
+    }
+    findDimensions();
+    //调用函数，获取数值
+    window.onresize = findDimensions;
+    //-->
+</script>
+<script type="text/javascript">
+    function menuFixed(id) {
+        var obj = document.getElementById(id);
+        var _getHeight = obj.offsetTop;
+
+        window.onscroll = function () {
+            changePos(id, _getHeight);
+        }
+    }
+    function changePos(id, height) {
+        var obj = document.getElementById(id);
+        var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+        if (scrollTop < height) {
+            obj.style.position = 'relative';
+        } else {
+            obj.style.position = 'fixed';
+        }
+    }
+</script>
+<script type="text/javascript">
+    window.onload = function () {
+        menuFixed('header_2');
+    }
+</script>
+
+<script src="js/jquery-1.11.3.js"> </script>
+<script>
+    // 显示头部登录用户名
+    $(function () {
+
+        //判断是否通过url传递了参数userId
+        var par = window.location.search;
+        console.log(par); //result:substring(1, searchURL.length);
+        par = par.substring(1, par.length);
+        var userId = null;
+        console.log(userId);
+        if((par != null) && (par != "")){
+            userId = par.split("&")[0].split("=")[1];
+            $.ajax({
+                type: "GET",
+                url: "idToUserName.php",
+                data:{"userId":userId},
+                success: function (msg) {
+                    //                msg指的是php执行成功返回的数据echo
+
+                    console.log(msg);
+                    //msg = JSON.parse(msg);
+                    if(msg != null){
+                        $("#user").html("账户&nbsp;"+msg);
+                    }
+                }
+            });
+            $("#user").text("账户 "+userId);
+        }
+    $("#user").click(function () {
+        if($("#user").text() == "登录"){
+            $("#user").attr("href","../ZFH/login/login.html");
+        }
+        else{
+            var str = "../ZFH/userInfo/userInfo.html?userId=";
+            str += userId;
+            $("#user").attr("href",str);
+        }
+    });
+        $("#order").click(function () {
+            if($("#user").text() == "登录"){
+                alert("您没有登录，请先登录！");
+                //$("#order").attr("href","../ZFH/login/login.html");
+            }
+            else{
+                var str = "../ZFH/order/order.html?userId=";
+                str += userId;
+                $("#order").attr("href",str);
+            }
+        });
+        $("#gouwudai").click(function () {
+            if($("#user").text() == "登录"){
+                alert("您没有登录，请先登录！");
+                //$("#order").attr("href","../ZFH/login/login.html");
+            }
+            else{
+                //var str = "../ZFH/order/order.html?userId=";
+                //str += userId;
+                var str = "../ZGQ/";
+                $("#gouwudai").attr("href",str);
+            }
+        });
+
+        $("#exit").click(function () {
+            $.ajax({
+                type: "GET",
+                url: "exit.php",
+                success: function (msg) {
+                    //                msg指的是php执行成功返回的数据echo
+
+                    console.log(msg);
+                    //msg = JSON.parse(msg);
+                    if(msg == null){
+                        $("#user").attr("href","../ZFH/login/login.html");
+                    }
+                    else{
+                        $("#user").attr("href","../ZFH/userInfo/userInfo.html");
+                    }
+                    $("#user").html("账户&nbsp;"+msg);
+                }
+            });
+        });
+    });
+</script>
+<!--</div> </div>-->
+<!--<div class="col-md-2"></div>-->
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery-1.11.3.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.js"></script>
+</body>
+</html>

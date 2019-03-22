@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html >
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>订购手机</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="js/jquery-1.4.2.js"></script>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <style>
+        body{
+            min-width: 982px;
+            max-width: 100%;
+            max-width: 100%;
+            overflow-x: hidden;
+        }
+        #container{
+            width:1880px;
+            height:2200px;
+            margin: auto;
+        }
+        #main{
+            margin:auto;
+            width:1200px;
+            height:600px;
+            position:relative;;
+            top:16px;
+        }
+        #left{
+            width: 460px;
+            height:540px;
+            position:relative;
+            float:left;
+            margin: auto;
+        }
+        #right{
+            width: 700px;
+            height: 600px;
+            position:relative;
+            float:right;
+            margin: auto;
+        }
+        a{
+            text-decoration: none;
+            text-underline: none;
+        }
+        a:hover{
+            text-underline: none;
+        }
+        #rec1{
+            width: 700px;
+            height:180px;
+            background: #F5F5F5;
+        }
+        p{
+            font-family: "Microsoft YaHei", "Segoe UI", "Lucida Grande", Helvetica, Arial, sans-serif;
+        }
+        .rec2{
+            width: 64px;
+            height: 22px;
+            border:1px solid #CA141D;
+            line-height: 22px;
+            position:relative;
+            left:86px;
+            text-align: center;
+            border-radius: 4px;
+        }
+        .rec3{
+            width: 130px;
+            height:30px;
+            line-height: 30px;
+            border:1px solid #3A3A3A;
+            text-align: center;
+            color:#3A3A3A;
+            top:-40px;
+            left: 70px;
+            position: relative;
+            border-radius: 4px;
+        }
+        .rec3 a{
+            color:#111;
+        }
+        .rec4{
+            width: 80px;
+            height:30px;
+            line-height: 30px;
+            border:1px solid #CA141D;
+            border-radius: 4px;
+            color:#3A3A3A;
+            text-align: center;
+            position:relative;
+            left:70px;
+        }
+        td{
+            width: 20px;
+            height:23px;
+        }
+        .rec5{
+            width: 170px;
+            height:46px;
+            line-height: 46px;
+            border-radius: 4px;
+            position:relative;
+            top:-186px;
+            left:100px;
+            color:#111;
+        }
+        #level1{
+            width: 1200px;
+            height: 170px;
+            margin: auto;
+            position: relative;
+            top:40px;
+        }
+        .rec6{
+            width:240px;
+            height:160px;
+            margin-right: 60px;
+            position: relative;
+            float: left;
+        }
+        .rec6 img{
+            width: 160px;
+            height: 170px;
+            position: relative;
+            top:20px;
+            cursor:pointer;
+            transition:all 1.2s;
+        }
+        .rec6 img:hover{
+            transform: scale(1.1);
+        }
+        #comment{}
+        #cs{}
+        a:visited{
+            color:#3A3A3A;
+        }
+        a:hover{
+            color:#63B2E8;
+            text-underline: none;
+        }
+        #cc3{
+            width: 1880px;
+            margin: auto;
+            position: relative;
+            top:100px;
+        }
+        a{
+            font-family: "Microsoft YaHei", "Segoe UI", "Lucida Grande", Helvetica, Arial, sans-serif;
+        }
+        p{
+            font-family: "Microsoft YaHei", "Segoe UI", "Lucida Grande", Helvetica, Arial, sans-serif;
+        }
+        li{
+            font-family: "Microsoft YaHei", "Segoe UI", "Lucida Grande", Helvetica, Arial, sans-serif;
+        }
+        #mainc{
+            width: 1880px;
+            margin: auto;
+        }
+        #mainc li{
+            margin-bottom: 18px;
+        }
+        #main2{
+            background: #F5F5F5;
+            width: 1880px;
+            height: 3700px;
+            position: relative;
+            top: -500px;
+            margin:0;
+        }
+        #main1{
+            width: 1880px;
+            height: 3700px;
+            position: relative;
+            top:60px;
+        }
+        #main2 li{
+            margin-bottom: 18px;
+        }
+        a{
+            font-size: 20px;
+            text-decoration: none;
+
+        }
+        a:hover{
+           text-decoration: none;
+          }
+        a:visited{
+            color: #A4A4A4;
+            text-decoration: none;
+        }
+        .rec7{
+            width: 140px;
+            height:40px;
+            line-height: 40px;
+            text-align: center;
+            border:1px solid #A4A4A4;
+            background:#F5F5F5;
+        }
+        .inputs{
+            width:30px;
+        }
+        #main3{
+            padding:0px;
+            margin:0px;
+            position:relative;
+            text-underline: none;
+        }
+        #mytable{
+            width:64px;
+        }
+        #mytable td{
+            width:20px;
+        }
+        body a:hover{
+            text-underline: none;
+        }
+
+    </style>
+    <script type="text/javascript">
+        $(function(){
+            calc(); //计算方法
+            //全选\反选
+            $("#selectAll").click(function(){
+                var $obj =$(this).attr("checked");
+                if($obj){
+                    $("input[name='ck1']").attr("checked",true);
+                }else{
+                    $("input[name='ck1']").attr("checked",false);
+                }
+            });
+
+            //删除所选
+            $("#deleteSelete").click(function(){
+                $("input[name='ck1']:checked").each(function(){
+                    $(this).parent().parent().remove();
+                });
+                calc();
+            });
+            //单击删除
+            $("#mytable .delete").click(function(){
+                $(this).parent().parent().remove();
+                calc()
+            });
+            //单机商品数量+
+            $("#mytable .add").click(function(){
+                //获得单前数量
+                var $goodsCount= parseInt($(this).prev().val());
+                $(this).prev().val($goodsCount+1);
+                calc();
+            });
+            //单机商品数量-
+            $("#mytable .cut").click(function(){
+                //获得单前数量
+                var $goodsCount= parseInt($(this).next().val());
+                $(this).next().val($goodsCount<=1?1:$goodsCount-1);
+                calc();
+            });
+
+            //计算价格
+            function calc(){
+                //找到共有对象
+                var $obj = $("input[name='deleteGoods']");
+                //var $obj = $("#mytable .delete");//也可以获得对象
+                var sum =0;
+                var count=1;
+                //循环共有对象，让它循环获得我们想要的对象的值
+                $obj.each(function(){
+                    //获得商品价格
+                    var $price = parseInt($(this).parent().prev().prev().prev().html());
+                    //获得商品数量
+                    var $count = parseFloat($(this).parent().prev().prev().find("input").val());
+                    var timSum =$count*$price;
+                    $(this).parent().prev().html("￥"+timSum);//给商品小计赋值
+                    sum +=timSum;  //累加计算总价
+                });
+                $("#sum").html(sum);
+            };
+            //绑定所有输入数量输入框的事件,输入值后自动计算
+            $("input[name='inputCount']").each(function(){
+                $(this).keyup(function(){
+                    var num = $(this).val();
+                    if(num!=""){
+                        calc();
+                    }else{
+                        $("#mytable .cut").next().val(1);  //赋一个默认数量1
+                        calc();
+                    }
+                });
+            });
+            $("#gouwudai").click(function() {
+                //alert("1111");
+                var type= "huawei10";
+                var contentVa = "64GB";
+                var color="black";
+
+                $.ajax({
+                    type: "post",
+                    url: "../ZBY/demo_test_post.php",
+                    data: {
+                        "type": type,
+                        "shape": color,
+                        "content":  contentVa
+                    },
+                    success: function(msg) {
+                        var href = "../ZGQ/";
+                        href+="?pid=";
+                        href+=msg;
+                        window.location.href=href;
+                    }
+                });
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        //===========================点击展开关闭效果====================================
+        function openShutManager(oSourceObj,oTargetObj,shutAble,oOpenTip,oShutTip){
+            var sourceObj = typeof oSourceObj == "string" ? document.getElementById(oSourceObj) : oSourceObj;
+            var targetObj = typeof oTargetObj == "string" ? document.getElementById(oTargetObj) : oTargetObj;
+            var openTip = oOpenTip || "";
+            var shutTip = oShutTip || "";
+            if(targetObj.style.display!="none"){
+                if(shutAble) return;
+                targetObj.style.display="none";
+                if(openTip&&shutTip){
+                    sourceObj.innerHTML = shutTip;
+                }
+            } else {
+                targetObj.style.display="block";
+                if(openTip&&shutTip){
+                    sourceObj.innerHTML = openTip;
+                }
+            }
+        }
+        function setHeight() {
+            var iframe = document.getElementById('iframe-bottom');
+            var body = iframe.contentWindow.document.body;
+            iframe.height = 500;//还原成iframe里面center的高度，然后延时设置iframe高度为所加载页面的实际滚动高度
+            setTimeout(function () { iframe.height = body.scrollHeight; }, 100)
+
+        }
+    </script>
+</head>
+<body>
+<div id="container">
+    <iframe src="DamiNewHeader-1.html" width="100%" height="100px" scrolling="no" frameborder="0px"
+            align="center" style="position: relative;top:15px;left:-8px;"></iframe>
+    <hr  style="width: 1866px;color:#EAEAEA;border: 6px solid #EAEAEA;position: relative;top:20px;" align="center" />
+    <p style="position:relative;top:20px;left: 340px;font-size: 16px;"><a href="huawei_fp.html">华为首页</a>&nbsp;
+        &nbsp;&gt;&nbsp;&nbsp;<a href="hw_honor.html">华为手机及其他商品
+    </a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="hw_order.html">当前页面</a></p>
+    
+    <div id="main">
+        <div id="left">
+            <img width="320px" height="430px"style="position: relative;left:30px;margin-bottom:10px;
+             margin-right: 70px;" src="xwq_img/hw_ry8-6.jpg" name="x1">
+                <img src="xwq_img/hw_rx4.jpg" width="60px" height="100px" style="
+                position: relative;margin-right: 20px;left:-20px;">
+            <img src="xwq_img/hw_honor3.jpg" width="60x"  height="100px" style="
+            position: relative;margin-right: 20px;left:-20px;">
+            <img src="xwq_img/hw_honor4.jpg" width="60px"  height="100px" style="
+            position: relative;margin-right:20px;left:-20px;">
+            <img src="xwq_img/hw_ry8-5.jpg" width="60px"  height="100px" style="
+            position: relative;margin-right: 20px;left:-20px;">
+            <img src="xwq_img/hw_ry8-6.jpg" width="60px"  height="100px" style="
+            position: relative;left:-20px;">
+        </div>
+        <div id="right">
+           <p style="font-size: 21px;color: #3A3A3A;">荣耀10 AI摄影手机 6GB+64GB 幻夜黑 全网通 双卡双待 高配版</p>
+            <a href="hw_order.html"><p style="font-size: 14px;color: #CA141D;text-decoration: underline;">下单立减100，
+                到手价2499元起，赠荣耀入耳式耳机+自拍杆，享双倍积分，晒单送499元美食卡</p></a>
+            <div id="rec1">
+                <p><span style="color:#3A3A3A;font-size: 16px;">价  &nbsp;&nbsp;&nbsp;&nbsp;格</span><span style="color: #CA141D;
+                text-underline:none;font-size: 20px;">&nbsp;&nbsp;&nbsp;&nbsp;￥2599.00</span></p>
+                <div style="margin-bottom: 8px;"></div>
+                <div style="position: relative;top:10px;"><p style="position:relative;top:-16px;color:#3A3A3A;font-size: 16px;"><span
+                        style="font-size: 16px;color:#111;margin-bottom: 8px;">
+                    促  &nbsp;&nbsp;&nbsp;
+                    销</span><a style="
+                text-underline:none;font-size: 16px;color:#3A3A3A;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;赠送充电宝+华为手环</a></p>
+                </div>
+                <div style="position: relative;top:16px;">
+                    <p><div class="rec2" style="position:relative;top:-26px;">
+                    <span style="line-height: 22px;font-size: 14px;color:#CA141D;">下单立减</span>
+                </div><span style="font-size: 14px;position:relative;left:160px;top:-48px;color:#3A3A3A;">7.1-7.3限时下单立减100元，机会不容错过~</span></p>
+
+                    <p><div class="rec2" style="position:relative;top:-50px;margin-bottom: 8px;">
+                    <span style="line-height: 22px;font-size: 14px;color:#CA141D;">整点赠送</span>
+                </div><span style="font-size: 14px;position:relative;left:160px;top:-78px;color:#3A3A3A;">10:00/14:00/20:00 限量送耳机</span></p>
+
+                    <p><div class="rec2" style="position:relative;top:-78px;margin-bottom: 8px;">
+                    <span style="line-height: 22px;font-size: 14px;color:#CA141D;">商品赠券</span>
+                </div><span style="font-size: 14px;position:relative;left:160px;top:-108px;color:#3A3A3A;">7.15-7.20支付后赠送35元优惠券</span></p>
+
+                    <p ><div class="rec2" style="position:relative;top:-108px;margin-bottom: 8px;">
+                    <span style="line-height: 22px;font-size: 14px;color:#CA141D;">积分翻倍</span>
+                </div><span style="font-size: 14px;position:relative;left:160px;top:-138px;color:#3A3A3A;">活动赠送翻倍积分，积分可抵现~</span></p>
+                </div>
+            </div>
+            <p style="font-size: 14px;color:#3A3A3A;">服务说明 &nbsp;&nbsp;已满48元已免运费 &nbsp;&nbsp;由华为商城负责发货，&nbsp;&nbsp;并提供售后服务</p>
+            <p style="font-size: 14px;color:#3A3A3A;">商品编码  &nbsp;&nbsp;2601010038103</p><br>
+            <p style="font-size: 14px;color:#3A3A3A;">选择版本
+            <div class="rec3" style="border: 1px solid #1285FF;" ><span style="position: relative;font-size: 14px;">全网通6GB+64GB</span></div>
+            <div class="rec3"  style="position: relative;left:220px;top:-70px;" ><span style="font-size: 14px;">全网通6GB+128GB</span></div>
+            </p>
+            <P style="position: relative;top:-106px;left:400px;color:#3A3A3A;">请选择颜色</P>
+            <select  style="width:80px;position: relative;top:-136px;left: 520px;color:#3A3A3A;" onChange="document.x1.src=options[selectedIndex].value"
+                     onChange="document.x1.a=options[selectedIndex].value">
+                <option value="xwq_img/hw_ry8-6.jpg">黑色</option>
+                <option value="xwq_img/hw_rx9.jpg">粉色</option>
+                <option value="xwq_img/hw_ry8-5.jpg">蓝色</option>
+                <option value="xwq_img/hw_rx4.jpg">红色</option>
+            </select>
+            <br><br><br>
+           <div style="position: relative;top:-70px;">
+               <p style="position:relative;top:-70px;font-size: 14px;color: #3A3A3A;">
+                   选择套餐<div class="rec4" style="position:relative;top:-106px;font-size: 14px;" align="center">官方标配</div></p>
+               <br>
+               <p style="font-size: 14px;color:#3A3A3A;position: relative;top:-120px;">已选择商品: &nbsp;&nbsp;&nbsp;&nbsp;
+                 幻夜黑 / 全网通 6GB+64GB / 官方标配
+               </p>
+               <div id="main3" style="position: relative;top: -20px;">
+               <table cellspacing="0px" cellpadding="0px" style=" border:1px solid #D6D6D6;height: 40px;width:560px;
+            position: relative;top:-120px;left:0px;" id="mytable">
+                   <tr>
+                       <td width="60px" height="24px">单价:&nbsp;&nbsp;</td>
+                       <span style="position: relative;top:-90px;left:50px;">￥</span><td>2599</td>
+                       <td style="line-height: 0px;">
+                           <a class="cut" style="position: relative;left:-16px;">-</a>
+                           <input type="text" size="4" value="1" style="width:20px" name="inputCount"/>
+                           <a class="add" style="position: relative;left:10px;top:0px;">+&nbsp;&nbsp;&nbsp;
+                               &nbsp;&nbsp;</a>
+                       </td>
+                       <td></td>
+                       <td><input type="button" value="重置"  name="deleteGoods"></td>
+                       <td  >总费用：<span id="sum"></span></td>
+                   </tr>
+               </table>
+                   </div>
+               <br> <br><br>
+               <p>
+                   <a href="" style="color:#111;"><div class="rec5" align="center" style="background: #FC600C;
+               left: 0px;" id="goueudai">加入购物袋</div></a>
+               <a href="" style="color:#111;"><div class="rec5" align="center" style="background: #CA151D;
+               left: 200px;top:-232px;">立即下单</div></a>
+               </p>
+           </div>
+        </div>
+    </div>
+    <hr  style="width: 1866px;color:#EAEAEA;position: relative;top:20px;" align="center" />
+    <p style="font-size: 18px;margin: auto;position: relative;top:20px;" align="center">-关联商品-</p>
+
+    <div id="level1">
+        <div class="rec6">
+            <img src="xwq_img/hw_yyjd.jpg">
+            <p style="position: relative;left:160px;top:-100px;">荣耀音乐小巨蛋</p>
+            <p style="color: #CA141D;position: relative;left: 155px;top:-100px;">￥199</p>
+        </div>
+        <div class="rec6">
+            <img src="xwq_img/hw_bhk.jpg">
+            <p style="position: relative;left:140px;top:-100px;">荣耀10 PC保护壳</p>
+            <p style="color: #CA141D;position: relative;left: 135px;top:-100px;">￥39</p>
+        </div>
+        <div class="rec6">
+            <img src="xwq_img/hw_bhk2.jpg">
+            <p style="position: relative;left:140px;top:-100px;">荣耀10透明保护壳</p>
+            <p style="color: #CA141D;position: relative;left: 135px;top:-100px;">￥69</p>
+        </div>
+        <div class="rec6" style="position: relative;left: 20px;">
+            <img src="xwq_img/hw_v10.jpg">
+            <p style="position: relative;left:160px;top:-100px;">荣耀V10</p>
+            <p style="color: #CA141D;position: relative;left: 155px;top:-100px;">￥2699</p>
+        </div>
+    </div>
+    <p style="position:relative;left:740px;font-size:20px;top:80px;color:#111;"><a href="#cc3" style="color:#A4A4A4;">
+        商品参数</a>&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#comment" style="color:#A4A4A4;">买家评论</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;<a href="hw_order.html">订购</a></p>
+    <a name="cc3"></a>
+    <div id="cc3">
+        <span style="position:relative; left: 340px;font-size: 18px;">规格参数</span>
+        <hr style="width: 1200px;margin: auto;color:#CCCCCC;top:10px;position:relative;margin-bottom: 40px;margin-top: 10px;">
+        <div id="mainc" style="position: relative;top:-10px;">
+            <span style="font-size: 24px;position: relative;left: 340px;">主要参数</span>
+            <ul style="list-style:none;font-size: 14px;left: 440px;position: relative;top:-36px;">
+                <li style="color: #111;">传播时间</li>
+                <li style="color: #111;">上市时间</li>
+                <li style="color: #111;">CPU型号</li>
+                <li style="color: #111;">CPU核数</li>
+                <li style="color: #111;">双卡</li>
+                <li style="color: #111;">屏幕尺寸</li>
+                <li style="color: #111;">屏幕色彩</li>
+                <li style="color: #111;">分辨率</li>
+                <li style="color: #111;">运行内存（RAM）</li>
+                <li style="color: #111;">机身内存（ROM）</li>
+                <li style="color: #111;">前置摄像头</li>
+                <li style="color: #111;">后置摄像头</li>
+                <li style="color: #111;">电池容量</li>
+            </ul>
+            <div style="position: relative;top:-18px;">
+            <ul style="list-style:none;font-size: 14px;position: relative;left:710px;top:-516px;">
+                <li style="color: #111;">荣耀10</li>
+                <li style="color: #111;">2018年4月</li>
+                <li style="color: #111;">HUAWEI Kirin 970 （麒麟970）</li>
+                <li style="color: #111;">八核 + 微智核i7</li>
+                <li style="color: #111;">双卡双待单通</li>
+                <li style="color: #111;">5.84英寸</li>
+                <li style="color: #111;">1600万色，色彩饱和度（NTSC）：96%（典型值</li>
+                <li style="color: #111;">2280 x 1080 像素</li>
+                <li style="color: #111;">6GB（备注：可使用的内存容量小于此值，因为手机软件占用的空间）</li>
+                <li style="color: #111;">64GB（备注：可使用的内存容量小于此值，因为手机软件占用的空间）</li>
+                <li style="color: #111;">2400万像素，f/2.0光圈，支持固定焦距；备注：不同拍照模式的照片像素可能有差异，
+                    请以实际为准。</li>
+                <li style="color: #111;">1600万（彩色）像素＋2400万（黑白）像素，f/1.8光圈，支持自动对焦
+                    （深度对焦/相位对焦/反差对焦；</li>
+                <li style="color: #111;">3400mAh（典型值）</li>
+            </ul>
+            </div>
+        </div>
+        <p><a href="###" onclick="openShutManager(this,'main2',false,'' +'查看全部参数',
+     '查看全部参数')"><div class="rec7" style="position: relative;top:-500px;left: 340px;font-size:
+      16px;">查看全部参数</div></a></p>
+        <div id="main2" style="display:none">
+            <div id="main1">
+                <span style="font-size: 24px;position: relative;left: 340px;">主体</span>
+                <ul style="list-style:none;font-size: 14px;left: 440px;position: relative;top:-36px;">
+                    <li style="color: #111;">品牌</li>
+                    <li style="color: #111;">传播名</li>
+                    <li style="color: #111;">上市时间</li>
+                    <li style="color: #111;">操作系统</li>
+                    <li style="color: #111;">用户界面</li>
+                    <li style="color: #111;">CPU型号</li>
+                    <li style="color: #111;">CPU核数</li>
+                    <li style="color: #111;">CPU主频</li>
+                    <li style="color: #111;">GPU</li>
+                    <li style="color: #111;">NPU</li>
+                    <li style="color: #111;">双卡</li>
+                    <li style="color: #111;">输入方式</li>
+                    <li style="color: #111;">按键类型</li>
+                </ul>
+               <div style="position: relative;top:-14px;">
+                   <ul style="list-style:none;font-size: 14px;position: relative;left:710px;top:-516px;">
+                       <li style="color: #111;">荣耀</li>
+                       <li style="color: #111;">荣耀10</li>
+                       <li style="color: #111;">2018年4月</li>
+                       <li style="color: #111;">Android 8.1</li>
+                       <li style="color: #111;">EMUI 8.1</li>
+                       <li style="color: #111;">HUAWEI Kirin 970 （麒麟970）</li>
+                       <li style="color: #111;">八核 + 微智核i7</li>
+                       <li style="color: #111;">4×Cortex A73 2.36GHz+4×Cortex A53 1.8GHz</li>
+                       <li style="color: #111;">Mali-G72 MP12</li>
+                       <li style="color: #111;">神经网络处理单元</li>
+                       <li style="color: #111;">双卡双待单通</li>
+                       <li style="color: #111;">百度输入法华为版</li>
+                       <li style="color: #111;">指纹导航（兼容虚拟导航键）</li>
+                   </ul>
+               </div>
+                <hr style="width: 1200px;margin: auto;color:#CCCCCC;top:-500px;position:relative;margin-bottom: 20px;margin-top: 10px;">
+
+                <span style="font-size: 24px;position: relative;left: 340px;top:-496px;">网络</span>
+                <ul style="list-style:none;font-size: 14px;left: 440px;position: relative;top:-532px;">
+                    <li style="color: #111;position: relative;margin-bottom: 126px;top:10px;">网络格式</li>
+                    <li style="color: #111;position: relative;margin-bottom: 116px;top:10px;">网络频率</li>
+                    <li style="color: #111;position: relative;margin-bottom: 96px;top:8px;">数据业务</li>
+                    <li style="color: #111;">浏览器</li>
+                </ul>
+              <ul style="position: relative;top:-26px;">
+                  <ul style="list-style:none;font-size: 14px;position: relative;left:670px;top:-516px;">
+                      <li style="color: #111;width: 700px;position: relative;top:-430px;">支持移动/联通/电信 4G+/4G/3G/2G；
+                          主卡：4G网络制式：移动4G（TD-LTE）/联通4G（TD-LTE/LTE FDD）/电信 4G（TD-LTE/LTE FDD）；3G网络制式：移动
+                          3G（TD-SCDMA）/联通3G（WCDMA）/电信3G（CDMA 2000）2G网络制式；移动2G：（GSM）/联通2G（GSM）/电信2G（CDMA
+                          1X）；副卡：4G网络制式：移动4G（TD-LTE）/联通4G（TD-LTE/LTE FDD）/电信 4G（TD-LTE/LTE FDD）；3G网络制式：
+                          联通3G（WCDMA）；2G网络制式：移动2G（GSM）/联通2G（GSM）/电信2G（CDMA 1X）；说明：*不支持同时插入两张电
+                          信卡；*卡槽 1、2 可任意切换为主卡、副卡；*双卡4G网络使用，需要根据运营商网络和相关业务部署情况确定是否支持。
+                          后续手机软件功能可能跟随网络匹配升级，请以手机实际版本支持功能为准。</li>
+                      <li style="color: #111;width: 700px;position: relative;top:-430px;">主卡：LTE FDD： B1/B3/B5/B8；
+                          TD-LTE： B34/B38/B39/B40/B41 ；WCDMA： B1/B5/B8；TD-SCDMA： B34/B39；CDMA（主副卡二选一）：BC0（ 800MHz）
+                          ；（仅限中国电信（中国大陆+澳门））；GSM：B2/B3/B5/B8（850/900/1800/1900 MHz）；副卡：LTE FDD： B1/B3/B5/
+                          B8；TD-LTE： B34/B38/B39/B40/B41；WCDMA： B1/B5/B8；CDMA（主副卡二选一）：BC0（ 800MHz）；（仅限中国电信
+                          （中国大陆+澳门））；GSM： B2/B3/B5/B8（850/900/1800/1900 MHz）；备注：各个地区的网络和频段可能有所不同，
+                          具体取决于当地运营商以及您所在的位置。</li>
+                      <li style="color: #111;width: 700px;position: relative;top:-430px;margin-bottom:30px;">
+                          TD-LTE/LTE FDD/TD-SCDMA/WCDMA/HSPA+/DC-HSDPA/CDMA2000/CDMA1X/EDGE/GPRS备注：*各个地区的网络和频段可能有
+                          所不同，具体取决于当地运营商以及您所在的位置。*4G业务需要对应的4G卡支持，在手机开启4G开关时，4G网络会频
+                          繁拒绝没有开通4G的SIM卡，导致频繁掉网。您可以选择关闭4G业务开关，或者联系对应的运营商开通4G业务。*CDMA
+                          仅限中国电信（中国大陆+澳门）。</li>
+                      <li style="color: #111;width: 700px;position: relative;top:-430px;">支持（华为EMUI 8.1浏览器）</li>
+                  </ul>
+              </ul>
+                <hr style="width: 1200px;margin: auto;color:#CCCCCC;top:-900px;position:relative;margin-bottom: 20px;margin-top: 10px;">
+                <span style="font-size: 24px;position: relative;left: 340px;top:-894px">屏幕</span>
+                <ul style="list-style:none;font-size: 14px;left: 440px;position: relative;top:-930px;">
+                    <li style="color: #111;">屏幕尺寸</li>
+                    <li style="color: #111;">屏幕色彩</li>
+                    <li style="color: #111;">屏幕类型</li>
+                    <li style="color: #111;">分辨率</li>
+                    <li style="color: #111;">屏幕像素密度PPI</li>
+                    <li style="color: #111;">触摸屏</li>
+                </ul>
+              <div style="position: relative;top:-6px;">
+                  <ul style="list-style:none;font-size: 14px;position: relative;left:710px;top:-1154px;">
+                      <li style="color: #111;">5.84英寸</li>
+                      <li style="color: #111;">1600万色，色彩饱和度（NTSC）：96%（典型值）</li>
+                      <li style="color: #111;">TFT LCD（IPS）</li>
+                      <li style="color: #111;">2280 x 1080 像素</li>
+                      <li style="color: #111;">432 PPI</li>
+                      <li style="color: #111;">多点触控触摸屏</li>
+                  </ul>
+              </div>
+                <hr style="width: 1200px;margin: auto;color:#CCCCCC;top:-1100px;position:relative;margin-bottom: 20px;margin-top: 10px;">
+                <span style="font-size: 24px;position: relative;left: 340px;top:-1094px">传感器</span>
+                <ul style="list-style:none;font-size: 14px;left: 440px;position: relative;top:-1130px;">
+                    <li style="color: #111;">环境光传感器</li>
+                    <li style="color: #111;">红外传感器</li>
+                    <li style="color: #111;">指纹传感器</li>
+                    <li style="color: #111;">陀螺仪</li>
+                    <li style="color: #111;">指南针</li>
+                    <li style="color: #111;margin-bottom: 40px;">NFC</li>
+                    <li style="color: #111;">接近光传感器</li>
+                    <li style="color: #111;">重力传感器</li>
+                </ul>
+              <div style="position: relative;top:-10px;">
+                  <ul style="list-style:none;font-size: 14px;position: relative;left:710px;top:-1448px;">
+                      <li style="color: #111;">支持</li>
+                      <li style="color: #111;">支持</li>
+                      <li style="color: #111;">支持</li>
+                      <li style="color: #111;">支持</li>
+                      <li style="color: #111;">支持</li>
+                      <li style="color: #111;width: 700px;">
+                          支持读卡器模式、点对点模式、卡模拟模式（华为钱包支付，SIM卡支付*，HCE支付）；备注：*SIM卡支付所使用的SIM
+                          卡只能放在SIM1卡槽；*SIM 卡支付需要当地SIM卡支持</li>
+                      <li style="color: #111;">支持</li>
+                      <li style="color: #111;">支持</li>
+                  </ul>
+              </div>
+                <hr style="width: 1200px;margin: auto;color:#CCCCCC;top:-1400px;position:relative;margin-bottom: 20px;margin-top: 10px;">
+                <span style="font-size: 24px;position: relative;left: 340px;top:-1394px">存储</span>
+                <ul style="list-style:none;font-size: 14px;left: 440px;position: relative;top:-1430px;">
+                    <li style="color: #111;">运行内存（RAM）</li>
+                    <li style="color: #111;">机身内存（ROM）</li>
+                </ul>
+                <ul style="list-style:none;font-size: 14px;position: relative;left:710px;top:-1506px;">
+                    <li style="color: #111;">6GB（备注：可使用的内存容量小于此值，因为手机软件占用的空间）</li>
+                    <li style="color: #111;">64GB（备注：可使用的内存容量小于此值，因为手机软件占用的空间）</li>
+                </ul>
+
+                <hr style="width: 1200px;margin: auto;color:#CCCCCC;top:-1500px;position:relative;margin-bottom: 20px;margin-top: 10px;">
+                <span style="font-size: 24px;position: relative;left: 340px;top:-1494px">娱乐功能</span>
+                <ul style="list-style:none;font-size: 14px;left: 440px;position: relative;top:-1530px;">
+                    <li style="color: #111;">彩信功能</li>
+                </ul>
+                <ul style="list-style:none;font-size: 14px;position: relative;left:710px;top:-1566px;">
+                    <li style="color: #111;">支持</li>
+                </ul>
+
+                <hr style="width: 1200px;margin: auto;color:#CCCCCC;top:-1550px;position:relative;margin-bottom: 40px;margin-top: 10px;">
+                <span style="font-size: 24px;position: relative;left: 340px;top:-1570px">拍摄功能</span>
+                <ul style="list-style:none;font-size: 14px;left: 440px;position: relative;top:-1610px;">
+                    <li style="color: #111;margin-bottom: 40px;">后置摄像头</li>
+                    <li style="color: #111;">前置摄像头</li>
+                    <li style="color: #111;">指纹传感器</li>
+                    <li style="color: #111;">闪光灯</li>
+                    <li style="color: #111;">视频拍摄</li>
+                    <li style="color: #111;">变焦模式</li>
+                    <li style="color: #111;margin-bottom: 70px;">其他特性</li>
+                    <li style="color: #111;">接近光传感器</li>
+                    <li style="color: #111;">重力传感器</li>
+                </ul>
+                <div style="position: relative;top:-10px;">
+                    <ul style="list-style:none;font-size: 14px;position: relative;left:710px;top:-2020px;">
+                        <li style="color: #111;width: 700px;">1600万（彩色）像素＋2400万（黑白）像素，f/1.8光圈，支持自动对焦（深度对焦/相位对焦
+                            /反差对焦）；备注：不同拍照模式的照片像素可能有差异，请以实际为准。</li>
+                        <li style="color: #111;">2400万像素，f/2.0光圈，支持固定焦距；备注：不同拍照模式的照片像素可能有差异，请
+                            以实际为准。</li>
+                        <li style="color: #111;">背照式</li>
+                        <li style="color: #111;">后置单LED闪光灯</li>
+                        <li style="color: #111;">后置摄像头：支持4K视频录制；前置摄像头：支持1080P视频录制</li>
+                        <li style="color: #111;">后置摄像头：双摄变焦；前置摄像头：数字变焦</li>
+                        <li style="color: #111;width: 700px;">
+                            AI摄影、乐趣AR（AR合影、手势特效、趣味变装、百变背景）、人像模式、大光圈拍照、画师模式、3D创意拍、动态照片、
+                            拍照、专业拍照、录像、专业录像、3D动态全景、黑白相机、HDR、超级夜景、全景照、流光快门（含车水马龙、光绘
+                            涂鸦、丝绢流水、绚丽星轨）、延时摄影、慢动作、连拍、滤镜、大光圈录像、定时拍照、声控拍照、笑脸抓拍、熄屏
+                            快拍等。备注：需用户下载支持功能：水印、智能识物、美食、文档校正</li>
+                        <li style="color: #111;">支持</li>
+                        <li style="color: #111;">支持</li>
+                    </ul>
+                </div>
+                <hr style="width: 1200px;margin: auto;color:#CCCCCC;top:-2000px;position:relative;margin-bottom: 20px;margin-top: 10px;">
+                <span style="font-size: 24px;position: relative;left: 340px;top:-1994px">传感器</span>
+                <ul style="list-style:none;font-size: 14px;left: 440px;position: relative;top:-2030px;">
+                    <li style="color: #111;">WLAN</li>
+                    <li style="color: #111;">WLAN协议</li>
+                    <li style="color: #111;">WLAN 频率</li>
+                    <li style="color: #111;">多屏互动</li>
+                    <li style="color: #111;">蓝牙</li>
+                    <li style="color: #111;">红外遥控</li>
+                    <li style="color: #111;">GPS</li>
+                    <li style="color: #111;">Glonass</li>
+                    <li style="color: #111;">北斗</li>
+                    <li style="color: #111;">AGPS</li>
+                </ul>
+                <div style="position: relative;top:-10px;">
+                <ul style="list-style:none;font-size: 14px;position: relative;left:710px;top:-2400px;">
+                    <li style="color: #111;">支持</li>
+                    <li style="color: #111;">802.11a/b/g/n/ac</li>
+                    <li style="color: #111;">2.4G和5G</li>
+                    <li style="color: #111;">支持</li>
+                    <li style="color: #111;">BT4.2，支持BLE，支持aptX，支持aptX HD高清音频，支持HWA</li>
+                    <li style="color: #111;">支持</li>
+                    <li style="color: #111;">支持</li>
+                    <li style="color: #111;">支持</li>
+                    <li style="color: #111;">支持</li>
+                    <li style="color: #111;">支持</li>
+                </ul>
+                  </div>
+                <hr style="width: 1200px;margin: auto;color:#CCCCCC;top:-2390px;position:relative;margin-bottom: 20px;margin-top: 10px;">
+                <span style="font-size: 24px;position: relative;left: 340px;top:-2376px">个人助理</span>
+                <ul style="list-style:none;font-size: 14px;left: 440px;position: relative;top:-2414px;">
+                    <li style="color: #111;">Office</li>
+                    <li style="color: #111;">电子邮件</li>
+                    <li style="color: #111;">闹钟</li>
+                    <li style="color: #111;">录音</li>
+                    <li style="color: #111;">通话录音</li>
+                </ul>
+                <div style="position: relative;top:-10px;">
+                <ul style="list-style:none;font-size: 14px;position: relative;left:710px;top:-2600px;">
+                    <li style="color: #111;">支持（内置WPS Office，支持OFFICE文档查看和编辑，支持pdf文档查看，支持zip解压和压缩等）</li>
+                    <li style="color: #111;">支持（POP3/IMAP/Exchange）</li>
+                    <li style="color: #111;">支持（支持关机闹钟）</li>
+                    <li style="color: #111;">支持</li>
+                    <li style="color: #111;">支持</li>
+                </ul>
+                    </div>
+                <hr style="width: 1200px;margin: auto;color:#CCCCCC;top:-2590px;position:relative;margin-bottom: 20px;margin-top: 10px;">
+                <span style="font-size: 24px;position: relative;left: 340px;top:-2576px">其他</span>
+                <ul style="list-style:none;font-size: 14px;left: 440px;position: relative;top:-2614px;">
+                    <li style="color: #111;">电池类型</li>
+                    <li style="color: #111;">电池容量</li>
+                    <li style="color: #111;">快充</li>
+                    <li style="color: #111;">数据线接口</li>
+                    <li style="color: #111;">耳机接口</li>
+                    <li style="color: #111;">SIM卡类型</li>
+                    <li style="color: #111;">软件名称</li>
+                    <li style="color: #111;">机身尺寸</li>
+                    <li style="color: #111;">机身重量</li>
+                </ul>
+                <div style="position: relative;top:-10px;">
+                    <ul style="list-style:none;font-size: 14px;position: relative;left:710px;top:-2950px;">
+                        <li style="color: #111;">锂聚合物电池</li>
+                        <li style="color: #111;">3400mAh（典型值）</li>
+                        <li style="color: #111;">支持（超级快充5V/4.5A）</li>
+                        <li style="color: #111;">Type-C，USB 2.0</li>
+                        <li style="color: #111;">3.5mm</li>
+                        <li style="color: #111;">SIM卡1：nano卡；SIM卡2：nano卡</li>
+                        <li style="color: #111;">华为终端智能设备人机交互通信软件V5.0</li>
+                        <li style="color: #111;">149.6mm×71.2mm×7.7mm（备注：受产品配置和制造工艺影响，实际机身尺寸或有差异，请以实物为准）</li>
+                        <li style="color: #111;">约153克（含电池）（备注：受产品配置和制造工艺影响，实际机身重量或有差异，请以实物为准）</li>
+                    </ul>
+                </div>
+                <hr style="width: 1200px;margin: auto;color:#CCCCCC;top:-2920px;position:relative;margin-bottom: 20px;margin-top: 10px;">
+                <span style="font-size: 24px;position: relative;left: 340px;top:-2910px">商品编码</span>
+                <ul style="list-style:none;font-size: 14px;left: 440px;position: relative;top:-2934px;">
+                    <li style="color: #111;">2601010038103</li>
+                </ul>
+            </div>
+            <p><a href="###" onclick="openShutManager(this,'main2',false,'' + '收起参数详情'
+     )"><div class="rec7" style="position: relative;top:-80px;left: 340px;font-size:
+      16px;">收起参数详情</div></a></p>
+        </div>
+    </div>
+    <a name="comment"></a>
+    <div id="comment"><iframe  align="center" src="hw_comment.html" width="100%" height="800px" scrolling="no"
+                               frameborder="0px" style="position: relative;top:-400px;right:8px;"></iframe></div>
+    <iframe  align="center" src="DamiNewFooter.html" width="100%" height="510px" scrolling="no"
+             frameborder="0px" style="position: relative;top:-300px;right:8px;"></iframe>
+</div>
+</body>
+</html>

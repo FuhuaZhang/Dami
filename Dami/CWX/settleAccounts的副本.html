@@ -1,0 +1,650 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>结账</title>
+		<link rel="stylesheet" type="text/css" href="settleAccounts.css" />
+		<script src="jquery/js/jquery-1.11.3.js"></script>
+	</head>
+
+	<body>
+		<header>
+			<div id="header">
+				<div id="header_1">
+
+				</div>
+				<div id="header_2">
+					<div class="header-main">
+
+					<table class="header_table">
+						<tr>
+							<td>
+					            <a href=""><img id="logo" src="WaZ_HeaderPicture/logo.png"></a>
+							</td>
+							<td>
+								<a href="" target="">iPhone</a>
+							</td>
+							<td>
+								<a href="" target="">Huawei</a>
+							</td>
+							<td>
+								<a href="" target="">Xiaomi</a>
+							</td>
+							<td>
+								<a href="" target="">Oppo</a>
+							</td>
+							<td>
+								<a href="" target="">服务</a>
+							</td>
+							<td>
+								<a href="" target="">技术支持</a>
+							</td>
+							<td>
+								<a id="header_magn" href="" target=""><img src="WAZ_HeaderPicture/magnifying.png"></a>
+							</td>
+							<td>
+								<a href="" target=""><img src="WAZ_HeaderPicture/shoppingbag.png"></a>
+							</td>
+						</tr>
+					</table>
+				</div>
+             	</div>
+			</div>
+		</header>
+		
+		
+		
+		<div class="main-div">
+		<main class="main">
+			<div class="div1">
+				<div class="item-title">
+					①送货选项
+				</div>
+				<div class="item-button">
+					<!--<button class="edit-button">编辑</button>-->
+				</div>
+			</div>
+			<div class="div2">
+				<div class="div2-item1">
+					<img src="cwx_img/phone.jpg" width="76" height="76" />
+				</div>
+				<div class="div2-item2">
+					<span class="div2-item2-span1">
+                 	  	小米8 256G 深空灰色
+                 	  </span>
+					<span class="div2-item2-span2">
+                 	  	RMB 8848
+                 	  </span>
+					<div class="div2-item2-block">
+						送达日期：我们收到付款后就会与您确认日期。-免费
+					</div>
+				</div>
+			</div>
+			<div class="div3">
+				<div class="item-title">
+					②送货地址
+				</div>
+				<div class="item-button">
+					<button class="edit-button" id="edit3">编辑</button>
+				</div>
+			</div>
+
+			<div class="div4" id="div4">
+				<table>
+					<tr class="tr1">
+						<td class="td-head">
+							送货地址
+						</td>
+						<td class="td-main">
+							<span id="name">达内</span><br />
+							<span id="tel">
+                 				13888488848
+                 			</span><br />
+							<span>
+                 				<label id="province">陕西</label>
+
+								<label id="city">咸阳</label>
+
+								<label id="county">杨凌</label>
+
+                 			</span><br />
+							<span id="address">西北农林科技大学</span>
+						</td>
+						<td class="td-main">
+							<a href="#">商品送达时，需签收</a>
+						</td>
+					</tr>
+					<tr>
+						<td class="td-head">
+							发货通知
+						</td>
+						<td>
+							<span id="email">
+                 				13888488848@163.com
+                 			</span>
+						</td>
+					</tr>
+				</table>
+			</div>
+
+			<!--默认隐藏-->
+			<div id="div4-1" class="div4-1">
+				<table>
+					<tr class="tr1">
+						<td class="td-head">
+							送货地址
+						</td>
+						<td class="td-main">
+							<span>
+								<label class="label-item">收货人</label>
+								<input type="text" name="" id="name1" value=""  />	<br />
+                 				<label class="label-item">电话</label>
+                 				<input type="tel" name="" id="tel1" value=""   required="required"/><br />
+								<label class="label-item">省</label>
+								<input type="text"  id="province1" value=""  required="required"/><br />
+								<label class="label-item">市</label>
+								<input type="text"  id="city1" value="" required="required"/><br />
+								<label class="label-item">区/县</label>
+								<input type="text"  id="county1" value="" required="required"/><br />
+								<label class="label-item" style="vertical-align: top;">详细地址</label>
+								<textarea id="address1"  required="required"></textarea>
+							</span>
+						</td>
+						<td class="td-main">
+							<a href="#">商品送达时，需签收</a>
+						</td>
+					</tr>
+					<tr>
+						<td class="td-head">
+							发货通知
+						</td>
+						<td>
+							<span>
+								<span class="label-item"  >电子邮箱</span>
+							<input type="text" id="email1" required="required" />
+							</span>
+						</td>
+					</tr>
+				</table>
+			</div>
+
+			<div class="div5">
+				<div class="item-title">
+					③付款
+				</div>
+				<div class="item-button">
+					<button class="edit-button" id="edit6">编辑</button>
+				</div>
+			</div>
+
+			<div class="div6" id="div6">
+				<div class="div6-item1">
+					付款方式
+				</div>
+				<div class="div6-item2">
+					<img src="cwx_img/alipay.png" width="82" height="24" id="payment" />
+				</div>
+
+			</div>
+
+			<!--默认隐藏-->
+			<div class="div6-1" id="div6-1">
+				<div class="div6-item1">
+					付款方式
+				</div>
+				<div class="div6-item2">
+					<input type="checkbox" name="payment" id="alipay" onclick="checkboxOne(this)" checked="checked"><img src="cwx_img/alipay.png" width="82" height="24" />
+					<input type="checkbox" name="payment" id="wechat" onclick="checkboxOne(this)"><img src="cwx_img/wechat.png" width="82" height="24" />
+					<input type="checkbox" name="payment" id="card" onclick="checkboxOne(this)"><img src="cwx_img/unionPay.png" width="82" height="24" />
+				</div>
+
+			</div>
+
+			<div class="div7">
+				<div class="item-title">
+					④发票
+				</div>
+				<div class="item-button">
+					<button class="edit-button" id="edit8">查看发票</button>
+				</div>
+			</div>
+			<div class="div8" id="div8">
+				<div class="div8-item1">
+					发票类型<br />
+					<span id="invoiceType">
+						小米电子收据
+					</span>
+				</div>
+				<div class="div8-item2">
+					电子邮件地址<br />
+					<span id="iemail">
+						13888488848@163.com
+					</span>
+				</div>
+			</div>
+
+			<div class="div8-1" id="div8-1">
+				<div class="div8-1-left">
+					<input type="radio" name="invoice" id="invoice1" checked="checked" />
+					<label for="invoice1" class="invoice-font" id="invoice1-label">小米电子收据</label>
+
+					<br />
+					<span>
+                                                         小米 电子收据 这是您本次购买商品的 小米 电子收据。本收据将于您的订单
+                                                         发货后发送到您订单上的电子邮件地址或 iMessage 电话号码。此收据可视为
+                                                          购买的正式凭证，可用于商品保修和维修等申请。<br />
+                                                          注意：如果您需要其它类型发票，请在下面选择。 <br />
+                                                          如果您的公司具备“一般纳税人资格”，可以进行增值税进项抵扣，您将需要增
+                                                          值税专用发票。
+                     </span><br /><br />
+					<input type="radio" name="invoice" id="invoice2" />
+					<label for="invoice2" class="invoice-font" id="invoice2-label">小米电子收据与普通发票</label>
+					<br />
+					<span>
+						普通发票 （个人，公司）：发票不随货物一起寄送，在订单发货后的 3 个工作
+						日内，发票将通过EMS快递服务寄出。
+						<br /><br />
+						
+						<span class="invoice-font">小米电子收据与增值税专用发票 </span>
+					<br /> 如果你需要增值税专用发票，请选择 “公司银行转账“ 作为你的付款方式。请注 意：我们可能需要几天时间处理银行转账付款的订单，因此将会延迟你的发货 时间。收到付款后，我们会通过电子邮件与你确认发货时间。
+					</span>
+
+				</div>
+				<div class="div8-1-right">
+					<div>
+						<span>
+                      	电子邮件地址<br />
+                      </span>
+						<input type="text" id="iemail1"  required="required"/>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="div9" id="div9">
+				<div class="item-title">
+					⑤条款与条件
+				</div>
+				<div class="item-button">
+					<button class="edit-button" id="edit9">查看</button>
+				</div>
+			</div>
+			<div class="div9-1" id="div9-1">
+				<div class="div9-item1">
+					不好意思，没有条款
+				</div>
+			</div>
+
+			<div class="div10">
+				<div class="div10-item1">
+					输入促销代码
+				</div>
+				<div class="div10-item2">
+					<span style="font-size: 12px;color: green;">免费送货
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						RMB 0</span>
+					<hr style="width: 176px;" />
+					<span style="font-size: 18px;font-weight: bold;">订单合计&nbsp;RMB</span>
+					<span style="font-size: 18px;font-weight: bold;">8848</span>
+
+				</div>
+			</div>
+
+			<div class="div11">
+				<div class="div11-item1">
+					单击"立即下订单"按钮，即表示您确认自己接受本次销售交易的
+					<a href="#">条款与条件</a>
+				</div>
+
+				<div class="div11-button">
+					<button class="div11-edit-button" id="submit">立即下订单</button>
+				</div>
+			</div>
+		</main>
+	</div>	
+		
+		<footer class="footer">
+			<div class="footer-main">
+				<table id="footer_table">
+					<tr>
+						<td>
+							<ul>
+								<li>
+									<a class="footer_thead" id="footer_h1">选购及了解</a>
+								</li>
+								<li class="footer_english">
+									<a href="" target="">iPhone</a>
+								</li>
+								<li class="footer_english">
+									<a href="" target="">Huawei</a>
+								</li>
+								<li class="footer_english">
+									<a href="" target="">Xiaomi</a>
+								</li>
+								<li class="footer_english">
+									<a href="" target="">Oppo</a>
+								</li>
+							</ul>
+						</td>
+						<td>
+							<ul>
+								<li>
+									<a class="footer_thead" id="footer_h2">服务于支持</a>
+								</li>
+								<li>
+									<a href="" target="">翻新与优惠</a>
+								</li>
+								<li>
+									<a href="" target="">分期付款</a>
+								</li>
+								<li>
+									<a href="" target="">订单状态</a>
+								</li>
+								<li>
+									<a href="" target="">以旧换新</a>
+								</li>
+								<li>
+									<a href="" target="">零件</a>
+								</li>
+								<li>
+									<a href="" target="">服务网点查询</a>
+								</li>
+								<li>
+									<a href="" target="">保修政策</a>
+								</li>
+								<li>
+									<a href="" target="">预约服务</a>
+								</li>
+								<li>
+									<a href="" target="">维修进度查询</a>
+								</li>
+							</ul>
+						</td>
+						<td>
+							<ul>
+								<li>
+									<a class="footer_thead" id="footer_h3">关注我们</a>
+								</li>
+								<li>
+									<a href="" target="">新浪微博</a>
+								</li>
+								<li>
+									<a href="" target="">官方微信</a>
+								</li>
+							</ul>
+						</td>
+						<td>
+							<ul>
+								<li>
+									<a class="footer_thead" id="footer_h4">商务合作</a>
+								</li>
+								<li>
+									<a href="" target="">开放平台</a>
+								</li>
+								<li>
+									<a href="" target="">商务采购</a>
+								</li>
+								<li>
+									<a href="" target="">品牌入驻</a>
+								</li>
+								<li>
+									<a href="" target="">成为伙伴</a>
+								</li>
+							</ul>
+						</td>
+						<td>
+							<ul>
+								<li>
+									<a class="footer_thead" id="footer_h5">选购及了解</a>
+								</li>
+								<li>
+									<a href="" target="">新闻资讯</a>
+								</li>
+								<li>
+									<a href="" target="">联系我们</a>
+								</li>
+								<li>
+									<a href="" target="">关于我们</a>
+								</li>
+								<li>
+									<a href="" target="">活动</a>
+								</li>
+								<li>
+									<a href="" target="">工作机会</a>
+								</li>
+							</ul>
+						</td>
+					</tr>
+				</table>
+				<hr id="footer_hr">
+				<div id="footer_copyrightpart">
+					<a id="footer_copyright_1"> Copyright&nbsp;&nbsp;&copy;&nbsp;2018&nbsp;&nbsp;Dami.com&nbsp;&nbsp;保留所有权利&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+					<a href="" target="" class="footer_four">隐私政策</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+					<a href="" target="" class="footer_four">使用条款</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+					<a href="" target="" class="footer_four">销售策略</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+					<a href="" target="" class="footer_four">法律信息</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+					<a href="" target="" class="footer_four">网络地图</a><br>
+					<a id="footer_copyright_2"> 京公安网安备&nbsp;&nbsp;&nbsp;11010502008968&nbsp;&nbsp;&nbsp;
+						<a href="http://www.miibeian.gov.cn/state/outPortal/loginPortal.action;jsessionid=mew3brmEvoFKl-z97HaBxx_OY5_V7bWTD4P8fII3Rj1LUHQtbnH6!1316315234" id="footer_number">京ICP备10214630</a>
+					</a>
+
+				</div>
+
+			</div>
+		</footer>
+
+		<script type="text/javascript">
+			const div41 = document.getElementById("div4-1"),
+				div4 = document.getElementById("div4"),
+				edit3 = document.getElementById("edit3"),
+				tel = document.getElementById("tel"),
+				tel1 = document.getElementById("tel1"),
+				name = document.getElementById("name"),
+				name1 = document.getElementById("name1"),
+
+				//地址
+				province = document.getElementById("province"),
+				province1 = document.getElementById("province1"),
+				city = document.getElementById("city"),
+				city1 = document.getElementById("city1"),
+				county = document.getElementById("county"),
+				county1 = document.getElementById("county1"),
+				address = document.getElementById("address"),
+				address1 = document.getElementById("address1"),
+				email = document.getElementById("email"),
+				email1 = document.getElementById("email1");
+
+			let edit3Flag = false;
+			edit3.onclick = (e) => {
+				if(edit3Flag) {
+					/* 显示/隐藏div 包括控制div的高度和编辑按钮的样式   */
+					div41.style.visibility = "hidden"
+					div41.style.height = 0;
+					edit3Flag = !edit3Flag
+					edit3.innerHTML = "编辑"
+					edit3.style.backgroundColor = "#1982D6"
+					div4.style.visibility = "visible"
+					div4.style.height = "216px";
+
+					// 修改电话属性
+					tel.innerHTML = tel1.value;
+					name.innerHTML = name1.value;
+					province.innerHTML = province1.value;
+					city.innerHTML = city1.value;
+					county.innerHTML = county1.value;
+					address.innerHTML = address1.value;
+					email.innerHTML = email1.value;
+
+				} else {
+					div4.style.visibility = "hidden"
+					div4.style.height = 0;
+					edit3Flag = !edit3Flag
+					edit3.innerHTML = "确认"
+					edit3.style.backgroundColor = "red"
+					div41.style.visibility = "visible"
+					div41.style.height = "216px";
+
+					tel1.value = tel.innerHTML.trim();
+					name1.value = name.innerHTML.trim();
+
+					province1.value = province.innerHTML.trim();
+					city1.value = city.innerHTML.trim();
+					county1.value = county.innerHTML.trim();
+					address1.value = address.innerHTML.trim();
+					email1.value = email.innerHTML.trim();
+
+				}
+
+			}
+
+			//支付方式
+			const div6 = document.getElementById("div6"),
+				div61 = document.getElementById("div6-1"),
+				edit6 = document.getElementById("edit6"),
+				payment = document.getElementById("payment");
+
+			let edit6Flag = false;
+
+			function checkboxOne(obj) {
+				const checks = document.getElementsByName("payment");
+				if(obj.checked) {
+					for(let i = 0; i < checks.length; i++) {
+						checks[i].checked = false
+					}
+					obj.checked = true;
+
+					payment.src = obj.nextSibling.src;
+
+				} else {
+					for(let i = 0; i < checks.length; i++) {
+						checks[i].checked = false
+					}
+				}
+			}
+
+			edit6.onclick = (e) => {
+				if(edit6Flag) {
+					/* 显示/隐藏div 包括控制div的高度和编辑按钮的样式   */
+					div61.style.visibility = "hidden"
+					div61.style.height = 0;
+					edit6Flag = !edit6Flag
+					edit6.innerHTML = "编辑"
+					edit6.style.backgroundColor = "#1982D6"
+					div6.style.visibility = "visible"
+					div6.style.height = "42px";
+
+					// 修改电话属性
+					//					tel.innerHTML=tel1.value;
+					//					name.innerHTML=name1.value;
+
+				} else {
+					div6.style.visibility = "hidden"
+					div6.style.height = 0;
+					edit6Flag = !edit6Flag
+					edit6.innerHTML = "确认"
+					edit6.style.backgroundColor = "red"
+					div61.style.visibility = "visible"
+					div61.style.height = "42px";
+
+					//					tel1.value=tel.innerHTML.trim();
+					//					name1.value=name.innerHTML.trim();
+
+				}
+
+			}
+
+			//条款与条件
+			const div9 = document.getElementById("div9"),
+				div91 = document.getElementById("div9-1"),
+				edit9 = document.getElementById("edit9");
+
+			let edit9Flag = false;
+			edit9.onclick = (e) => {
+				if(edit9Flag) {
+					/* 显示/隐藏div 包括控制div的高度和编辑按钮的样式   */
+					div91.style.visibility = "hidden"
+					div91.style.height = 0;
+					edit9Flag = !edit9Flag
+					edit9.innerHTML = "编辑"
+					edit9.style.backgroundColor = "#1982D6"
+
+				} else {
+					edit9Flag = !edit9Flag
+					edit9.innerHTML = "确认"
+					edit9.style.backgroundColor = "red"
+					div91.style.visibility = "visible"
+					div91.style.height = "42px";
+
+				}
+
+			}
+
+			//发票类型
+			const div81 = document.getElementById("div8-1"),
+				div8 = document.getElementById("div8"),
+				edit8 = document.getElementById("edit8"),
+				invoiceType = document.getElementById("invoiceType"),
+				invoice1 = document.getElementById("invoice1"),
+				invoice2 = document.getElementById("invoice2"),
+				iemail = document.getElementById("iemail"),
+				iemail1 = document.getElementById("iemail1"),
+				invoice1Label = document.getElementById("invoice1-label"),
+				invoice2Label = document.getElementById("invoice2-label");
+
+			let edit8Flag = false;
+			edit8.onclick = (e) => {
+				if(edit8Flag) {
+					/* 显示/隐藏div 包括控制div的高度和编辑按钮的样式   */
+					div81.style.visibility = "hidden"
+					div81.style.height = 0;
+					edit8Flag = !edit8Flag
+					edit8.innerHTML = "编辑"
+					edit8.style.backgroundColor = "#1982D6"
+					div8.style.visibility = "visible"
+					div8.style.height = "59px";
+
+					// 修改电话属性		
+					iemail.innerHTML = iemail1.value;
+
+					if(invoice1.checked) {
+						invoiceType.innerHTML = invoice1Label.innerHTML;
+					} else {
+						invoiceType.innerHTML = invoice2Label.innerHTML;
+					}
+
+				} else {
+					div8.style.visibility = "hidden"
+					div8.style.height = 0;
+					edit8Flag = !edit8Flag
+					edit8.innerHTML = "确认"
+					edit8.style.backgroundColor = "red"
+					div81.style.visibility = "visible"
+					div81.style.height = "350px";
+					iemail1.value = iemail.innerHTML.trim();
+
+					if(invoiceType.innerHTML === invoice1Label.innerHTML) {
+						invoice2.checked = "checked"
+					} else {
+						invoice1.checked = "checked"
+					}
+
+				}
+
+			}
+
+			//提交订单
+			const submit = document.getElementById("submit");
+			submit.onclick = () => {
+				if(!edit3Flag && !edit6Flag && !edit9Flag && !edit8Flag) {
+					alert("提交成功！正在跳转至支付页面...")
+				} else {
+					alert("提交失败！请确认所有编辑项之后再提交...")
+				}
+			}
+		</script>
+
+	</body>
+
+</html>

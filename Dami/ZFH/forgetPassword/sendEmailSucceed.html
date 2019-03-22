@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>重置密码邮件发送成功</title>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+
+        #header_1 {
+            width: 100%;
+            height: 40px;
+            background-color: #454545;
+        }
+
+        #header_2 {
+            width: 100%;
+            /*height: 44px;*/
+            /*position:relative;*/
+            /*top:0;*/
+            border-radius: 0;
+            /*text-align: center;!important;*/
+            background-color: #333333;
+            z-index: 1;
+            border: 0px;
+        }
+
+
+        .headerUL {
+            /*text-align: left;*/
+            /*position: relative;*/
+            font-family: '微软雅黑';
+            font-size: 14px;
+            color: #ffffff;
+            margin: auto auto;
+            /*text-align: center;*/
+            background-color: #333333 !important;
+
+        }
+
+        .header-mynavbar-default .header-mynavbar-nav > li > a {
+            color: #ffffff;
+        }
+
+        .headerUL a:link {
+            color: #FFFFFF
+        }
+
+        .headerUL a:visited {
+            color: #FFFFFF
+        }
+
+        .headerUL a:hover {
+            color: #b2b2b2 !important;
+            outline: none;
+        }
+
+        .headerUL a:active {
+            color: #b2b2b2;
+            outline: none;
+        }
+
+        .headerUL a {
+            text-decoration: none;
+        }
+
+        /*.navbar-default .navbar-toggle:hover,.nav-pills > li > a:focus{*/
+        /*background-color: red;*/
+        /*}*/
+        .header-mynav-pills > li > a {
+            height: 44px;
+        }
+
+        .header-mynavbar-default .header-mynavbar-toggle:hover, .header-mynav-pills > li > a:focus, .header-mynavbar-default .header-mynavbar-toggle:hover, .header-mynav-pills > li > a:hover {
+            background-color: #333333;
+            outline: none;
+        }
+
+        .header-mynav-pills .header-mynav-justified.navbar-navt .header-mynavbar-toggle:hover, .header-mynavbar-default .header-mynavbar-toggle .header-mynav-pills :focus {
+            background-color: #333333;
+            outline: none;
+        }
+
+        #header-mytoggle1 {
+            border: 0px;
+        }
+
+        .header-mynav-justified > li > a {
+            text-align: left;
+        }
+
+        /*.navbar-brand{*/
+        /*text-align: center;!important;*/
+        /*}*/
+        .header-mynavbar-brand {
+            float: left;
+            height: 44px;
+            padding: 15px 15px;
+            font-size: 18px;
+            line-height: 20px;
+        }
+
+        .header-mynavbar {
+            position: relative;
+            min-height: 44px;
+            margin-bottom: 20px;
+            border: 1px solid transparent;
+        }
+        .header-mynavbar-fixed-top .header-mynavbar-collapse, .navbar-fixed-bottom .header-mynavbar-collapse {
+            max-height: 800px;
+        }
+        /*.col-sm-1, .col-sm-11, .col-sm-12, {*/
+        /*position: relative;*/
+        /*/!*min-height: 1px;*!/*/
+        /*padding-right: 0px;*/
+        /*padding-left: 0px;*/
+        /*}*/
+        /*.nav > li > a {*/
+        /*position: relative;*/
+        /*display: block;*/
+        /*padding: 12px 15px;*/
+        /*}*/
+        .header-myrow {
+            margin-right: 0px;
+            margin-left: 0px;
+        }
+
+        @media (max-width: 1300px){
+            .header-mypadding1
+            {
+                padding-left: 30px;
+            }
+            /*@media (max-width: 760px){*/
+            /*.mypadding1*/
+            /*{*/
+            /*padding-left: 0px;*/
+            /*}}*/
+        }
+        @media (min-width: 1300px){
+            .header-mypadding1
+            {
+                padding-left: 80px;
+            }}
+
+
+        /*@media (min-width: 1400px){*/
+        /*.mypadding1*/
+        /*{*/
+        /*width: 100px;*/
+        /*}}*/
+
+        /*@media (max-width: 1200px){*/
+        /*.mypadding1*/
+        /*{*/
+        /*width: 100px;*/
+        /*}}*/
+    </style>
+    <style type="text/css">
+        #footer_copyright_1,#footer_copyright_2{
+            font-family: 微软雅黑;
+            font-size: 12px;
+            color: #999999;
+        }
+        #footer_copyright_1,#footer_copyright_2:hover {text-decoration: none;  color:#999999;}
+        #footer_copyright_1,#footer_copyright_2:active {color: #999999}
+        .footer-mynavbar-brand {
+            float: left;!important;
+        }
+        #footer_hr{
+            height: 1px;
+            background-color: #dddddd;
+            border:0px ;
+        }
+
+        .footer-mynavbar-nav > li {
+            /*float: left;*/
+            clear: both;
+        !important;
+        }
+
+
+
+
+
+        .footer_english {
+            font-family: Arial;
+        }
+
+
+
+
+        .footer a:link {
+            color: #3e3e3e
+        }
+
+        .footer a:visited {
+            color: #3e3e3e
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+            color: #000000;
+        }
+
+        .footer a:active {
+            color: #3e3e3e
+        }
+
+        .footer a {
+            text-decoration: none;
+        }
+
+        #footer_h1, #footer_h2, #footer_h3, #footer_h4, #footer_h5:hover {
+            text-decoration: none;
+            color: #020202;
+        }
+
+        #footer_h1, #footer_h2, #footer_h3, #footer_h4, #footer_h5:active {
+            color: #020202;
+        }
+
+        #footer_number {
+            font-family: 微软雅黑;
+            font-size: 12px;
+            color: #999999;
+        }
+
+
+        .footer_thead {
+            /*line-height: 10px;*/
+            color: #020202;
+            font-family: '微软雅黑';
+            padding: 0px 0px;
+            /*width: 100%;*/
+            font-size: 14px;
+            height: 30px;
+            margin-left: 32px;
+        !important;
+        }
+        .footer-mycontainer-fluid > .navbar-header,  .footer-mycontainer-fluid > .navbar-collapse {
+            margin-right: 0px;
+            margin-left: 0px;
+        !important;
+        }
+        .footer-mybutton{
+            position: relative;
+            bottom: 13px;
+            border:0px;
+        }
+        .footer-myrow {
+            margin-right: 0px;
+            margin-left: 0px;
+        !important;
+        }
+        .footer-mynavbar-default  {
+            color: #000;
+            margin-left: 20px;
+            font-size: 12px ;
+        !important;
+        }
+
+
+        .footer-mynavbar-default .footer-mynavbar-nav > li > a:hover, .footer-mynavbar-default .footer-mynavbar-nav > li > a:focus {
+            text-decoration: underline;
+            color: #000000;
+        !important;
+        }
+
+        .footer-mynavbar-default .footer-mynavbar-nav > li > a {
+            color: #333;
+        !important;
+        }
+        .footer-mycontainer-fluid {
+            padding-right: 0px;
+            padding-left: 0px;
+        }
+
+
+        .footer-mycol-sm-2 {
+            position: relative;
+            min-height: 1px;
+            padding-right: 0px;
+            padding-left: 0px;
+        }
+
+
+
+        #footer_h1, #footer_h2, #footer_h3, #footer_h4, #footer_h5:active {
+
+            color: #020202;
+
+        }
+
+        #footer_h1, #footer_h2, #footer_h3, #footer_h4, #footer_h5:hover {
+
+            text-decoration: none;
+            color: #020202;
+
+        }
+
+
+
+        .footer-mynavbar-collapse {
+
+            /*padding-right: 2px;*/
+            /*padding-left: 2px;*/
+            width: 100%;
+
+        }
+
+
+
+        .footer-mynav > li > a {
+            position: relative;
+            display: block;
+            padding: 0px 0px;
+            margin-left: 20px;
+            padding-bottom: 10px;!important;
+        }
+        .footer-mynavbar-default .footer-mynavbar-toggle:hover,  .footer-mynavbar-default .footer-mynavbar-toggle:hover {
+            background-color:rgba(242, 242, 242, 0.81);
+        }
+
+        .footer-mynavbar-navt .footer-mynavbar-toggle:hover, .footer-mynavbar-default .footer-mynavbar-toggle:focus {
+            background-color: rgba(242, 242, 242, 0.81);
+        }
+        @media (max-width: 767px) {
+            .footer-myheader{
+                border-bottom: 1px solid darkgray;
+            }
+        }
+        #FooterLogo:hover, #FootercurrentPade:hover{text-decoration: none}
+    </style>
+    <script src="head.js"></script>
+</head>
+
+<body  style="background-color: #f2f2f2;">
+<div id="DamiNewHeader">
+    <div id="header_1">
+    </div>
+    <nav class="navbar navbar-default navbar-fixed-top header-mynavbar-default header-mynavbar header-mynavbar-fixed-top"  role="navigation" id="header_2">
+        <div class="row header-myrow">
+            <!--<div class=" col-lg-1 hidden-md hidden-xs hidden-sm" style="height: 44px"></div>-->
+            <div class="col-lg-11 col-md-12 col-sm-12 col-xs-12 col-lg-offset-1">
+                <div class="row header-myrow">
+                    <div class="navbar-header" style="background-color: #333333">
+                   <span class="navbar-toggle header-mynavbar-toggle" data-toggle="collapse" data-target="#menu" id="header-mytoggle1">
+                       <span class="sr-only">展开导航</span>
+                       <span class="icon-bar"></span>
+                       <span class="icon-bar"></span>
+                   </span>
+                        <!--<div class=" col-xs-5 hidden-md hidden-lg hidden-sm"></div>-->
+                        <a class="navbar-brand col-lg-2 col-md-1 col-sm-1 col-xs-2 col-xs-offset-5 header-mynavbar-brand" href="../../WAZ/NewDaMi.html"style="position: relative;bottom: 5px;"><img id="logo" src="WaZ_HeaderPicture/logo.png"></a>
+                    </div>
+                    <div class="col-lg-11 col-md-10 col-sm-10 col-xs-12 ">
+                        <div class="collapse navbar-collapse header-mynavbar-collapse" id="menu">
+                            <ul class="nav  nav-pills nav-justified headerUL header-mypadding1 header-mynav-pills header-mynav-justified" style="margin-left: 20px; margin-left: 0px;" >
+                                <li><a href="../../ZBY/iphoneXFirst.html">iPhone</a></li>
+                                <li><a href="../../XWQ/huawei_fp.html">Huawei</a></li>
+                                <li><a href="../../WJY/xiaomi8/mi8.html">Xiaomi</a></li>
+                                <li><a href="../../DWJ/OPPOR15.html">Oppo</a></li>
+                                <li><a href="#" style="width: 60px">服务</a></li>
+                                <li><a href="#" style="font-size: 12px;width:80px;">技术支持</a></li>
+                                <li><a href="#"><img src="WAZ_HeaderPicture/magnifying.png"></a></li>
+                                <li>
+                                    <div class="dropdown">
+                                        <button class="btn btn-default dropdown-toggle" type="button"  data-toggle="dropdown" aria-expanded="true"style="background-color: #333333;border: none">
+                                            <img src="WAZ_HeaderPicture/shoppingbag.png">
+                                        </button>
+                                        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1" style="background-color:#ffffff;">
+                                            <li role="presentation"><a role="menuitem" tabindex="-1" href="" style="color: black" id="gouwudai">购物袋</a></li>
+                                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#" style="color: black">收藏</a></li>
+                                            <li role="presentation"><a role="menuitem" tabindex="-1" id="order" style="color: black">订单</a></li>
+                                            <li role="presentation"><a role="menuitem" tabindex="-1"  style="color: black" id="user">登录</a></li>
+                                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#" style="color: black" id="exit">注销</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
+<script type="text/javascript">
+    function menuFixed(id) {
+        var obj = document.getElementById(id);
+        var _getHeight = obj.offsetTop;
+
+        window.onscroll = function () {
+            changePos(id, _getHeight);
+        }
+    }
+    function changePos(id, height) {
+        var obj = document.getElementById(id);
+        var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+        if (scrollTop < height) {
+            obj.style.position = 'relative';
+        } else {
+            obj.style.position = 'fixed';
+        }
+    }
+</script>
+<script type="text/javascript">
+    window.onload = function () {
+        menuFixed('header_2');
+    }
+</script>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/bootstrap.js"></script>
+<div class="row col-md-6 col-md-offset-3" STYLE="margin-top:100px; margin-bottom: 300px;">
+    <div style="text-align: center; width: 100%;"><img src="succeed.png" alt=""></div>
+    <div style="text-align: center; width: 100%;">
+        <h1>密码重置邮件已经发送！</h1>
+        <h2>Dami商城已经发送了一封邮件到您的邮箱，请遵循邮箱指示重置密码！</h2>
+    </div>
+    <div style="text-align: center; width: 100%;">
+        <button onclick="javascript:window.location.href='../login/login.html'"; style="background-color:#1886d6 ;width: 150px;height: 40px; border-radius:3px; border:0px;margin-top: 30px;color: #ffffff;">Done</button>
+        <!--跳转到登录页-->
+    </div>
+</div>
+<div class="NewFooter" style="background-color: #f2f2f2;">
+    <div class="thankyou col-lg-offset-2 col-md-offset-1 col-sm-offset-1 " style="position: relative;left: 45px;top: 40px;z-index: 1;font-size: 12px;width: 160px">
+        <h4>
+            <a id="FooterLogo"style="color: black;text-underline: none"href="#"><img  src="waz_headerpicture/logo3.png"style="position: relative;bottom: 5px"></a>
+            <a style="color: black;text-underline: none;"id="FootercurrentPade"><h class="glyphicon glyphicon-menu-right"> </h>Thank you</a>
+        </h4>
+    </div>
+    <!--<div class="thankyou col-lg-offset-2 col-md-offset-1 col-sm-offset-1 " style="position: relative;left: 45px;top: 40px;z-index: 1;font-size: 12px;">-->
+    <!--<a href="" style="color: black;text-underline: none"><h4><img src="waz_headerpicture/logo3.png"style="position: relative;bottom: 5px"><h class="glyphicon glyphicon-menu-right"> </h> Thank you</h4></a>-->
+    <!--</div>-->
+    <nav class="navbar navbar-default footer-mynavbar-default" role="navigation"style="border-radius: 0px;padding-top: 60px;background-color: #f2f2f2;border: 0px">
+        <div class="=row footer-myrow">
+            <div class="col-lg-2 col-md-1 col-sm-1"></div>
+            <div class="col-lg-2 col-md-2 col-sm-2 footer-mycol-sm-2">
+                <div class="container-fluid footer-mycontainer-fluid">
+                    <div class="navbar-header footer-myheader">
+                        <button type="button" class="navbar-toggle collapsed footer-mybutton footer-mynavbar-toggle" data-toggle="collapse"
+                                data-target="#bs-example-navbar-collapse-2">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="glyphicon glyphicon-plus" ></span>
+                        </button>
+                        <a class="footer_thead footer-mynavbar-brand" id="footer_h1">选购及了解</a>
+                    </div>
+                    <div class="navbar-header collapse navbar-collapse footer-mynavbar-collapse" id="bs-example-navbar-collapse-2">
+
+                        <ul class=" nav navbar-nav footer-mynav footer-mynavbar-nav">
+                            <li class="footer_english "><a href="../../ZBY/iphoneXFirst.html" target="">iPhone</a>
+                            </li>
+                            <li class="footer_english "><a href="../../XWQ/huawei_fp.html" target="">Huawei</a>
+                            </li>
+                            <li class="footer_english "><a href="../../WJY/xiaomi8/mi8.html" target="">Xiaomi</a>
+                            </li>
+                            <li class="footer_english "><a href="../../DWJ/OPPOR15.html" target="">Oppo</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 footer-mycol-sm-2">
+                <div class="container-fluid footer-mycontainer-fluid">
+                    <div class="navbar-header footer-myheader">
+                        <button type="button" class="navbar-toggle collapsed footer-mybutton footer-mynavbar-toggle" data-toggle="collapse"
+                                data-target="#bs-example-navbar-collapse-3">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="glyphicon glyphicon-plus" ></span>
+                        </button>
+                        <a class="footer_thead footer-mynavbar-brand footer_thead" id="footer_h2">服务与支持</a>
+                    </div>
+                    <div class="navbar-header collapse navbar-collapse footer-mynavbar-collapse" id="bs-example-navbar-collapse-3">
+                        <ul class=" nav navbar-nav footer-mynav footer-mynavbar-nav">
+                            <li><a href="" target="">翻新与优惠</a></li>
+                            <li><a href="" target="">分期付款</a></li>
+                            <li><a href="" target="">订单状态</a></li>
+                            <li><a href="" target="">以旧换新</a></li>
+                            <li><a href="" target="">零件</a></li>
+                            <li><a href="" target="">服务网点查询</a></li>
+                            <li><a href="" target="">保修政策</a></li>
+                            <li><a href="" target="">预约服务</a></li>
+                            <li><a href="" target="">维修进度查询</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 footer-mycol-sm-2">
+                <div class="container-fluid footer-mycontainer-fluid">
+                    <div class="navbar-header footer-myheader">
+                        <button type="button" class="navbar-toggle collapsed footer-mybutton  footer-mynavbar-toggle" data-toggle="collapse"
+                                data-target="#bs-example-navbar-collapse-4">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="glyphicon glyphicon-plus" ></span>
+                        </button>
+                        <a class="footer_thead footer-mynavbar-brand footer_thead" id="footer_h3">关注我们</a>
+                    </div>
+                    <div class="navbar-header collapse navbar-collapse footer-mynavbar-collapse" id="bs-example-navbar-collapse-4">
+                        <ul class=" nav navbar-nav footer-mynav footer-mynavbar-nav">
+                            <li><a href="" target="">新浪微博</a></li>
+                            <li><a href="" target="">官方微信</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 footer-mycol-sm-2">
+                <div class="container-fluid footer-mycontainer-fluid">
+                    <div class="navbar-header footer-myheader">
+                        <button type="button" class="navbar-toggle collapsed footer-mybutton footer-mynavbar-toggle" data-toggle="collapse"
+                                data-target="#bs-example-navbar-collapse-5">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="glyphicon glyphicon-plus" ></span>
+                        </button>
+                        <a class="footer_thead footer-mynavbar-brand" id="footer_h4">商务合作</a>
+                    </div>
+                    <div class="navbar-header collapse navbar-collapse footer-mynavbar-collapse" id="bs-example-navbar-collapse-5">
+
+                        <ul class=" nav navbar-nav footer-mynav footer-mynavbar-nav">
+                            <li><a href="" target="">开放平台</a></li>
+                            <li><a href="" target="">商务采购</a></li>
+                            <li><a href="" target="">品牌入驻</a></li>
+                            <li><a href="" target="">成为伙伴</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 footer-mycol-sm-2">
+                <div class="container-fluid footer-mycontainer-fluid">
+                    <div class="navbar-header footer-myheader">
+                        <button type="button" class="navbar-toggle collapsed footer-mybutton  footer-mynavbar-toggle" data-toggle="collapse"
+                                data-target="#bs-example-navbar-collapse-6">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="glyphicon glyphicon-plus" ></span>
+                        </button>
+                        <a class="footer_thead footer-mynavbar-brand footer_thead" id="footer_h5"style="color: #333">更多资讯</a>
+                    </div>
+                    <div class="navbar-header collapse navbar-collapse footer-mynavbar-collapse" id="bs-example-navbar-collapse-6">
+                        <ul class=" nav navbar-nav footer-mynav footer-mynavbar-nav">
+                            <li><a href="" target="">新闻资讯</a></li>
+                            <li><a href="" target="">联系我们</a></li>
+                            <li><a href="" target="">关于我们</a></li>
+                            <li><a href="" target="">活动</a></li>
+                            <li><a href="" target="">工作机会</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </nav>
+
+    <div style="padding-bottom:45px">
+        <div class="row footer-myrow">
+            <hr id="footer_hr"class="col-sm-12 col-xs-12 col-lg-offset-2 col-lg-9 col-md-10 "style="padding-left: 0px;padding-right: 0px;" >
+        </div>
+
+        <div id="footer_copyrightpart" class="row footer-myrow">
+            <div class="col-sm-12 col-xs-12 col-lg-offset-2  col-md-offset-1 col-lg-3 col-md-4 " style="padding-left: 45px;padding-right: 0px;">
+                <a id="footer_copyright_1" > Copyright&nbsp;&nbsp;&copy;&nbsp;2018&nbsp;&nbsp;Dami.com&nbsp;&nbsp;保留所有权利</a>
+            </div>
+            <div class="col-lg-5 col-md-6 col-sm-12 col-xs-12" style="padding-left: 45px">
+                <a href="" target="" class="footer_four"style="color: #565656;font-family: 黑体;font-size: 12px;">隐私政策</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+                <a href="" target="" class="footer_four"style="color: #565656;font-family: 黑体;font-size: 12px;">使用条款</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+                <a href="" target="" class="footer_four"style="color: #565656;font-family: 黑体;font-size: 12px;">销售策略</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+                <a href="" target="" class="footer_four"style="color: #565656;font-family: 黑体;font-size: 12px;">法律信息</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+                <a href="" target="" class="footer_four"style="color: #565656;font-family: 黑体;font-size: 12px;">网络地图</a><br>
+
+            </div>
+        </div>
+        <div class="row footer-myrow">
+            <div class="col-lg-offset-2  col-md-offset-1 col-lg-6 col-md-6 col-sm-12 col-xs-12"style="padding-left: 45px">
+                <a id="footer_copyright_2"> 京公安网安备&nbsp;&nbsp;&nbsp;11010502008968&nbsp;&nbsp;&nbsp;
+                    <a href="http://www.miibeian.gov.cn/state/outPortal/loginPortal.action;jsessionid=mew3brmEvoFKl-z97HaBxx_OY5_V7bWTD4P8fII3Rj1LUHQtbnH6!1316315234"
+                       id="footer_number">京ICP备10214630</a>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<!-- jquery (necessary for bootstrap's javascript plugins) -->
+<script src="js/jquery-1.11.3.js"></script>
+<!-- include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.js"></script>
+</body>
+</html>

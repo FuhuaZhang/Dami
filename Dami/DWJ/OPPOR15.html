@@ -1,0 +1,2025 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <style type="text/css">
+   @media screen and (max-width: 1320px) { 
+     #adv_div{
+        	position: relative;
+            background-color:#f2f2f2;
+            height:641px;
+            margin-top: 1344px;
+        }
+   }
+    </style>
+    <title>大米商城</title>
+    <link type="text/css" rel="stylesheet" href="damishangcheng.css">
+    <link href="./bootstrap.css" rel="stylesheet">
+    <script src="./jquery-1.11.3.js"></script>
+    <script src="./bootstrap.js"></script>
+    <script src="./click.js"></script>
+    <!--<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/popper.js/1.12.5/umd/popper.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"></script>
+    <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+    <script type="text/javascript">
+         function myload(){
+         var dvs=document.getElementById("shouye");
+         dvs.setAttribute("style","z-index:100");
+         dvs.setAttribute("style","opacity: 1");
+        }
+        
+        function chooseoppr15(){
+           var dvh=document.getElementById("shouye");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvht=document.getElementById("waiguanbufen_mengjingban_div");
+           dvht.setAttribute("style","z-index:-1");
+           dvht.setAttribute("style","opacity: 0");
+           dvht.setAttribute("style","display:none");
+           var dvs=document.getElementById("waiguanbufen_div");
+           dvs.setAttribute("style","z-index:100");
+           dvs.setAttribute("style","opacity: 1");
+        }
+
+         function chooseoppr15meng(){
+           var dvh=document.getElementById("shouye");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvht=document.getElementById("waiguanbufen_div");
+           dvht.setAttribute("style","z-index:-1");
+           dvht.setAttribute("style","opacity: 0");
+           dvht.setAttribute("style","display:none");
+           var dvs=document.getElementById("waiguanbufen_mengjingban_div");
+           dvs.setAttribute("style","z-index:100");
+           dvs.setAttribute("style","opacity: 1");
+        }
+        function relihongrongliang(){
+           var dvh=document.getElementById("waiguanbufen_div");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("rongliangbufen_xingkongzi");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("rongliangbufen_taocihei");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("rongliangbufen_tebieban");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("rongliangbufen_mengjinghong");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("rongliangbufen_mengjingzi");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvs=document.getElementById("rongliangbufen_relihong");
+           dvs.setAttribute("style","z-index:100");
+           dvs.setAttribute("style","opacity: 1");
+        }
+        function xingkongzirongliang(){
+           var dvh=document.getElementById("waiguanbufen_div");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("rongliangbufen_taocihei");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("rongliangbufen_tebieban");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("rongliangbufen_relihong");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("rongliangbufen_mengjinghong");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("rongliangbufen_mengjingzi");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvs=document.getElementById("rongliangbufen_xingkongzi");
+           dvs.setAttribute("style","z-index:100");
+           dvs.setAttribute("style","opacity: 1");
+        }
+        function taociheirongliang(){
+           var dvh=document.getElementById("waiguanbufen_div");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("rongliangbufen_relihong");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+            var dvh=document.getElementById("rongliangbufen_xingkongzi");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("rongliangbufen_tebieban");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("rongliangbufen_mengjinghong");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("rongliangbufen_mengjingzi");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+            var dvs=document.getElementById("rongliangbufen_taocihei");
+           dvs.setAttribute("style","z-index:100");
+           dvs.setAttribute("style","opacity: 1");
+        }
+        function tebiebanrongliang(){
+           var dvh=document.getElementById("waiguanbufen_div");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("rongliangbufen_relihong");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+            var dvh=document.getElementById("rongliangbufen_xingkongzi");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("rongliangbufen_taocihei");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+          var dvh=document.getElementById("rongliangbufen_mengjinghong");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("rongliangbufen_mengjingzi");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvs=document.getElementById("rongliangbufen_tebieban");
+           dvs.setAttribute("style","z-index:100");
+           dvs.setAttribute("style","opacity: 1");
+        }
+        function mengjinghongrongliang(){
+           var dvh=document.getElementById("waiguanbufen_mengjingban_div");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("rongliangbufen_relihong");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+            var dvh=document.getElementById("rongliangbufen_xingkongzi");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("rongliangbufen_taocihei");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("rongliangbufen_tebieban");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("rongliangbufen_mengjingzi");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvs=document.getElementById("rongliangbufen_mengjinghong");
+           dvs.setAttribute("style","z-index:100");
+           dvs.setAttribute("style","opacity: 1");
+        }
+        function mengjingzirongliang(){
+           var dvh=document.getElementById("waiguanbufen_mengjingban_div");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("rongliangbufen_relihong");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+            var dvh=document.getElementById("rongliangbufen_xingkongzi");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("rongliangbufen_taocihei");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("rongliangbufen_tebieban");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("rongliangbufen_mengjinghong");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvs=document.getElementById("rongliangbufen_mengjingzi");
+           dvs.setAttribute("style","z-index:100");
+           dvs.setAttribute("style","opacity: 1");
+        }
+         function oppor15xin_relihong32(){
+           var dvh=document.getElementById("rongliangbufen_relihong");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("xindeoppor15_relihong64");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("xindeoppor15_xingkongzi32");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("xindeoppor15_xingkongzi64");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("xindeoppor15_taocihei32");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("xindeoppor15_taocihei64");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("xindeoppor15_tebieban32");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("xindeoppor15_tebieban64");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("xindeoppor15_mengjinghong32");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("xindeoppor15_mengjinghong64");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("xindeoppor15_mengjingzi32");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("xindeoppor15_mengjingzi64");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvs=document.getElementById("xindeoppor15_relihong32");
+           dvs.setAttribute("style","z-index:100");
+           dvs.setAttribute("style","opacity: 1");
+        }
+        function oppor15xin_relihong64(){
+           var dvh=document.getElementById("rongliangbufen_relihong");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("xindeoppor15_relihong32");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("xindeoppor15_xingkongzi32");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("xindeoppor15_xingkongzi64");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("xindeoppor15_taocihei32");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("xindeoppor15_taocihei64");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("xindeoppor15_tebieban32");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("xindeoppor15_tebieban64");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("xindeoppor15_mengjinghong32");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("xindeoppor15_mengjinghong64");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("xindeoppor15_mengjingzi32");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("xindeoppor15_mengjingzi64");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvs=document.getElementById("xindeoppor15_relihong64");
+           dvs.setAttribute("style","z-index:100");
+           dvs.setAttribute("style","opacity: 1");
+        }
+        function oppor15xin_xingkongzi32(){
+           var dvh=document.getElementById("rongliangbufen_xingkongzi");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("xindeoppor15_relihong32");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("xindeoppor15_relihong64");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("xindeoppor15_xingkongzi64");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("xindeoppor15_taocihei32");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("xindeoppor15_taocihei64");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("xindeoppor15_tebieban32");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("xindeoppor15_tebieban64");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("xindeoppor15_mengjinghong32");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("xindeoppor15_mengjinghong64");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("xindeoppor15_mengjingzi32");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("xindeoppor15_mengjingzi64");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvs=document.getElementById("xindeoppor15_xingkongzi32");
+           dvs.setAttribute("style","z-index:100");
+           dvs.setAttribute("style","opacity: 1");
+        }
+        function oppor15xin_xingkongzi64(){
+           var dvh=document.getElementById("rongliangbufen_xingkongzi");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("xindeoppor15_relihong32");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+             var dvh=document.getElementById("xindeoppor15_relihong64");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("xindeoppor15_xingkongzi32");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("xindeoppor15_taocihei32");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("xindeoppor15_taocihei64");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("xindeoppor15_tebieban32");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("xindeoppor15_tebieban64");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("xindeoppor15_mengjinghong32");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("xindeoppor15_mengjinghong64");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("xindeoppor15_mengjingzi32");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("xindeoppor15_mengjingzi64");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvs=document.getElementById("xindeoppor15_xingkongzi64");
+           dvs.setAttribute("style","z-index:100");
+           dvs.setAttribute("style","opacity: 1");
+        }
+        function oppor15xin_taocihei32(){
+           var dvh=document.getElementById("rongliangbufen_taocihei");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("xindeoppor15_relihong32");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+            var dvh=document.getElementById("xindeoppor15_relihong64");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("xindeoppor15_xingkongzi64");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("xindeoppor15_xingkongzi32");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("xindeoppor15_taocihei64");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("xindeoppor15_tebieban32");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("xindeoppor15_tebieban64");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("xindeoppor15_mengjinghong32");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("xindeoppor15_mengjinghong64");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("xindeoppor15_mengjingzi32");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("xindeoppor15_mengjingzi64");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvs=document.getElementById("xindeoppor15_taocihei32");
+           dvs.setAttribute("style","z-index:100");
+           dvs.setAttribute("style","opacity: 1");
+        }
+        function oppor15xin_taocihei64(){
+           var dvh=document.getElementById("rongliangbufen_taocihei");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("xindeoppor15_relihong32");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+            var dvh=document.getElementById("xindeoppor15_relihong64");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("xindeoppor15_xingkongzi32");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("xindeoppor15_xingkongzi64");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("xindeoppor15_taocihei32");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("xindeoppor15_tebieban32");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("xindeoppor15_tebieban64");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("xindeoppor15_mengjinghong32");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("xindeoppor15_mengjinghong64");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("xindeoppor15_mengjingzi32");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("xindeoppor15_mengjingzi64");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvs=document.getElementById("xindeoppor15_taocihei64");
+           dvs.setAttribute("style","z-index:100");
+           dvs.setAttribute("style","opacity: 1");
+        }
+        function oppor15xin_tebieban32(){
+           var dvh=document.getElementById("rongliangbufen_tebieban");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("xindeoppor15_relihong32");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+            var dvh=document.getElementById("xindeoppor15_relihong64");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("xindeoppor15_xingkongzi32");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("xindeoppor15_xingkongzi64");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("xindeoppor15_taocihei32");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("xindeoppor15_taocihei64");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("xindeoppor15_tebieban64");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("xindeoppor15_mengjinghong32");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("xindeoppor15_mengjinghong64");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("xindeoppor15_mengjingzi32");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("xindeoppor15_mengjingzi64");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvs=document.getElementById("xindeoppor15_tebieban32");
+           dvs.setAttribute("style","z-index:100");
+           dvs.setAttribute("style","opacity: 1");
+        }
+        function oppor15xin_tebieban64(){
+           var dvh=document.getElementById("rongliangbufen_tebieban");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("xindeoppor15_relihong32");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+            var dvh=document.getElementById("xindeoppor15_relihong64");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("xindeoppor15_xingkongzi32");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("xindeoppor15_xingkongzi64");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("xindeoppor15_taocihei32");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("xindeoppor15_taocihei64");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("xindeoppor15_tebieban32");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("xindeoppor15_mengjinghong32");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("xindeoppor15_mengjinghong64");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("xindeoppor15_mengjingzi32");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("xindeoppor15_mengjingzi64");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvs=document.getElementById("xindeoppor15_tebieban64");
+           dvs.setAttribute("style","z-index:100");
+           dvs.setAttribute("style","opacity: 1");
+        }
+        function oppor15xin_mengjinghong32(){
+           var dvh=document.getElementById("rongliangbufen_mengjinghong");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("xindeoppor15_relihong32");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+            var dvh=document.getElementById("xindeoppor15_relihong64");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("xindeoppor15_xingkongzi32");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("xindeoppor15_xingkongzi64");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("xindeoppor15_taocihei32");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("xindeoppor15_taocihei64");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("xindeoppor15_tebieban32");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("xindeoppor15_tebieban64");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("xindeoppor15_mengjinghong64");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("xindeoppor15_mengjingzi32");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("xindeoppor15_mengjingzi64");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvs=document.getElementById("xindeoppor15_mengjinghong32");
+           dvs.setAttribute("style","z-index:100");
+           dvs.setAttribute("style","opacity: 1");
+        }
+        function oppor15xin_mengjinghong64(){
+           var dvh=document.getElementById("rongliangbufen_mengjinghong");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("xindeoppor15_relihong32");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+            var dvh=document.getElementById("xindeoppor15_relihong64");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("xindeoppor15_xingkongzi32");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("xindeoppor15_xingkongzi64");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("xindeoppor15_taocihei32");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("xindeoppor15_taocihei64");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("xindeoppor15_tebieban32");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("xindeoppor15_tebieban64");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("xindeoppor15_mengjinghong32");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("xindeoppor15_mengjingzi32");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("xindeoppor15_mengjingzi64");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvs=document.getElementById("xindeoppor15_mengjinghong64");
+           dvs.setAttribute("style","z-index:100");
+           dvs.setAttribute("style","opacity: 1");
+        }
+        function oppor15xin_mengjingzi32(){
+           var dvh=document.getElementById("rongliangbufen_mengjingzi");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("xindeoppor15_relihong32");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+            var dvh=document.getElementById("xindeoppor15_relihong64");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("xindeoppor15_xingkongzi32");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("xindeoppor15_xingkongzi64");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("xindeoppor15_taocihei32");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("xindeoppor15_taocihei64");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("xindeoppor15_tebieban32");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("xindeoppor15_tebieban64");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("xindeoppor15_mengjinghong32");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("xindeoppor15_mengjinghong64");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("xindeoppor15_mengjingzi64");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvs=document.getElementById("xindeoppor15_mengjingzi32");
+           dvs.setAttribute("style","z-index:100");
+           dvs.setAttribute("style","opacity: 1");
+        }
+        function oppor15xin_mengjingzi64(){
+           var dvh=document.getElementById("rongliangbufen_mengjingzi");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("xindeoppor15_relihong32");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+            var dvh=document.getElementById("xindeoppor15_relihong64");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("xindeoppor15_xingkongzi32");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("xindeoppor15_xingkongzi64");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("xindeoppor15_taocihei32");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("xindeoppor15_taocihei64");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("xindeoppor15_tebieban32");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("xindeoppor15_tebieban64");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("xindeoppor15_mengjinghong32");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("xindeoppor15_mengjinghong64");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvh=document.getElementById("xindeoppor15_mengjingzi32");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvs=document.getElementById("xindeoppor15_mengjingzi64");
+           dvs.setAttribute("style","z-index:100");
+           dvs.setAttribute("style","opacity: 1");
+        }
+        /*$("#relihong").click(function () {
+           var dvh=document.getElementById("waiguanbufen_div");
+           dvh.setAttribute("style","z-index:-1");
+           dvh.setAttribute("style","opacity: 0");
+           dvh.setAttribute("style","display:none");
+           var dvs=document.getElementById("rongliangbufen");
+           dvs.setAttribute("style","z-index:200");
+           dvs.setAttribute("style","opacity: 1");
+    });*/
+     /*$("#relihong").click(function () {
+        $("#waiguanbufen_div").css("z-index", "-1");
+        $("#waiguanbufen_div").animate({
+            opacity: '0'
+        }, "slow");
+        $("#rongliangbufen").css("z-index", "100");
+        $("#rongliangbufen").animate({
+            opacity: '1'
+        }, "slow");
+    })*/
+    </script>
+</head>
+<body onload="myload();">
+<!--<header>
+   <div id="header_one_div"></div>
+    <div id="header_two_div">
+    	<ul class="heard_title">
+    		<li class="heard_title_li"><a id="heard_title_logo" src=""><img id="logo" src="./heard大米图标.png"></a></li>
+    	    <li class="heard_title_li"><a id="heard_title_iPhone"  src=""><span class="heard_text">iPhone</span></a></li>
+    	    <li class="heard_title_li"><a id="heard_title_Huawei" src=""><span class="heard_text">Huawei</span></a></li>
+    	    <li class="heard_title_li"><a id="heard_title_Xiaomi" src=""><span class="heard_text">Xiaomi</span></a></li>
+    	    <li class="heard_title_li"><a id="heard_title_Oppo" src=""><span class="heard_text">Oppo</span></a></li>
+    	    <li class="heard_title_li"><a id="heard_title_server"  src=""><span class="heard_text">服务</span></a></li>
+    	    <li class="heard_title_li"><a id="heard_title_jishuzhichi" src=""><span class="heard_text">技术支持</span></a></li>
+    	    <li class="heard_title_li"><a src=""></a></li>
+    	    <li class="heard_title_li"><a src=""></a></li>
+        </ul>
+    </div>
+</header>-->
+    <iframe name="" frameborder="0" scrolling="no" marginwidth="0" marginheight="0"  width="100%" height="100" src="DamiNewHeader-1.html"></iframe>
+
+   <!--<div id="title_div" class="container-fluid">
+        <div class="hidden-xs col-sm-1 col-md-2" style="height: 48px"></div>
+        <div class="col-xs-12 col-sm-10 col-md-9" style="height: 48px">
+    	<a id="title_OPPO" src=""><span id="title_OPPO_text">OPPO R15</span></a>
+    	<hr id="title_hr">
+        </div>
+        <div class="hidden-xs col-sm-1 col-md-1" style="height: 48px"></div>
+    </div>-->
+
+     
+    <div id="title_div">
+    </div>
+     <div id="top">
+    	<a id="title_OPPO" src=""><span id="title_OPPO_text">OPPO R15</span></a>
+    	<hr id="title_hr">
+    </div>
+
+
+
+
+
+
+    <div id="part1">
+    <div id="xindeoppor15_relihong32">
+    <div id="xindeOPPOR15_div">
+    	<div id="xuanzewaiguan_div" class="container-fluid">
+        <div class="hidden-xs col-sm-5 col-md-6" id="xuanzewaiguan_blank"></div>
+        <div class="col-xs-12 col-sm-2 col-md-2" id="xuanzewaiguan_conten">
+            <ul class="xuanzewaiguan_ul" id="xinde_daohanglan_relihong32">
+                <li class="xuanzewaiguan_li" style="color:#3f93d6">OPPO R15<hr id="xuanxianglan_underline"></li>
+                <li class="xuanzewaiguan_li" style="color:#3f93d6;">热力红</li>
+                <li class="xuanzewaiguan_li"  style="color:#3f93d6;">32GB</li>
+            </ul>
+        </div>
+         <div class="hidden-xs col-sm-5 col-md-4" id="xuanzewaiguan_blank"></div>
+    </div>
+    	<div>
+    		<p id="xindeOPPOR15_title">这是你的新OPPO R15</p>
+    	</div>
+    		<div id="xindeOPPOR15_pic">
+                <img src="./img/新的热力红.png">
+            </div>
+            <div id="xindeOPPOR15_bottom" class="container-fluid">
+            	<div class="hidden-xs col-sm-2 col-md-3"></div>
+            	<div class="col-xs-6 col-sm-4 col-md-4">
+                <span id="xindeOPPOR15_jiagetext">价格</span>
+                <hr id="xindeOPPOR15_hr">
+                <ul id="xindeOPPR15_songdariqiul">
+                    <li class="xindeOPPOR15_songdariqili" style="font-weight: bold;">送达日期</li>
+                    <li class="xindeOPPOR15_songdariqili">有现货</li>
+                    <li class="xindeOPPOR15_songdariqili">免费送货</li>
+                </ul>
+            </div>
+                <div class="col-xs-6 col-sm-4 col-md-3">
+                <span id="xindeOPPOR15_RMBtext">RMB &nbsp;3,755</span>
+                <span id="xindeOPPOR15_zengzhishui">含增值税及其他法定税费：约 RMB 743。</span>
+                <input type="button" class="xindeOPPOR15_gouwudai_button" id="OPPOR15RED32">
+               </div>
+                <div class="hidden-xs col-sm-2 col-md-2"></div>
+            </div>
+    	</div>
+    </div>
+      <div id="xindeoppor15_relihong64">
+    <div id="xindeOPPOR15_div">
+    	<div id="xuanzewaiguan_div" class="container-fluid">
+        <div class="hidden-xs col-sm-5 col-md-6" id="xuanzewaiguan_blank"></div>
+        <div class="col-xs-12 col-sm-2 col-md-2" id="xuanzewaiguan_conten">
+            <ul class="xuanzewaiguan_ul" id="xinde_daohanglan_relihong32">
+                <li class="xuanzewaiguan_li" style="color:#3f93d6">OPPO R15<hr id="xuanxianglan_underline"></li>
+                <li class="xuanzewaiguan_li" style="color:#3f93d6;">热力红</li>
+                <li class="xuanzewaiguan_li"  style="color:#3f93d6;">64GB</li>
+            </ul>
+        </div>
+         <div class="hidden-xs col-sm-5 col-md-4" id="xuanzewaiguan_blank"></div>
+    </div>
+    	<div>
+    		<p id="xindeOPPOR15_title">这是你的新OPPO R15</p>
+    	</div>
+    		<div id="xindeOPPOR15_pic">
+                <img src="./img/新的热力红.png">
+            </div>
+            <div id="xindeOPPOR15_bottom" class="container-fluid">
+              <div class="hidden-xs col-sm-2 col-md-3"></div>
+              <div class="col-xs-6 col-sm-4 col-md-4">
+                <span id="xindeOPPOR15_jiagetext">价格</span>
+                <hr id="xindeOPPOR15_hr">
+                <ul id="xindeOPPR15_songdariqiul">
+                    <li class="xindeOPPOR15_songdariqili" style="font-weight: bold;">送达日期</li>
+                    <li class="xindeOPPOR15_songdariqili">有现货</li>
+                    <li class="xindeOPPOR15_songdariqili">免费送货</li>
+                </ul>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3">
+                <span id="xindeOPPOR15_RMBtext">RMB &nbsp;4,548</span>
+                <span id="xindeOPPOR15_zengzhishui">含增值税及其他法定税费：约 RMB 743。</span>
+                <input type="button" class="xindeOPPOR15_gouwudai_button" id="OPPOR15RED64">
+                </div>
+                <div class="hidden-xs col-sm-2 col-md-2"></div>
+            </div>
+    	</div>
+    </div>
+
+       <div id="xindeoppor15_xingkongzi32">
+    <div id="xindeOPPOR15_div">
+    	<div id="xuanzewaiguan_div" class="container-fluid">
+        <div class="hidden-xs col-sm-5 col-md-6" id="xuanzewaiguan_blank"></div>
+        <div class="col-xs-12 col-sm-2 col-md-2" id="xuanzewaiguan_conten">
+            <ul class="xuanzewaiguan_ul" id="xinde_daohanglan_relihong32">
+                <li class="xuanzewaiguan_li" style="color:#3f93d6">OPPO R15<hr id="xuanxianglan_underline"></li>
+                <li class="xuanzewaiguan_li" style="color:#3f93d6;">星空紫</li>
+                <li class="xuanzewaiguan_li"  style="color:#3f93d6;">32GB</li>
+            </ul>
+        </div>
+         <div class="hidden-xs col-sm-5 col-md-4" id="xuanzewaiguan_blank"></div>
+    </div>
+    	<div>
+    		<p id="xindeOPPOR15_title">这是你的新OPPO R15</p>
+    	</div>
+    		<div id="xindeOPPOR15_pic">
+                <img src="./img/新的星空紫.png">
+            </div>
+            <div id="xindeOPPOR15_bottom" class="container-fluid">
+              <div class="hidden-xs col-sm-2 col-md-3"></div>
+              <div class="col-xs-6 col-sm-4 col-md-4">
+                <span id="xindeOPPOR15_jiagetext">价格</span>
+                <hr id="xindeOPPOR15_hr">
+                <ul id="xindeOPPR15_songdariqiul">
+                    <li class="xindeOPPOR15_songdariqili" style="font-weight: bold;">送达日期</li>
+                    <li class="xindeOPPOR15_songdariqili">有现货</li>
+                    <li class="xindeOPPOR15_songdariqili">免费送货</li>
+                </ul>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3">
+                <span id="xindeOPPOR15_RMBtext">RMB &nbsp;3,755</span>
+                <span id="xindeOPPOR15_zengzhishui">含增值税及其他法定税费：约 RMB 743。</span>
+                <input type="button" class="xindeOPPOR15_gouwudai_button" id="OPPOR15PURPLE32">
+                </div>
+                <div class="hidden-xs col-sm-2 col-md-2"></div>
+            </div>
+    	</div>
+    </div>
+       <div id="xindeoppor15_xingkongzi64">
+    <div id="xindeOPPOR15_div">
+    	<div id="xuanzewaiguan_div" class="container-fluid">
+        <div class="hidden-xs col-sm-5 col-md-6" id="xuanzewaiguan_blank"></div>
+        <div class="col-xs-12 col-sm-2 col-md-2" id="xuanzewaiguan_conten">
+            <ul class="xuanzewaiguan_ul" id="xinde_daohanglan_relihong32">
+                <li class="xuanzewaiguan_li" style="color:#3f93d6">OPPO R15<hr id="xuanxianglan_underline"></li>
+                <li class="xuanzewaiguan_li" style="color:#3f93d6;">星空紫</li>
+                <li class="xuanzewaiguan_li"  style="color:#3f93d6;">64GB</li>
+            </ul>
+        </div>
+         <div class="hidden-xs col-sm-5 col-md-4" id="xuanzewaiguan_blank"></div>
+    </div>
+    	<div>
+    		<p id="xindeOPPOR15_title">这是你的新OPPO R15</p>
+    	</div>
+    		<div id="xindeOPPOR15_pic">
+                <img src="./img/新的星空紫.png">
+            </div>
+            <div id="xindeOPPOR15_bottom" class="container-fluid">
+            	 <div class="hidden-xs col-sm-2 col-md-3"></div>
+                <div class="col-xs-6 col-sm-4 col-md-4">
+                <span id="xindeOPPOR15_jiagetext">价格</span>
+                <hr id="xindeOPPOR15_hr">
+                <ul id="xindeOPPR15_songdariqiul">
+                    <li class="xindeOPPOR15_songdariqili" style="font-weight: bold;">送达日期</li>
+                    <li class="xindeOPPOR15_songdariqili">有现货</li>
+                    <li class="xindeOPPOR15_songdariqili">免费送货</li>
+                </ul>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3">
+                <input type="button" class="xindeOPPOR15_gouwudai_button" id="OPPOR15PURPLE64">
+                <span id="xindeOPPOR15_RMBtext">RMB &nbsp;4,548</span>
+                <span id="xindeOPPOR15_zengzhishui">含增值税及其他法定税费：约 RMB 743。</span>
+                 </div>
+                <div class="hidden-xs col-sm-2 col-md-2"></div>
+            </div>
+    	</div>
+    </div>
+      <div id="xindeoppor15_taocihei32">
+    <div id="xindeOPPOR15_div">
+    	<div id="xuanzewaiguan_div" class="container-fluid">
+        <div class="hidden-xs col-sm-5 col-md-6" id="xuanzewaiguan_blank"></div>
+        <div class="col-xs-12 col-sm-2 col-md-2" id="xuanzewaiguan_conten">
+            <ul class="xuanzewaiguan_ul" id="xinde_daohanglan_relihong32">
+                <li class="xuanzewaiguan_li" style="color:#3f93d6">OPPO R15<hr id="xuanxianglan_underline"></li>
+                <li class="xuanzewaiguan_li" style="color:#3f93d6;">陶瓷黑</li>
+                <li class="xuanzewaiguan_li"  style="color:#3f93d6;">32GB</li>
+            </ul>
+        </div>
+         <div class="hidden-xs col-sm-5 col-md-4" id="xuanzewaiguan_blank"></div>
+    </div>
+    	<div>
+    		<p id="xindeOPPOR15_title">这是你的新OPPO R15</p>
+    	</div>
+    		<div id="xindeOPPOR15_pic">
+                <img src="./img/新的陶瓷黑.png">
+            </div>
+            <div id="xindeOPPOR15_bottom" class="container-fluid">
+            	<div class="hidden-xs col-sm-2 col-md-3"></div>
+                <div class="col-xs-6 col-sm-4 col-md-4">
+                <span id="xindeOPPOR15_jiagetext">价格</span>
+                <hr id="xindeOPPOR15_hr">
+                <ul id="xindeOPPR15_songdariqiul">
+                    <li class="xindeOPPOR15_songdariqili" style="font-weight: bold;">送达日期</li>
+                    <li class="xindeOPPOR15_songdariqili">有现货</li>
+                    <li class="xindeOPPOR15_songdariqili">免费送货</li>
+                </ul>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3">
+                <span id="xindeOPPOR15_RMBtext">RMB &nbsp;3,755</span>
+                <span id="xindeOPPOR15_zengzhishui">含增值税及其他法定税费：约 RMB 743。</span>
+                <input type="button" class="xindeOPPOR15_gouwudai_button" id="OPPOR15BLACK32">
+                 </div>
+                <div class="hidden-xs col-sm-2 col-md-2"></div>
+            </div>
+    	</div>
+    </div>
+      <div id="xindeoppor15_taocihei64">
+    <div id="xindeOPPOR15_div">
+    	<div id="xuanzewaiguan_div" class="container-fluid">
+        <div class="hidden-xs col-sm-5 col-md-6" id="xuanzewaiguan_blank"></div>
+        <div class="col-xs-12 col-sm-2 col-md-2" id="xuanzewaiguan_conten">
+            <ul class="xuanzewaiguan_ul" id="xinde_daohanglan_relihong32">
+                <li class="xuanzewaiguan_li" style="color:#3f93d6">OPPO R15<hr id="xuanxianglan_underline"></li>
+                <li class="xuanzewaiguan_li" style="color:#3f93d6;">陶瓷黑</li>
+                <li class="xuanzewaiguan_li"  style="color:#3f93d6;">64GB</li>
+            </ul>
+        </div>
+         <div class="hidden-xs col-sm-5 col-md-4" id="xuanzewaiguan_blank"></div>
+    </div>
+    	<div>
+    		<p id="xindeOPPOR15_title">这是你的新OPPO R15</p>
+    	</div>
+    		<div id="xindeOPPOR15_pic">
+                <img src="./img/新的陶瓷黑.png">
+            </div>
+            <div id="xindeOPPOR15_bottom" class="container-fluid">
+            	<div class="hidden-xs col-sm-2 col-md-3"></div>
+                <div class="col-xs-6 col-sm-4 col-md-4">
+                <span id="xindeOPPOR15_jiagetext">价格</span>
+                <hr id="xindeOPPOR15_hr">
+                <ul id="xindeOPPR15_songdariqiul">
+                    <li class="xindeOPPOR15_songdariqili" style="font-weight: bold;">送达日期</li>
+                    <li class="xindeOPPOR15_songdariqili">有现货</li>
+                    <li class="xindeOPPOR15_songdariqili">免费送货</li>
+                </ul>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3">
+                <span id="xindeOPPOR15_RMBtext">RMB &nbsp;4，548</span>
+                <span id="xindeOPPOR15_zengzhishui">含增值税及其他法定税费：约 RMB 743。</span>
+                <input type="button" class="xindeOPPOR15_gouwudai_button" id="OPPOR15BLACK64">
+                 </div>
+                <div class="hidden-xs col-sm-2 col-md-2"></div>
+            </div>
+    	</div>
+    </div>
+       <div id="xindeoppor15_tebieban32">
+    <div id="xindeOPPOR15_div">
+    	<div id="xuanzewaiguan_div" class="container-fluid">
+        <div class="hidden-xs col-sm-5 col-md-6" id="xuanzewaiguan_blank"></div>
+        <div class="col-xs-12 col-sm-2 col-md-2" id="xuanzewaiguan_conten">
+            <ul class="xuanzewaiguan_ul" id="xinde_daohanglan_relihong32">
+                <li class="xuanzewaiguan_li" style="color:#3f93d6">OPPO R15<hr id="xuanxianglan_underline"></li>
+                <li class="xuanzewaiguan_li" style="color:#3f93d6;">星云特别版</li>
+                <li class="xuanzewaiguan_li"  style="color:#3f93d6;">32GB</li>
+            </ul>
+        </div>
+         <div class="hidden-xs col-sm-5 col-md-4" id="xuanzewaiguan_blank"></div>
+    </div>
+    	<div>
+    		<p id="xindeOPPOR15_title">这是你的新OPPO R15</p>
+    	</div>
+    		<div id="xindeOPPOR15_pic">
+                <img src="./img/新的特别版.png">
+            </div>
+            <div id="xindeOPPOR15_bottom" class="container-fluid">
+            	 <div class="hidden-xs col-sm-2 col-md-3"></div>
+                 <div class="col-xs-6 col-sm-4 col-md-4">
+                <span id="xindeOPPOR15_jiagetext">价格</span>
+                <hr id="xindeOPPOR15_hr">
+                <ul id="xindeOPPR15_songdariqiul">
+                    <li class="xindeOPPOR15_songdariqili" style="font-weight: bold;">送达日期</li>
+                    <li class="xindeOPPOR15_songdariqili">有现货</li>
+                    <li class="xindeOPPOR15_songdariqili">免费送货</li>
+                </ul>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3">
+                <span id="xindeOPPOR15_RMBtext">RMB &nbsp;3,755</span>
+                <span id="xindeOPPOR15_zengzhishui">含增值税及其他法定税费：约 RMB 743。</span>
+                <input type="button" class="xindeOPPOR15_gouwudai_button" id="OPPOR15SPECIAL32">
+                </div>
+                <div class="hidden-xs col-sm-2 col-md-2"></div>
+            </div>
+    	</div>
+    </div>
+      <div id="xindeoppor15_tebieban64">
+    <div id="xindeOPPOR15_div">
+    	<div id="xuanzewaiguan_div" class="container-fluid">
+        <div class="hidden-xs col-sm-5 col-md-6" id="xuanzewaiguan_blank"></div>
+        <div class="col-xs-12 col-sm-2 col-md-2" id="xuanzewaiguan_conten">
+            <ul class="xuanzewaiguan_ul" id="xinde_daohanglan_relihong32">
+                <li class="xuanzewaiguan_li" style="color:#3f93d6">OPPO R15<hr id="xuanxianglan_underline"></li>
+                <li class="xuanzewaiguan_li" style="color:#3f93d6;">星云特别版</li>
+                <li class="xuanzewaiguan_li"  style="color:#3f93d6;">64GB</li>
+            </ul>
+        </div>
+         <div class="hidden-xs col-sm-5 col-md-4" id="xuanzewaiguan_blank"></div>
+    </div>
+    	<div>
+    		<p id="xindeOPPOR15_title">这是你的新OPPO R15</p>
+    	</div>
+    		<div id="xindeOPPOR15_pic">
+                <img src="./img/新的特别版.png">
+            </div>
+            <div id="xindeOPPOR15_bottom" class="container-fluid">
+            	 <div class="hidden-xs col-sm-2 col-md-3"></div>
+                <div class="col-xs-6 col-sm-4 col-md-4">
+                <span id="xindeOPPOR15_jiagetext">价格</span>
+                <hr id="xindeOPPOR15_hr">
+                <ul id="xindeOPPR15_songdariqiul">
+                    <li class="xindeOPPOR15_songdariqili" style="font-weight: bold;">送达日期</li>
+                    <li class="xindeOPPOR15_songdariqili">有现货</li>
+                    <li class="xindeOPPOR15_songdariqili">免费送货</li>
+                </ul>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3">
+                <span id="xindeOPPOR15_RMBtext">RMB &nbsp;4,548</span>
+                <span id="xindeOPPOR15_zengzhishui">含增值税及其他法定税费：约 RMB 743。</span>
+                <input type="button" class="xindeOPPOR15_gouwudai_button" id="OPPOR15SPECIAL64">
+                </div>
+                <div class="hidden-xs col-sm-2 col-md-2"></div>
+            </div>
+    	</div>
+    </div>
+       <div id="xindeoppor15_mengjinghong32">
+    <div id="xindeOPPOR15_div">
+    	<div id="xuanzewaiguan_div" class="container-fluid">
+        <div class="hidden-xs col-sm-5 col-md-6" id="xuanzewaiguan_blank"></div>
+        <div class="col-xs-12 col-sm-2 col-md-2" id="xuanzewaiguan_conten">
+            <ul class="xuanzewaiguan_ul" id="xinde_daohanglan_relihong32">
+                <li class="xuanzewaiguan_li" style="color:#3f93d6;min-width: 95px">OPPOR15梦境版<hr id="xuanxianglan_underline"></li>
+                <li class="xuanzewaiguan_li" style="color:#3f93d6;">&nbsp;&nbsp;&nbsp;梦境红</li>
+                <li class="xuanzewaiguan_li"  style="color:#3f93d6;">32GB</li>
+            </ul>
+        </div>
+         <div class="hidden-xs col-sm-5 col-md-4" id="xuanzewaiguan_blank"></div>
+    </div>
+    	<div>
+    		<p id="xindeOPPOR15_title">这是你的新OPPO R15</p>
+    	</div>
+    		<div id="xindeOPPOR15_pic">
+                <img src="./img/新的梦境红.png">
+            </div>
+            <div id="xindeOPPOR15_bottom" class="container-fluid">
+            	 <div class="hidden-xs col-sm-2 col-md-3"></div>
+                <div class="col-xs-6 col-sm-4 col-md-4">
+                <span id="xindeOPPOR15_jiagetext">价格</span>
+                <hr id="xindeOPPOR15_hr">
+                <ul id="xindeOPPR15_songdariqiul">
+                    <li class="xindeOPPOR15_songdariqili" style="font-weight: bold;">送达日期</li>
+                    <li class="xindeOPPOR15_songdariqili">有现货</li>
+                    <li class="xindeOPPOR15_songdariqili">免费送货</li>
+                </ul>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3">
+                <span id="xindeOPPOR15_RMBtext">RMB &nbsp;4,548</span>
+                <span id="xindeOPPOR15_zengzhishui">含增值税及其他法定税费：约 RMB 743。</span>
+                <input type="button" class="xindeOPPOR15_gouwudai_button" id="OPPOR15MENGRED32">
+                </div>
+                <div class="hidden-xs col-sm-2 col-md-2"></div>
+            </div>
+    	</div>
+    </div>
+     <div id="xindeoppor15_mengjinghong64">
+    <div id="xindeOPPOR15_div">
+    	<div id="xuanzewaiguan_div" class="container-fluid">
+        <div class="hidden-xs col-sm-5 col-md-6" id="xuanzewaiguan_blank"></div>
+        <div class="col-xs-12 col-sm-2 col-md-2" id="xuanzewaiguan_conten">
+            <ul class="xuanzewaiguan_ul" id="xinde_daohanglan_relihong32">
+                <li class="xuanzewaiguan_li" style="color:#3f93d6;min-width: 95px">OPPOR15梦境版<hr id="xuanxianglan_underline"></li>
+                <li class="xuanzewaiguan_li" style="color:#3f93d6;">&nbsp;&nbsp;&nbsp;梦境红</li>
+                <li class="xuanzewaiguan_li"  style="color:#3f93d6;">64GB</li>
+            </ul>
+        </div>
+         <div class="hidden-xs col-sm-5 col-md-4" id="xuanzewaiguan_blank"></div>
+    </div>
+    	<div>
+    		<p id="xindeOPPOR15_title">这是你的新OPPO R15</p>
+    	</div>
+    		<div id="xindeOPPOR15_pic">
+                <img src="./img/新的梦境红.png">
+            </div>
+            <div id="xindeOPPOR15_bottom" class="container-fluid">
+            	 <div class="hidden-xs col-sm-2 col-md-3"></div>
+              <div class="col-xs-6 col-sm-4 col-md-4">
+                <span id="xindeOPPOR15_jiagetext">价格</span>
+                <hr id="xindeOPPOR15_hr">
+                <ul id="xindeOPPR15_songdariqiul">
+                    <li class="xindeOPPOR15_songdariqili" style="font-weight: bold;">送达日期</li>
+                    <li class="xindeOPPOR15_songdariqili">有现货</li>
+                    <li class="xindeOPPOR15_songdariqili">免费送货</li>
+                </ul>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3">
+                <span id="xindeOPPOR15_RMBtext">RMB &nbsp;5,348</span>
+                <span id="xindeOPPOR15_zengzhishui">含增值税及其他法定税费：约 RMB 743。</span>
+                <input type="button" class="xindeOPPOR15_gouwudai_button" id="OPPOR15MENGRED64">
+                 </div>
+                <div class="hidden-xs col-sm-2 col-md-2"></div>
+            </div>
+    	</div>
+    </div>
+     <div id="xindeoppor15_mengjingzi32">
+    <div id="xindeOPPOR15_div">
+    	<div id="xuanzewaiguan_div" class="container-fluid">
+        <div class="hidden-xs col-sm-5 col-md-5" id="xuanzewaiguan_blank"></div>
+        <div class="col-xs-12 col-sm-2 col-md-2" id="xuanzewaiguan_conten">
+            <ul class="xuanzewaiguan_ul" id="xinde_daohanglan_relihong32">
+                <li class="xuanzewaiguan_li" style="color:#3f93d6;min-width: 95px">OPPOR15梦境版<hr id="xuanxianglan_underline"></li>
+                <li class="xuanzewaiguan_li" style="color:#3f93d6;">&nbsp;&nbsp;&nbsp;梦境紫</li>
+                <li class="xuanzewaiguan_li"  style="color:#3f93d6;">32GB</li>
+            </ul>
+        </div>
+         <div class="hidden-xs col-sm-5 col-md-5" id="xuanzewaiguan_blank"></div>
+    </div>
+    	<div>
+    		<p id="xindeOPPOR15_title">这是你的新OPPO R15</p>
+    	</div>
+    		<div id="xindeOPPOR15_pic">
+                <img src="./img/新的梦境紫.png">
+            </div>
+            <div id="xindeOPPOR15_bottom" class="container-fluid">
+            	 <div class="hidden-xs col-sm-2 col-md-3"></div>
+                <div class="col-xs-6 col-sm-4 col-md-4">
+                <span id="xindeOPPOR15_jiagetext">价格</span>
+                <hr id="xindeOPPOR15_hr">
+                <ul id="xindeOPPR15_songdariqiul">
+                    <li class="xindeOPPOR15_songdariqili" style="font-weight: bold;">送达日期</li>
+                    <li class="xindeOPPOR15_songdariqili">有现货</li>
+                    <li class="xindeOPPOR15_songdariqili">免费送货</li>
+                </ul>
+                 </div>
+                <div class="col-xs-6 col-sm-4 col-md-3">
+                <span id="xindeOPPOR15_RMBtext">RMB &nbsp;4,548</span>
+                <span id="xindeOPPOR15_zengzhishui">含增值税及其他法定税费：约 RMB 743。</span>
+                <input type="button" class="xindeOPPOR15_gouwudai_button" id="OPPOR15MENGPURPLE32">
+                </div>
+                <div class="hidden-xs col-sm-2 col-md-2"></div>
+            </div>
+    	</div>
+    </div>
+     <div id="xindeoppor15_mengjingzi64">
+    <div id="xindeOPPOR15_div">
+    	<div id="xuanzewaiguan_div" class="container-fluid">
+        <div class="hidden-xs col-sm-5 col-md-5" id="xuanzewaiguan_blank"></div>
+        <div class="col-xs-12 col-sm-2 col-md-2" id="xuanzewaiguan_conten">
+            <ul class="xuanzewaiguan_ul" id="xinde_daohanglan_relihong32">
+                <li class="xuanzewaiguan_li" style="color:#3f93d6;min-width: 95px">OPPOR15梦境版<hr id="xuanxianglan_underline"></li>
+                <li class="xuanzewaiguan_li" style="color:#3f93d6;">&nbsp;&nbsp;&nbsp;梦境紫</li>
+                <li class="xuanzewaiguan_li"  style="color:#3f93d6;">64GB</li>
+            </ul>
+        </div>
+         <div class="hidden-xs col-sm-5 col-md-5" id="xuanzewaiguan_blank"></div>
+    </div>
+    	<div>
+    		<p id="xindeOPPOR15_title">这是你的新OPPO R15</p>
+    	</div>
+    		<div id="xindeOPPOR15_pic">
+                <img src="./img/新的梦境紫.png">
+            </div>
+            <div id="xindeOPPOR15_bottom" class="container-fluid">
+            	<div class="hidden-xs col-sm-2 col-md-3"></div>
+                <div class="col-xs-6 col-sm-4 col-md-4">
+                <span id="xindeOPPOR15_jiagetext">价格</span>
+                <hr id="xindeOPPOR15_hr">
+                <ul id="xindeOPPR15_songdariqiul">
+                    <li class="xindeOPPOR15_songdariqili" style="font-weight: bold;">送达日期</li>
+                    <li class="xindeOPPOR15_songdariqili">有现货</li>
+                    <li class="xindeOPPOR15_songdariqili">免费送货</li>
+                </ul>
+                 </div>
+                <div class="col-xs-6 col-sm-4 col-md-3">
+                <span id="xindeOPPOR15_RMBtext">RMB &nbsp;5,348</span>
+                <span id="xindeOPPOR15_zengzhishui">含增值税及其他法定税费：约 RMB 743。</span>
+                <input type="button" class="xindeOPPOR15_gouwudai_button" id="OPPOR15MENGPURPLE64">
+                 </div>
+                <div class="hidden-xs col-sm-2 col-md-2"></div>
+            </div>
+    	</div>
+    </div>
+
+
+      <div id="rongliangbufen_relihong">
+        <div id="xuanzewaiguan_div" class="container-fluid">
+        <div class="hidden-xs col-sm-5 col-md-6" id="xuanzewaiguan_blank"></div>
+    	<div class="col-xs-12 col-sm-2 col-md-2" id="xuanzewaiguan_conten">
+            <ul class="xuanzewaiguan_ul">
+                <li class="xuanzewaiguan_li" style="color:#3f93d6">OPPO R15<hr id="xuanxianglan_underline"></li>
+                <li class="xuanzewaiguan_li" style="color:#3f93d6">热力红</li>
+                <li class="xuanzewaiguan_li">容量</li>
+            </ul>
+    	</div>
+    	 <div class="hidden-xs col-sm-5 col-md-4" id="xuanzewaiguan_blank"></div>
+    	</div>
+
+
+        <div id="xuanzewaiguan_title_container" class="container-fluid">
+        <div class="col-xs-2 col-sm-3 col-md-4" id="xuanzewaiguan_title_blank"></div>
+        <div class="col-xs-8 col-sm-6 col-md-4" id="xuanzewaiguan_title_conten">
+            <p id="xuanzerongliang_title">然后选择存储容量</p>
+        </div>
+        <div class="col-xs-2 col-sm-3 col-md-4" id="xuanzewaiguan_title_blank"></div>
+        </div>
+
+        <div class="container-fluid" style="width: 100%">
+        <div class="hidden-xs col-sm-2 col-md-5"></div>
+        <div class="col-xs-12 col-sm-8 col-md-3" id="xuanzerongliang_twolabel">
+            <div class="label_div">
+            <lable onclick="oppor15xin_relihong32();"><span class="label_text">32<small>GB</small><sup>1</sup></span>
+                <p><span class="label_subtext">更有分期付款选择 &nbsp;RMB &nbsp; 3,755</span></p>
+            </lable>
+            </div>
+            <div class="label_div" style="left:50%;margin-left: 10px;">
+            <lable onclick="oppor15xin_relihong64();"><span class="label_text">64<small>GB</small><sup>1</sup></span>
+                <p><span class="label_subtext">更有分期付款选择 &nbsp;RMB &nbsp; 4,548</span></p>
+            </lable>
+            </div>
+            <div class="songhuoriqi">送达日期：有现货
+            </div>
+            <div class="songhuoriqi" style="margin-left: 10px;">送达日期：有现货
+            </div>
+        </div>
+            <div class="hidden-xs col-sm-2 col-md-4"></div>
+        </div>
+
+        <div class="container-fluid" style="width: 100%">
+        <div class="hidden-xs col-sm-1 col-md-3"></div>
+        <div class="col-xs-12 col-sm-10 col-md-6" id="xuanzerongliang_pic">
+            <img class="cunchurongliang_pic" src="./img/容量热力红.png">
+        </div>
+        <div class="hidden-xs col-sm-1 col-md-3"></div>
+        </div>
+
+        </div>
+
+        <div id="rongliangbufen_xingkongzi">
+
+
+        <div id="xuanzewaiguan_div" class="container-fluid">
+        <div class="hidden-xs col-sm-5 col-md-6" id="xuanzewaiguan_blank"></div>
+    	<div class="col-xs-12 col-sm-2 col-md-2" id="xuanzewaiguan_conten">
+            <ul class="xuanzewaiguan_ul">
+                <li class="xuanzewaiguan_li" style="color:#3f93d6">OPPO R15<hr id="xuanxianglan_underline"></li>
+                <li class="xuanzewaiguan_li" style="color:#3f93d6">星空紫</li>
+                <li class="xuanzewaiguan_li">容量</li>
+            </ul>
+    	</div>
+    	 <div class="hidden-xs col-sm-5 col-md-4" id="xuanzewaiguan_blank"></div>
+    	</div>
+
+
+        <div id="xuanzewaiguan_title_container" class="container-fluid">
+        <div class="col-xs-2 col-sm-3 col-md-4" id="xuanzewaiguan_title_blank"></div>
+        <div class="col-xs-8 col-sm-6 col-md-4" id="xuanzewaiguan_title_conten">
+            <p id="xuanzerongliang_title">然后选择存储容量</p>
+        </div>
+        <div class="col-xs-2 col-sm-3 col-md-4" id="xuanzewaiguan_title_blank"></div>
+        </div>
+
+        <div class="container-fluid" style="width: 100%">
+        <div class="hidden-xs col-sm-2 col-md-5"></div>
+        <div class="col-xs-12 col-sm-8 col-md-3" id="xuanzerongliang_twolabel">
+            <div class="label_div">
+            <lable onclick="oppor15xin_xingkongzi32();"><span class="label_text">32<small>GB</small><sup>1</sup></span>
+                <p><span class="label_subtext">更有分期付款选择 &nbsp;RMB &nbsp; 3,755</span></p>
+            </lable>
+            </div>
+            <div class="label_div" style="left:50%;margin-left: 10px;">
+            <lable onclick="oppor15xin_xingkongzi64();"><span class="label_text">64<small>GB</small><sup>1</sup></span>
+                <p><span class="label_subtext">更有分期付款选择 &nbsp;RMB &nbsp; 4,548</span></p>
+            </lable>
+            </div>
+            <div class="songhuoriqi">送达日期：有现货
+            </div>
+            <div class="songhuoriqi" style="margin-left: 10px;">送达日期：有现货
+            </div>
+        </div>
+            <div class="hidden-xs col-sm-2 col-md-4"></div>
+        </div>
+
+        <div class="container-fluid" style="width: 100%">
+        <div class="hidden-xs col-sm-1 col-md-3"></div>
+        <div class="col-xs-12 col-sm-10 col-md-6" id="xuanzerongliang_pic">
+            <img class="cunchurongliang_pic" src="./img/容量星空紫.png">
+        </div>
+        <div class="hidden-xs col-sm-1 col-md-3"></div>
+        </div>
+
+        </div>
+
+
+
+        <div id="rongliangbufen_taocihei">
+
+
+        <div id="xuanzewaiguan_div" class="container-fluid">
+        <div class="hidden-xs col-sm-5 col-md-6" id="xuanzewaiguan_blank"></div>
+    	<div class="col-xs-12 col-sm-2 col-md-2" id="xuanzewaiguan_conten">
+             <ul class="xuanzewaiguan_ul">
+                <li class="xuanzewaiguan_li" style="color:#3f93d6">OPPO R15<hr id="xuanxianglan_underline"></li>
+                <li class="xuanzewaiguan_li" style="color:#3f93d6">陶瓷黑</li>
+                <li class="xuanzewaiguan_li">容量</li>
+            </ul>
+    	</div>
+    	 <div class="hidden-xs col-sm-5 col-md-4" id="xuanzewaiguan_blank"></div>
+    	</div>
+
+
+        <div id="xuanzewaiguan_title_container" class="container-fluid">
+        <div class="col-xs-2 col-sm-3 col-md-4" id="xuanzewaiguan_title_blank"></div>
+        <div class="col-xs-8 col-sm-6 col-md-4" id="xuanzewaiguan_title_conten">
+            <p id="xuanzerongliang_title">然后选择存储容量</p>
+        </div>
+        <div class="col-xs-2 col-sm-3 col-md-4" id="xuanzewaiguan_title_blank"></div>
+        </div>
+
+        <div class="container-fluid" style="width: 100%">
+        <div class="hidden-xs col-sm-2 col-md-5"></div>
+        <div class="col-xs-12 col-sm-8 col-md-3" id="xuanzerongliang_twolabel">
+            <div class="label_div">
+            <lable  onclick="oppor15xin_taocihei32();"><span class="label_text">32<small>GB</small><sup>1</sup></span>
+                <p><span class="label_subtext">更有分期付款选择 &nbsp;RMB &nbsp; 3,755</span></p>
+            </lable>
+            </div>
+            <div class="label_div" style="left:50%;margin-left: 10px;">
+            <lable onclick="oppor15xin_taocihei64();"><span class="label_text">64<small>GB</small><sup>1</sup></span>
+                <p><span class="label_subtext">更有分期付款选择 &nbsp;RMB &nbsp; 4,548</span></p>
+            </lable>
+            </div>
+            <div class="songhuoriqi">送达日期：有现货
+            </div>
+            <div class="songhuoriqi" style="margin-left: 10px;">送达日期：有现货
+            </div>
+        </div>
+            <div class="hidden-xs col-sm-2 col-md-4"></div>
+        </div>
+
+        <div class="container-fluid" style="width: 100%">
+        <div class="hidden-xs col-sm-1 col-md-3"></div>
+        <div class="col-xs-12 col-sm-10 col-md-6" id="xuanzerongliang_pic">
+            <img class="cunchurongliang_pic" src="./img/容量陶瓷黑.png">
+        </div>
+        <div class="hidden-xs col-sm-1 col-md-3"></div>
+        </div>
+
+        </div>
+
+
+
+
+         <div id="rongliangbufen_tebieban">
+
+
+        <div id="xuanzewaiguan_div" class="container-fluid">
+        <div class="hidden-xs col-sm-5 col-md-6" id="xuanzewaiguan_blank"></div>
+    	<div class="col-xs-12 col-sm-2 col-md-2" id="xuanzewaiguan_conten">
+             <ul class="xuanzewaiguan_ul">
+                <li class="xuanzewaiguan_li" style="color:#3f93d6">OPPO R15<hr id="xuanxianglan_underline"></li>
+                <li class="xuanzewaiguan_li" style="color:#3f93d6">星云特别版</li>
+                <li class="xuanzewaiguan_li">容量</li>
+            </ul>
+    	</div>
+    	 <div class="hidden-xs col-sm-5 col-md-4" id="xuanzewaiguan_blank"></div>
+    	</div>
+
+
+        <div id="xuanzewaiguan_title_container" class="container-fluid">
+        <div class="col-xs-2 col-sm-3 col-md-4" id="xuanzewaiguan_title_blank"></div>
+        <div class="col-xs-8 col-sm-6 col-md-4" id="xuanzewaiguan_title_conten">
+            <p id="xuanzerongliang_title">然后选择存储容量</p>
+        </div>
+        <div class="col-xs-2 col-sm-3 col-md-4" id="xuanzewaiguan_title_blank"></div>
+        </div>
+
+        <div class="container-fluid" style="width: 100%">
+        <div class="hidden-xs col-sm-2 col-md-5"></div>
+        <div class="col-xs-12 col-sm-8 col-md-3" id="xuanzerongliang_twolabel">
+            <div class="label_div">
+            <lable  onclick="oppor15xin_tebieban32();"><span class="label_text">32<small>GB</small><sup>1</sup></span>
+                <p><span class="label_subtext">更有分期付款选择 &nbsp;RMB &nbsp; 3,755</span></p>
+            </lable>
+            </div>
+            <div class="label_div" style="left:50%;margin-left: 10px;">
+            <lable onclick="oppor15xin_tebieban64();"><span class="label_text">64<small>GB</small><sup>1</sup></span>
+                <p><span class="label_subtext">更有分期付款选择 &nbsp;RMB &nbsp; 4,548</span></p>
+            </lable>
+            </div>
+            <div class="songhuoriqi">送达日期：有现货
+            </div>
+            <div class="songhuoriqi" style="margin-left: 10px;">送达日期：有现货
+            </div>
+        </div>
+            <div class="hidden-xs col-sm-2 col-md-4"></div>
+        </div>
+
+        <div class="container-fluid" style="width: 100%">
+        <div class="hidden-xs col-sm-1 col-md-3"></div>
+        <div class="col-xs-12 col-sm-10 col-md-6" id="xuanzerongliang_pic">
+            <img class="cunchurongliang_pic" src="./img/容量特别版.png">
+        </div>
+        <div class="hidden-xs col-sm-1 col-md-3"></div>
+        </div>
+        </div>
+
+
+         <div id="rongliangbufen_mengjinghong">
+
+
+        <div id="xuanzewaiguan_div" class="container-fluid">
+        <div class="hidden-xs col-sm-5 col-md-6" id="xuanzewaiguan_blank"></div>
+    	<div class="col-xs-12 col-sm-2 col-md-2" id="xuanzewaiguan_conten">
+            <ul class="xuanzewaiguan_ul">
+                <li class="xuanzewaiguan_li" style="color:#3f93d6">OPPO R15<hr id="xuanxianglan_underline"></li>
+                <li class="xuanzewaiguan_li" style="color:#3f93d6">梦境红</li>
+                <li class="xuanzewaiguan_li">容量</li>
+            </ul>
+    	</div>
+    	 <div class="hidden-xs col-sm-5 col-md-4" id="xuanzewaiguan_blank"></div>
+    	</div>
+
+
+        <div id="xuanzewaiguan_title_container" class="container-fluid">
+        <div class="col-xs-2 col-sm-3 col-md-4" id="xuanzewaiguan_title_blank"></div>
+        <div class="col-xs-8 col-sm-6 col-md-4" id="xuanzewaiguan_title_conten">
+            <p id="xuanzerongliang_title">然后选择存储容量</p>
+        </div>
+        <div class="col-xs-2 col-sm-3 col-md-4" id="xuanzewaiguan_title_blank"></div>
+        </div>
+
+        <div class="container-fluid" style="width: 100%">
+        <div class="hidden-xs col-sm-2 col-md-5"></div>
+        <div class="col-xs-12 col-sm-8 col-md-3" id="xuanzerongliang_twolabel">
+            <div class="label_div">
+            <lable onclick="oppor15xin_mengjinghong32();"><span class="label_text">32<small>GB</small><sup>1</sup></span>
+                <p><span class="label_subtext">更有分期付款选择 &nbsp;RMB &nbsp; 4,548</span></p>
+            </lable>
+            </div>
+            <div class="label_div" style="left:50%;margin-left: 10px;">
+            <lable onclick="oppor15xin_mengjinghong64();"><span class="label_text">64<small>GB</small><sup>1</sup></span>
+                <p><span class="label_subtext">更有分期付款选择 &nbsp;RMB &nbsp; 5,348</span></p>
+            </lable>
+            </div>
+            <div class="songhuoriqi">送达日期：有现货
+            </div>
+            <div class="songhuoriqi" style="margin-left: 10px;">送达日期：有现货
+            </div>
+        </div>
+            <div class="hidden-xs col-sm-2 col-md-4"></div>
+        </div>
+
+        <div class="container-fluid" style="width: 100%">
+        <div class="hidden-xs col-sm-1 col-md-3"></div>
+        <div class="col-xs-12 col-sm-10 col-md-6" id="xuanzerongliang_pic">
+            <img class="cunchurongliang_pic" src="./img/容量梦境红.png">
+        </div>
+        <div class="hidden-xs col-sm-1 col-md-3"></div>
+        </div>
+
+        </div>
+
+
+         <div id="rongliangbufen_mengjingzi">
+
+
+        <div id="xuanzewaiguan_div" class="container-fluid">
+        <div class="hidden-xs col-sm-5 col-md-6" id="xuanzewaiguan_blank"></div>
+    	<div class="col-xs-12 col-sm-2 col-md-2" id="xuanzewaiguan_conten">
+            <ul class="xuanzewaiguan_ul">
+                <li class="xuanzewaiguan_li" style="color:#3f93d6">OPPO R15<hr id="xuanxianglan_underline"></li>
+                <li class="xuanzewaiguan_li" style="color:#3f93d6">梦境紫</li>
+                <li class="xuanzewaiguan_li">容量</li>
+            </ul>
+    	</div>
+    	 <div class="hidden-xs col-sm-5 col-md-4" id="xuanzewaiguan_blank"></div>
+    	</div>
+
+
+        <div id="xuanzewaiguan_title_container" class="container-fluid">
+        <div class="col-xs-2 col-sm-3 col-md-4" id="xuanzewaiguan_title_blank"></div>
+        <div class="col-xs-8 col-sm-6 col-md-4" id="xuanzewaiguan_title_conten">
+            <p id="xuanzerongliang_title">然后选择存储容量</p>
+        </div>
+        <div class="col-xs-2 col-sm-3 col-md-4" id="xuanzewaiguan_title_blank"></div>
+        </div>
+
+        <div class="container-fluid" style="width: 100%">
+        <div class="hidden-xs col-sm-2 col-md-5"></div>
+        <div class="col-xs-12 col-sm-8 col-md-3" id="xuanzerongliang_twolabel">
+            <div class="label_div">
+            <lable onclick="oppor15xin_mengjingzi32();"><span class="label_text">32<small>GB</small><sup>1</sup></span>
+                <p><span class="label_subtext">更有分期付款选择 &nbsp;RMB &nbsp; 4,548</span></p>
+            </lable>
+            </div>
+            <div class="label_div" style="left:50%;margin-left: 10px;">
+            <lable onclick="oppor15xin_mengjingzi64();"><span class="label_text">64<small>GB</small><sup>1</sup></span>
+                <p><span class="label_subtext">更有分期付款选择 &nbsp;RMB &nbsp; 5,348</span></p>
+            </lable>
+            </div>
+            <div class="songhuoriqi">送达日期：有现货
+            </div>
+            <div class="songhuoriqi" style="margin-left: 10px;">送达日期：有现货
+            </div>
+        </div>
+            <div class="hidden-xs col-sm-2 col-md-4"></div>
+        </div>
+
+        <div class="container-fluid" style="width: 100%">
+        <div class="hidden-xs col-sm-1 col-md-3"></div>
+        <div class="col-xs-12 col-sm-10 col-md-6" id="xuanzerongliang_pic">
+            <img class="cunchurongliang_pic" src="./img/容量梦境紫.png">
+        </div>
+        <div class="hidden-xs col-sm-1 col-md-3"></div>
+        </div>
+
+        </div>
+
+
+
+
+
+
+     <div id="waiguanbufen_div">
+     <div id="xuanzewaiguan_div" class="container-fluid">
+        <div class="hidden-xs col-sm-5 col-md-6" id="xuanzewaiguan_blank"></div>
+        <div class="col-xs-12 col-sm-2 col-md-2" id="xuanzewaiguan_conten">
+            <ul class="xuanzewaiguan_ul">
+                <li class="xuanzewaiguan_li" style="color:#3f93d6">OPPO R15<hr id="xuanxianglan_underline"></li>
+                <li class="xuanzewaiguan_li">外观</li>
+                <li class="xuanzewaiguan_li">容量</li>
+            </ul>
+            <!--<span class="xuanxianglan_text" style="color:#3f93d6">OPPO R15</span>
+            <span class="xuanxianglan_text" style="left:85px">外观</span>
+            <span class="xuanxianglan_text" style="left:170px">容量</span>
+            <hr id="xuanzewaiguan_xuanxianglan_underline">-->
+        </div>
+         <div class="hidden-xs col-sm-5 col-md-4" id="xuanzewaiguan_blank"></div>
+
+    </div>
+        
+        <div id="xuanzewaiguan_title_container" class="container-fluid">
+        <div class="col-xs-2 col-sm-4 col-md-5" id="xuanzewaiguan_title_blank"></div>
+        <div class="col-xs-8 col-sm-4 col-md-2" id="xuanzewaiguan_title_conten">
+            <p id="xuanzewaiguan_title">选择你想要的外观</p>
+        </div>
+        <div class="col-xs-2 col-sm-4 col-md-5" id="xuanzewaiguan_title_blank"></div>
+        </div>
+
+        <div id="xuanzewaiguan_fourpic_container" class="container-fluid">
+       <div class="hidden-xs hidden-sm col-md-2" id="xuanzewaiguan_fourpic_blank"></div>
+        <div class="col-xs-12 col-sm-12 col-md-7" id="xuanzewaiguan_fourpic">
+            <ul  id="xuanzewaiguan_fourpic_ul">
+                <li class="xuanzewaiguan_fourpic_li"><img src="./img/热力红.png" id="relihong" onclick="relihongrongliang();"><p class="xuanzewaiguan_fourpic_li_text">热力红</p></li>
+                <li class="xuanzewaiguan_fourpic_li"><img src="./img/星空紫.png" id="xingkongzi" onclick="xingkongzirongliang();"><p class="xuanzewaiguan_fourpic_li_text">星空紫</p></li>
+                <li class="xuanzewaiguan_fourpic_li"><img src="./img/陶瓷黑.png" id="taocihei" onclick="taociheirongliang();"><p class="xuanzewaiguan_fourpic_li_text">陶瓷黑</p></li>
+                <li class="xuanzewaiguan_fourpic_li"><img src="./img/星云特别版.png" id="tebieban" onclick="tebiebanrongliang();"><p class="xuanzewaiguan_fourpic_li_text">星云特别版</p></li>
+            </ul>
+        </div>
+        <div class="hidden-xs hidden-sm col-md-1" id="xuanzewaiguan_fourpic_blank"></div>
+        </div>
+        </div>
+
+
+
+        <div id="waiguanbufen_mengjingban_div">
+     <div id="xuanzewaiguan_div" class="container-fluid">
+        <div class="hidden-xs col-sm-5 col-md-6" id="xuanzewaiguan_blank"></div>
+        <div class="col-xs-12 col-sm-2 col-md-2" id="xuanzewaiguan_conten">
+            <ul class="xuanzewaiguan_ul">
+                <li class="xuanzewaiguan_li" style="color:#3f93d6;min-width: 95px;">OPPOR15梦境版<hr id="xuanxianglan_underline"></li>
+                <li class="xuanzewaiguan_li">&nbsp;&nbsp;&nbsp;外观</li>
+                <li class="xuanzewaiguan_li">容量</li>
+            </ul>
+            <!--<span class="xuanxianglan_text" style="color:#3f93d6">OPPO R15</span>
+            <span class="xuanxianglan_text" style="left:85px">外观</span>
+            <span class="xuanxianglan_text" style="left:170px">容量</span>
+            <hr id="xuanzewaiguan_xuanxianglan_underline">-->
+        </div>
+         <div class="hidden-xs col-sm-5 col-md-4" id="xuanzewaiguan_blank"></div>
+
+    </div>
+        
+        <div id="xuanzewaiguan_title_container" class="container-fluid">
+        <div class="col-xs-2 col-sm-4 col-md-5" id="xuanzewaiguan_title_blank"></div>
+        <div class="col-xs-8 col-sm-4 col-md-2" id="xuanzewaiguan_title_conten">
+            <p id="xuanzewaiguan_title">选择你想要的外观</p>
+        </div>
+        <div class="col-xs-2 col-sm-4 col-md-5" id="xuanzewaiguan_title_blank"></div>
+        </div>
+
+        <div id="xuanzewaiguan_fourpic_container" class="container-fluid">
+       <div class="hidden-xs hidden-sm col-md-2" id="xuanzewaiguan_fourpic_blank"></div>
+        <div class="col-xs-12 col-sm-12 col-md-7" id="xuanzewaiguan_fourpic">
+            <ul  id="xuanzewaiguan_fourpic_ul" style="margin-left: 200px">
+                <li class="xuanzewaiguan_fourpic_li"><img src="./img/梦境红.png" id="mengjinghong" onclick="mengjinghongrongliang();"><p class="xuanzewaiguan_fourpic_li_text">梦境红</p></li>
+                <li class="xuanzewaiguan_fourpic_li"><img src="./img/梦境紫.png" id="mengjingzi" onclick="mengjingzirongliang();"><p class="xuanzewaiguan_fourpic_li_text">梦境紫</p></li>
+            </ul>
+        </div>
+        <div class="hidden-xs hidden-sm col-md-1" id="xuanzewaiguan_fourpic_blank"></div>
+        </div>
+        </div>
+
+
+
+    <div id="shouye">
+    <div id="xuanzewaiguan_div" class="container-fluid">
+        <div class="hidden-xs col-sm-5 col-md-6" id="xuanzewaiguan_blank"></div>
+    	<div class="col-xs-12 col-sm-2 col-md-2" id="xuanzewaiguan_conten">
+            <ul class="xuanzewaiguan_ul">
+                <li class="xuanzewaiguan_li">机型<hr id="xuanxianglan_underline"></li>
+                <li class="xuanzewaiguan_li">外观</li>
+                <li class="xuanzewaiguan_li">容量</li>
+            </ul>
+    		<!--<span class="xuanxianglan_text">机型</span>
+    		<span class="xuanxianglan_text" style="left:85px">外观</span>
+    		<span class="xuanxianglan_text" style="left:170px">容量</span>
+    		<hr id="xuanxianglan_underline">-->
+    	</div>
+        <div class="hidden-xs col-sm-5 col-md-4" id="xuanzewaiguan_blank"></div>
+
+    	<div id="jixingbijiao_title_container" class="container-fluid">
+            <div class="hidden-xs col-sm-1 col-md-3" id="jixingbijiao_title_blank"></div>
+    		<div class="col-xs-12 col-sm-10 col-md-8" id="jixingbijiao_title_conten"><h1 id="jixing_title">首先选择 &nbsp;OPPO&nbsp;R15 &nbsp;或&nbsp; OPPO&nbsp;R15&nbsp;梦境版</h1></div>
+            <div class="hidden-xs col-sm-1 col-md-1" id="jixingbijiao_title_blank"></div>
+        </div>
+
+        <div id="jixingbijiao_subtitle_container" class="container-fluid">
+            <div class="hidden-xs col-sm-4 col-md-5" id="jixingbijiao_subtitle_blank"></div>
+            <div class="col-xs-12 col-sm-4 col-md-4" id="jixingbijiao_subtitle_conten">购买 OPPO，享受免费送货服务。</div>
+            <div class="hidden-xs col-sm-4 col-md-3" id="jixingbijiao_subtitle_blank"></div>
+    	</div>
+
+        <div  class="container-fluid">
+            <div class="hidden-xs col-sm-1 col-md-2"></div>
+    	<div class="col-xs-12 col-sm-5 col-md-3" id="jixing_OPPOR15">
+    		<span id="jixing_OPPOR15_labetext">OPPO R15</span>
+            <span id="jixing_OPPOR15_pingmu">5.5 &nbsp;英寸显示屏</span>
+            <input type="button" class="jixing_OPPOR15_anniu" onclick="chooseoppr15();">
+            <span id="jixing_OPPOR15_fengqifukuan">更有分期付款选择。</span>
+            <span id="jixing_OPPOR15_RMB">RMB 3755</span>
+            <span id="jixing_OPPOR15_qishou">起售</span>
+            <span id="jixing_OPPOR15_pic"><img src="./img/OPPOR15.png" onclick="chooseoppr15();"></span>
+    	</div>
+    	<div class="col-xs-12 col-sm-5 col-md-3" id="jixing_OPPOR15_mengjingban">
+    		<span id="jixing_mengjinban_labetext">OPPO R15梦境版</span>
+            <span id="jixing_mengjinban_pingmu">5.5 &nbsp;英寸显示屏</span>
+            <input type="button" class="jixing_mengjinban_anniu" onclick="chooseoppr15meng();">
+            <span id="jixing_mengjinban_fengqifukuan">更有分期付款选择。</span>
+            <span id="jixing_mengjinban_RMB">RMB 4548</span>
+            <span id="jixing_mengjinban_qishou">起售</span>
+            <span id="jixing_mengjinban_pic"><img src="./img/OPPOR15梦境版.png" onclick="chooseoppr15meng();"></span>
+    	</div>
+        <div class="clearfloat"></div>
+           <div class="hidden-xs col-sm-1 col-md-4"></div>
+        </div>
+    </div>
+    </div>
+
+
+        </div>
+
+
+
+
+
+    <div id="adv_div" class="container-fluid">
+        <div class="hidden-xs col-sm-1 col-md-3" id="adv_blank"></div>
+        <div class="col-xs-12 col-sm-10 col-md-6" id="adv_conten">
+
+
+         <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" style="top:130px">
+  <!-- Indicators -->
+          <ol class="carousel-indicators" style="bottom:-40px">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+             <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+          </ol>
+
+  <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+          <img src="./img/OPPOR15广告.png" alt="...">
+          </div>
+          <div class="item">
+          <img src="./img/oppor15_adv2.png" alt="...">
+          </div>
+          <div class="item">
+          <img src="./img/oppor15_adv3.png" alt="...">
+          </div>
+          <div class="item">
+          <img src="./img/oppor15_adv4.png" alt="...">
+          </div>
+        </div>
+       </div>
+
+    	<!--<span id="adv_guanggao"><img src="OPPOR15广告.png" class="img-responsive"></span>
+    	<ul id="adv_dotnav">
+    		<li><a href="" class="circle" style="left:2px;background-color: #ffffff" alt=""></a></li>
+    		<li><a href="" class="circle" style="left:26px" alt=""></a></li>
+    		<li><a href="" class="circle" style="left:50px" alt=""></a></li>
+    		<li><a href="" class="circle" style="left:74px" alt=""></a></li>
+    	</ul>-->
+        </div>
+
+        <div class="hidden-xs col-sm-1 col-md-3" id="adv_blank"></div>
+    </div>
+
+    <div class="container-fluid">
+    	<div class="col-xs-4 col-sm-5 col-md-5"></div>
+    <div class="col-xs-4 col-sm-2 col-md-2" id="baozhuangneirong_title_div">
+    	<span id="baozhuangneirong_text">包装内容</span>
+    </div>
+        <div class="col-xs-4 col-sm-5 col-md-5"></div>
+    </div>
+
+    <div id="baozhuangneirong_conten_div" class="container-fluid">
+    	<div class="hidden-xs col-sm-1 col-md-3" id="baozhuangneirong_blank"></div>
+    	<div class="col-xs-12 col-sm-10 col-md-6" id="baozhuangneirong_conten">
+    	<span id="baozhuangneirong_pic1"><img src="./img/包装内容耳机.png" id="bznr_pic1"></span>
+    	<span id="baozhuangneirong_pic2"><img src="./img/包装内容OPPOR15.png" id="bznr_pic2"></span>
+    	<span id="baozhuangneirong_pic3"><img src="./img/包装内容插头.png" id="bznr_pic3"></span>
+    	<span id="baozhuangneirong_pic4"><img src="./img/包装内容数据线.png" id="bznr_pic4"></span>
+        </div>
+    	<div class="hidden-xs col-sm-1 col-md-3" id="baozhuangneirong_blank"></div>
+    </div>
+
+    <div id="baozhuangneirong_bottom_div" class="container-fluid">
+    	<div class="hidden-xs col-sm-1 col-md-3" id="baozhuangneirong_bottom_blank"></div>
+    	<div class="col-xs-12 col-sm-10 col-md-6" id="baozhuangneirong_bottom_conten">
+    	<span id="baozhuangneirong_bottom_text1">采用8.5毫米耳机插头</span>
+    	<span id="baozhuangneirong_bottom_text2">OPPO R15</span>
+    	<span id="baozhuangneirong_bottom_text3">5W USB电源适配器</span>
+    	<span id="baozhuangneirong_bottom_text4">闪电传 USB 连接线</span>
+        </div>
+        <div class="hidden-xs col-sm-1 col-md-3" id="baozhuangneirong_bottom_blank"></div>
+    </div>
+
+    <div id="jixingbijiao_div" class="container-fluid">
+    	<div class="hidden-xs col-sm-2 col-md-4" id="jixingbijiao_blank"></div>
+    	<div class="col-xs-12 col-sm-8 col-md-4" id="jixingbijiao_conten">
+    	<span id="jixingbijiao_title">OPPO R15 &nbsp;机型比较</span>
+        <span id="jixingbijiao_subtitle">找到最适合你的&nbsp; OPPO R15</span>
+        <span id="jixingbijiao_pic"><img src="./img/机型比较pic.png" id="jixingbijiao_img"></span>
+        </div>
+        <div class="hidden-xs col-sm-2 col-md-4" id="jixingbijiao_blank"></div>
+    </div>
+   <!-- <div id="bottom_div"></div>
+    <div id="bottom_conten_div">
+        <div id="bottom_title">
+        	<span id="bottom_logo"><img src="./bottom大米图标.png"></span>
+        	<span id="bottom_damishangchengtext"><a src="">大米商城</a></span>
+        	<span id="bottom_OPPOR15text"><a src="">OPPO R15</a></span>
+        	<span id="bottom_jiantou1"><img src="./bottom箭头.png"></span>
+        </div>
+        <div id="bottom_conten">
+        	<ul id="bottom_xuangoujiliaojie">
+               <li class="bottom_xuangoujiliaojie_li" style="font-family: 微软雅黑;color: #000000;">选购及了解</li>
+               <li class="bottom_xuangoujiliaojie_li"><a src="">iPhone</a></li>
+               <li class="bottom_xuangoujiliaojie_li"><a src="">Huawei</a></li>
+               <li class="bottom_xuangoujiliaojie_li"><a src="">Xiaomi</a></li>
+               <li class="bottom_xuangoujiliaojie_li"><a src="">Oppo</a></li>
+        	</ul>
+            <ul id="bottom_fuwuyuzhichi">
+            	<li class="bottom_fuwuyuzhichi_li" style="font-family: 微软雅黑;color: #000000;">服务与支持</li>
+                <li class="bottom_fuwuyuzhichi_li"><a src="">翻新和优惠</a></li>
+                <li class="bottom_fuwuyuzhichi_li"><a src="">分期付款</a></li>
+                <li class="bottom_fuwuyuzhichi_li"><a src="">订单状态</a></li>
+                <li class="bottom_fuwuyuzhichi_li"><a src="">以旧换新</a></li>
+                <li class="bottom_fuwuyuzhichi_li"><a src="">零件</a></li>
+                <li class="bottom_fuwuyuzhichi_li"><a src="">服务网点查询</a></li>
+                <li class="bottom_fuwuyuzhichi_li"><a src="">保修政策</a></li>
+                <li class="bottom_fuwuyuzhichi_li"><a src="">预约服务</a></li>
+                <li class="bottom_fuwuyuzhichi_li"><a src="">维修进度查询</a></li>
+            </ul>
+            <ul id="bottom_guanzhuwomen">
+                <li class="bottom_guanzhuwomen_li" style="font-family: 微软雅黑;color: #000000;">关注我们</li>
+                <li class="bottom_guanzhuwomen_li"><a src="">新浪微博</a></li></li>
+                <li class="bottom_guanzhuwomen_li"><a src="">官方微信</a></li></li>
+            </ul>
+            <ul id="bottom_shangwuhezuo">
+                <li class="bottom_shangwuhezuo_li" style="font-family: 微软雅黑;color: #000000;">商务合作</li>
+                <li class="bottom_shangwuhezuo_li"><a src="">开放平台</a></li></li>
+                <li class="bottom_shangwuhezuo_li"><a src="">商务采购</a></li></li>
+                <li class="bottom_shangwuhezuo_li"><a src="">品牌入驻</a></li></li>
+                <li class="bottom_shangwuhezuo_li"><a src="">成为伙伴</a></li></li>
+            </ul>
+            <ul id="bottom_gengduozixun">
+            	<li class="bottom_gengduozixun_li" style="font-family: 微软雅黑;color: #000000;">更多资讯</li>
+            	<li class="bottom_gengduozixun_li"><a src="">新闻资讯</a></li>
+            	<li class="bottom_gengduozixun_li"><a src="">联系我们</a></li>
+            	<li class="bottom_gengduozixun_li"><a src="">关于我们</a></li>
+            	<li class="bottom_gengduozixun_li"><a src="">活动</a></li>
+            	<li class="bottom_gengduozixun_li"><a src="">工作机会</a></li>     
+            </ul>
+        </div>
+        <div id="bottom_bottom">
+                <hr id="bottom_bottom_hr">
+        </div>
+    </div>-->  
+     <div id="bottom_div"></div>
+     <iframe name="" frameborder="0" scrolling="no" marginwidth="0" marginheight="0"  width="100%" height="510" src="DamiNewFooter.html"></iframe>
+</body>
+</html>

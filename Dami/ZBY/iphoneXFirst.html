@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>iPhoneX</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="WAZ_HomePagePicture/logo1.png" type="image/x-icon">
+    <link href="bootstrap.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/popper.js/1.12.5/umd/popper.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <link rel="icon" href="WAZ_HomePagePicture/logo1.png" type="image/x-icon">
+    <link rel="stylesheet" href="iphoneXFirst.css" type="text/css">
+    <script src="iphoneXFirst.js"></script>
+</head>
+
+<body>
+
+    <div id="DamiNewHeader">
+
+        <nav class="navbar  navbar-fixed-top header-mynavbar-default header-mynavbar header-mynavbar-fixed-top" role="navigation"
+            id="header_2">
+            <div id="header_1">
+            </div>
+            <div class="row header-myrow">
+                <div class="col-lg-11 col-md-12 col-sm-12 col-xs-12 col-lg-offset-1">
+                    <div class="row header-myrow">
+                        <div class="navbar-header" style="background-color: #333333">
+                            <span class="navbar-toggle header-mynavbar-toggle" data-toggle="collapse" data-target="#menu" id="header-mytoggle1">
+                                <span class="sr-only">展开导航</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </span>
+                            <a class="navbar-brand col-lg-2 col-md-1 col-sm-1 col-xs-2 col-xs-offset-5 header-mynavbar-brand" href="../WAZ/NewDaMi.html" style="position: relative;bottom: 5px;">
+                                <img id="logo" src="WAZ_HeaderPicture/logo.png">
+                            </a>
+                        </div>
+                        <div class="col-lg-11 col-md-10 col-sm-10 col-xs-12 ">
+                            <div class="collapse navbar-collapse header-mynavbar-collapse" id="menu">
+                                <ul class="nav nav-justified headerUL header-mypadding1 header-mynav-pills header-mynav-justified" style="margin-left: 20px;">
+                                    <li>
+                                        <a href="../ZBY/iphoneXFirst.html">iPhone</a>
+                                    </li>
+                                    <li>
+                                        <a href="../XWQ/huawei_fp.html">Huawei</a>
+                                    </li>
+                                    <li>
+                                        <a href="../WJY/xiaomi8/mi8.html">Xiaomi</a>
+                                    </li>
+                                    <li>
+                                        <a href="../DWJ/OPPOR15.html">Oppo</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" style="width: 60px">服务</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" style="font-size: 12px;width:80px;">技术支持</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="WAZ_HeaderPicture/magnifying.png">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <div class="dropdown">
+                                            <button class="btn btn-default dropdown-toggle" type="button"  data-toggle="dropdown" aria-expanded="true"style="background-color: #333333;border: none">
+                                                <img src="WAZ_HeaderPicture/shoppingbag.png">
+                                            </button>
+                                            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1" style="background-color:#ffffff;">
+                                                <li role="presentation"><a role="menuitem" tabindex="-1" href="" style="color: black" id="gouwudai">购物袋</a></li>
+                                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#" style="color: black">收藏</a></li>
+                                                <li role="presentation"><a role="menuitem" tabindex="-1" id="order" style="color: black">订单</a></li>
+                                                <li role="presentation"><a role="menuitem" tabindex="-1"  style="color: black" id="user">登录</a></li>
+                                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#" style="color: black" id="exit">注销</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar navbar-light navbar-fixed-top" id="headerNav" role="navigation" id="iphoneHeader" style="z-index: 0;background-color: rgba(245,245,245,0.4);border-bottom:1px solid gray;margin-top: 86px;height: 60px">
+                <div class="container-fluid">
+                    <div class="navbar-header navbar-left" style="margin-left: 300px;">
+                        <div id="headerFont" style="text-align: left;margin-bottom: 20px">
+                            iPhone X
+                        </div>
+                    </div>
+                    <div class="navbar-right" role="navigation" style="margin-right: 300px;">
+                        <a href="buyiPhone.html">
+                            <button class="btn btn-primary btn-xs" type="button" id="buyBtn" style="width: 60px;height: 40px;background: linear-gradient(#3d9de9, #0271ca);font-size: 16px ">购买</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    </div>
+    <script type="text/javascript">
+        function menuFixed(id) {
+            var obj = document.getElementById(id);
+            var _getHeight = obj.offsetTop;
+
+            window.onscroll = function () {
+                changePos(id, _getHeight);
+            }
+        }
+
+        function changePos(id, height) {
+            var obj = document.getElementById(id);
+            var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+            if (scrollTop < height) {
+                obj.style.position = 'relative';
+            } else {
+                obj.style.position = 'fixed';
+            }
+        }
+    </script>
+    <script type="text/javascript">
+        window.onload = function () {
+            menuFixed('header_2');
+        }
+    </script>
+
+
+
+    <div class="container" style="padding-top: 100px;margin-top: 100px">
+
+        <img id="iphoneFirst" src="index/iphoneFirst.jpg">
+        <div style="text-align: center" id="bigFont">
+            <p>iPhone X</p>
+        </div>
+
+        <div class="row">
+
+        </div>
+        <div style="text-align: center;margin-top: 20px" id="firstDescription">
+            <p>一直以来，我们都心存一个设想，期待着能够打造出这样一部 iPhone：它
+                <br> 有整面的屏幕，能让你在使用时完全沉浸其中，仿佛忘记了它的存在。
+                <br> 它是如此智能，你的一触、一碰、一言、一语，哪怕是轻轻一瞥，都会得到它
+                <br> 心有灵犀的回应。而这个设想，终于随着 iPhone X 的到来
+                <br> 成为了现实。现在，就跟未来见个面吧。
+            </p>
+
+        </div>
+    </div>
+    <div class="screen">
+        <blockquote class="text-center" id="firstSummaryFont">
+            <p>显示屏</p>
+        </blockquote>
+        <blockquote class="text-center" id="firstDescriptionFont">
+            <p>全面屏，传统机身握感</p>
+        </blockquote>
+        <blockquote class="text-center" id="firstSmallDescriptionFont">
+            <p>外观设计硬朗利落，精湛的多层镀膜工艺带来
+                <br> 莹润光泽，握在手中熠熠闪亮
+            </p>
+        </blockquote>
+        <img id="firstScreen" src="index/firstScreenPicture.png">
+        <div id="secondScreen">
+            <blockquote class="text-center" id="secondScreenDescriptionFont">
+                <p>惊艳的 5.88'' 全面屏，却有着大小合手的 5.2''
+                    <br> 传统机身握感
+                </p>
+            </blockquote>
+            <img id="secondScreenPicture" src="index/secondScreenPicture.jpg">
+        </div>
+    </div>
+    <div class="CPU">
+        <blockquote class="text-center" id="secondSummaryFont">
+            <p>处理器</p>
+        </blockquote>
+        <blockquote class="text-center" id="secondDescriptionFont">
+            <p>首发骁龙，性能更猛</p>
+        </blockquote>
+        <blockquote class="text-center" id="secondSmallDescriptionFont">
+            <p>率先搭载骁龙710，采用8核架构，不仅性能猛进，
+                <br> 图形处理能力、AI 能力也突破性提升</p>
+        </blockquote>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3">
+                    <img id="secondCPUPicture" src="index/mobilePhoneBody.jpg">
+                </div>
+                <div class="col-md-3"></div>
+                <div class="col-md-6">
+                    <div id="compareDescription">
+                        <div id="firstCompare">
+                            <blockquote class="text-left">
+                                <p>CPU最高主频2.2GHz相比上一代提升20%</p>
+                                <div></div>
+                                <div id="firstBorder" style="margin-top: 5px;
+    width:480px;
+    height:12px;
+    animation:roateFirst 2s;
+    animation-fill-mode:forwards;
+    animation-direction:alternate;"></div>
+                            </blockquote>
+                        </div>
+                        <div id="secondCompare">
+                            <blockquote class="text-left">
+                                <p>Antutu 性能测试跑分相比上一代提升 22%</p>
+                                <div></div>
+                                <div id="secondBorder" style="margin-top: 5px;
+                width:468px;
+                height:12px;
+animation:roateSecond 2s;
+    animation-fill-mode:forwards;
+    animation-direction:alternate;"></div>
+                            </blockquote>
+                        </div>
+                        <div id="thirdCompare">
+                            <blockquote class="text-left">
+                                <p>GPU 最高主频 500MHz 相比上一代提升 25%</p>
+                                <div></div>
+                                <div id="thirdBorder" style="margin-top: 5px;
+    width:450px;
+    height:12px;
+animation:roateThird 2s;
+    animation-fill-mode:forwards;
+    animation-direction:alternate;"></div>
+                            </blockquote>
+                        </div>
+                        <div id="fourthCompare">
+                            <blockquote class="text-left">
+                                <p>AI 运算处理能力相比上一代提升 2倍</p>
+                                <div></div>
+                                <div id="fourthBorder" style="margin-top: 5px;
+    width:300px;
+    height:12px;
+animation:roateFourth 2s;
+    animation-fill-mode:forwards;
+    animation-direction:alternate;"></div>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div id="gameDescription">
+            <blockquote class="text-center">
+                <p>针对各类大型游戏优化，画面更流畅，
+                    <br> 功耗更低，发热更少。
+                </p>
+            </blockquote>
+            <img src="index/playExample.jpg" id="game">
+        </div>
+    </div>
+    <div class="Camera">
+        <blockquote class="text-center" id="thirdSummaryFont">
+            <p>摄像头</p>
+        </blockquote>
+        <blockquote class="text-center" id="thirdDescriptionFont">
+            <p>AI超感，清晰捕捉一切</p>
+        </blockquote>
+        <blockquote class="text-center" id="thirdSmallDescriptionFont">
+            <p>旗舰级后置 AI 超感光双摄，1.4 μm 超大像素，配
+                <br>以源于单反的 Dual PD 双核极速对焦技术</p>
+        </blockquote>
+        <img id="firstCamera" src="index/firstCameraPicture.jpg">
+        <div id="secondCamera">
+            <blockquote class="text-center" id="firstCameraDescriptionFont">
+                <p>惊艳的 5.88'' 全面屏，却有着大小合手的 5.2''
+                    <br> 传统机身握感
+                </p>
+            </blockquote>
+            <img id="secondCameraPicture" src="index/secondCameraPicture.jpg">
+        </div>
+    </div>
+    <div class="footerUp">
+        <blockquote class="text-center">
+            <p>iPhone X
+                <p>
+                    <p>全球首发，小屏旗舰</p>
+        </blockquote>
+        <img src="index/footerPicture.jpg" id="footerPicture">
+    </div>
+
+    <div class="NewFooter" style="background-color: #f2f2f2;">
+        <div class="thankyou col-lg-offset-2 col-md-offset-1 col-sm-offset-1 " style="position: relative;left: 45px;top: 40px;z-index: 1;font-size: 12px;width: 160px">
+            <h4>
+                <a id="FooterLogo" style="color: black;text-underline: none" href="#">
+                    <img src="WAZ_HeaderPicture/logo3.png" style="position: relative;bottom: 5px">
+                </a>
+                <a style="color: black;text-underline: none;" id="FootercurrentPade">
+                    <span class="glyphicon glyphicon-menu-right"></span>
+                    Thank you</a>
+            </h4>
+        </div>
+
+        <nav class="navbar navbar-default footer-mynavbar-default" role="navigation" style="border-radius: 0;padding-top: 60px;background-color: #f2f2f2;border: 0">
+            <div class="=row footer-myrow">
+                <div class="col-lg-2 col-md-1 col-sm-1"></div>
+                <div class="col-lg-2 col-md-2 col-sm-2 footer-mycol-sm-2">
+                    <div class="container-fluid footer-mycontainer-fluid">
+                        <div class="navbar-header footer-myheader">
+                            <button type="button" class="navbar-toggle collapsed footer-mybutton footer-mynavbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="glyphicon glyphicon-plus"></span>
+                            </button>
+                            <a class="footer_thead footer-mynavbar-brand" id="footer_h1">选购及了解</a>
+                        </div>
+                        <div class="navbar-header collapse navbar-collapse footer-mynavbar-collapse" id="bs-example-navbar-collapse-2">
+
+                            <ul class=" nav navbar-nav footer-mynav footer-mynavbar-nav">
+                                <li class="footer_english ">
+                                    <a href="../ZBY/iphoneXFirst.html">iPhone</a>
+                                </li>
+                                <li class="footer_english ">
+                                    <a href="../XWQ/huawei_fp.html">Huawei</a>
+                                </li>
+                                <li class="footer_english ">
+                                    <a href="../WJY/xiaomi8/mi8.html">Xiaomi</a>
+                                </li>
+                                <li class="footer_english ">
+                                    <a href="../DWJ/OPPOR15.html">Oppo</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 footer-mycol-sm-2">
+                    <div class="container-fluid footer-mycontainer-fluid">
+                        <div class="navbar-header footer-myheader">
+                            <button type="button" class="navbar-toggle collapsed footer-mybutton footer-mynavbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-3">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="glyphicon glyphicon-plus"></span>
+                            </button>
+                            <a class="footer_thead footer-mynavbar-brand footer_thead" id="footer_h2">服务与支持</a>
+                        </div>
+                        <div class="navbar-header collapse navbar-collapse footer-mynavbar-collapse" id="bs-example-navbar-collapse-3">
+                            <ul class=" nav navbar-nav footer-mynav footer-mynavbar-nav">
+                                <li>
+                                    <a href="" target="">翻新与优惠</a>
+                                </li>
+                                <li>
+                                    <a href="" target="">分期付款</a>
+                                </li>
+                                <li>
+                                    <a href="" target="">订单状态</a>
+                                </li>
+                                <li>
+                                    <a href="" target="">以旧换新</a>
+                                </li>
+                                <li>
+                                    <a href="" target="">零件</a>
+                                </li>
+                                <li>
+                                    <a href="" target="">服务网点查询</a>
+                                </li>
+                                <li>
+                                    <a href="" target="">保修政策</a>
+                                </li>
+                                <li>
+                                    <a href="" target="">预约服务</a>
+                                </li>
+                                <li>
+                                    <a href="" target="">维修进度查询</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 footer-mycol-sm-2">
+                    <div class="container-fluid footer-mycontainer-fluid">
+                        <div class="navbar-header footer-myheader">
+                            <button type="button" class="navbar-toggle collapsed footer-mybutton  footer-mynavbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-4">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="glyphicon glyphicon-plus"></span>
+                            </button>
+                            <a class="footer_thead footer-mynavbar-brand footer_thead" id="footer_h3">关注我们</a>
+                        </div>
+                        <div class="navbar-header collapse navbar-collapse footer-mynavbar-collapse" id="bs-example-navbar-collapse-4">
+                            <ul class=" nav navbar-nav footer-mynav footer-mynavbar-nav">
+                                <li>
+                                    <a href="" target="">新浪微博</a>
+                                </li>
+                                <li>
+                                    <a href="" target="">官方微信</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 footer-mycol-sm-2">
+                    <div class="container-fluid footer-mycontainer-fluid">
+                        <div class="navbar-header footer-myheader">
+                            <button type="button" class="navbar-toggle collapsed footer-mybutton footer-mynavbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-5">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="glyphicon glyphicon-plus"></span>
+                            </button>
+                            <a class="footer_thead footer-mynavbar-brand" id="footer_h4">商务合作</a>
+                        </div>
+                        <div class="navbar-header collapse navbar-collapse footer-mynavbar-collapse" id="bs-example-navbar-collapse-5">
+
+                            <ul class=" nav navbar-nav footer-mynav footer-mynavbar-nav">
+                                <li>
+                                    <a href="" target="">开放平台</a>
+                                </li>
+                                <li>
+                                    <a href="" target="">商务采购</a>
+                                </li>
+                                <li>
+                                    <a href="" target="">品牌入驻</a>
+                                </li>
+                                <li>
+                                    <a href="" target="">成为伙伴</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 footer-mycol-sm-2">
+                    <div class="container-fluid footer-mycontainer-fluid">
+                        <div class="navbar-header footer-myheader">
+                            <button type="button" class="navbar-toggle collapsed footer-mybutton  footer-mynavbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-6">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="glyphicon glyphicon-plus"></span>
+                            </button>
+                            <a class="footer_thead footer-mynavbar-brand footer_thead" id="footer_h5" style="color: #333">更多资讯</a>
+                        </div>
+                        <div class="navbar-header collapse navbar-collapse footer-mynavbar-collapse" id="bs-example-navbar-collapse-6">
+                            <ul class=" nav navbar-nav footer-mynav footer-mynavbar-nav">
+                                <li>
+                                    <a href="" target="">新闻资讯</a>
+                                </li>
+                                <li>
+                                    <a href="" target="">联系我们</a>
+                                </li>
+                                <li>
+                                    <a href="" target="">关于我们</a>
+                                </li>
+                                <li>
+                                    <a href="" target="">活动</a>
+                                </li>
+                                <li>
+                                    <a href="" target="">工作机会</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </nav>
+
+        <div style="padding-bottom:45px">
+            <div class="row footer-myrow">
+                <hr id="footer_hr" class="col-sm-12 col-xs-12 col-lg-offset-2 col-lg-9 col-md-10 " style="padding-left: 0px;padding-right: 0px;">
+            </div>
+
+            <div id="footer_copyrightpart" class="row footer-myrow">
+                <div class="col-sm-12 col-xs-12 col-lg-offset-2  col-md-offset-1 col-lg-3 col-md-4 " style="padding-left: 45px;padding-right: 0px;">
+                    <a id="footer_copyright_1">
+                        Copyright&nbsp;&nbsp;&copy;&nbsp;2018&nbsp;&nbsp;Dami.com&nbsp;&nbsp;保留所有权利</a>
+                </div>
+                <div class="col-lg-5 col-md-6 col-sm-12 col-xs-12" style="padding-left: 45px">
+                    <a href="" target="" class="footer_four" style="color: #565656;font-family: 黑体;font-size: 12px;">隐私政策</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+                    <a href="" target="" class="footer_four" style="color: #565656;font-family: 黑体;font-size: 12px;">使用条款</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+                    <a href="" target="" class="footer_four" style="color: #565656;font-family: 黑体;font-size: 12px;">销售策略</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+                    <a href="" target="" class="footer_four" style="color: #565656;font-family: 黑体;font-size: 12px;">法律信息</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+                    <a href="" target="" class="footer_four" style="color: #565656;font-family: 黑体;font-size: 12px;">网络地图</a>
+                    <br>
+
+                </div>
+            </div>
+            <div class="row footer-myrow">
+                <div class="col-lg-offset-2  col-md-offset-1 col-lg-6 col-md-6 col-sm-12 col-xs-12" style="padding-left: 45px">
+                    <a id="footer_copyright_2"> 京公安网安备&nbsp;&nbsp;&nbsp;11010502008968&nbsp;&nbsp;&nbsp;
+                        <a href="http://www.miibeian.gov.cn/state/outPortal/loginPortal.action;jsessionid=mew3brmEvoFKl-z97HaBxx_OY5_V7bWTD4P8fII3Rj1LUHQtbnH6!1316315234"
+                            id="footer_number">京ICP备10214630</a>
+                    </a>
+                </div>
+            </div>
+            <script src="js/jquery-1.11.3.js"></script>
+            <script src="js/bootstrap.js"></script>
+        </div>
+    </div>
+    <script src="js/jquery-1.11.3.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.js"></script>
+    <script src="head.js"></script>
+</body>
+
+</html>

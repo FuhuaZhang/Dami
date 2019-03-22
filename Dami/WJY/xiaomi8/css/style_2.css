@@ -1,0 +1,30 @@
+@charset "utf-8";
+*{margin:0;padding:0;list-style-type:none;}
+a,img{border:0;}
+.font{font-size:12px;font-family:Arial, Helvetica, sans-serif;color:#333;margin:0 auto;}
+table{border-collapse:collapse;border-spacing:0;}
+a{color:#333;text-decoration:none;}
+
+
+#box{width:960px;margin:0 auto;}
+/* bigPic */
+.bigPic{margin:0px auto;overflow:hidden;width:818px;position:relative}
+.bigPic a.btnleft{margin-top:-42px;display:block;background:url(../img/btnleft.png);left:10px;overflow:hidden;width:50px;position:absolute;top:50%;height:85px}
+.bigPic a.btnleft:hover{margin-top:-42px;display:block;background:url(../img/btnleft_1.png);left:10px;overflow:hidden;width:50px;position:absolute;top:50%;height:85px}
+.bigPic a.btnright{margin-top:-42px;display:block;right:10px;background:url(../img/btnright.png);overflow:hidden;width:50px;position:absolute;top:50%;height:85px}
+.bigPic a.btnright:hover{margin-top:-42px;display:block;right:10px;background:url(../img/btnright_1.png);overflow:hidden;width:50px;position:absolute;top:50%;height:85px}
+.bigPic .info{overflow:hidden;width:818px;height:auto}
+.bigPic .info div{overflow:hidden;width:818px;text-align:center}
+/* sPic */
+.sPic{border-right:#595858 1px solid;border-top:#595858 1px solid;margin:0px auto;overflow:hidden;border-left:#595858 1px solid;width:560px;border-bottom:#595858 1px solid;position:relative}
+.sPic a.btnleft{display:block;left:2px;overflow:hidden;width:15px;position:absolute;top:6px;height:90px}
+.sPic a.btnright{display:block;right:2px;overflow:hidden;width:15px;position:absolute;top:6px;height:90px}
+.sPic .info{margin:0px auto;overflow:hidden;width:791px}
+.sPic .info div{background:url(../img/spbg0.jpg);overflow:hidden;width:113px;cursor:pointer;height:102px;text-align:center}
+.sPic .info div img{margin:11px 0px 0px;width:90px;height:80px}
+.sPic .info td.current div{background:url(../img/spbg1.jpg)}
+/* chanegecolor */
+.chanegecolor{margin-top:15px;font-size:12px;z-index:99999;margin-left:50px;position:absolute}
+.chanegecolor span{display:block;float:left;margin-right:10px}
+.chanegecolor span img{border-right:#ffffff 2px solid;border-top:#ffffff 2px solid;display:block;margin-bottom:5px;border-left:#ffffff 2px solid;cursor:pointer;border-bottom:#ffffff 2px solid}
+.chanegecolor span.b00eaff img{border-right:#00eaff 2px solid;border-top:#00eaff 2px solid;border-left:#00eaff 2px solid;border-bottom:#00eaff 2px solid}

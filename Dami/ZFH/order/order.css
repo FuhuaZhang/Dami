@@ -1,0 +1,40 @@
+body{
+    background-color: #F1F1F1;
+}
+.zone{
+    background-color: #ffffff;
+    margin-bottom: 10px;
+    box-shadow: 0.1rem 0 0 0 #d2d2d2, -0.1rem 0 0 0 #d2d2d2, 0 0.1rem 0 0 #b6b6b6, 0 0.2rem 0 0 #d2d2d2, 0.2rem 0 0 0 #e6e6e6, -0.2rem 0 0 0 #e6e6e6, 0 0.3rem 0 0 #e6e6e6, 0 -0.1rem 0 0 #e6e6e6;
+    border-radius: 3px;
+    /*text-align: center;*/
+    /*vertical-align: middle;*/
+    padding: 30px;
+}
+#free{
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 96%;font-family: 'Myriad Set Pro', 'Helvetica Neue', Helvetica,Arial, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: #333;
+
+    padding-bottom: 9px;
+}
+#order{
+    padding-bottom: 9px;
+    color: #757575;
+    font-weight: bold;
+}
+table{
+    text-align: center;
+}
+.productItem{
+    width: 100%;
+}
+.table>tbody>tr>td{
+    vertical-align: middle;
+}
+.productsPic{
+    width: 50px;
+    height: 73px;
+}
